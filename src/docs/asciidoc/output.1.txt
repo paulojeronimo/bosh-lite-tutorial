@@ -1,0 +1,152 @@
+                                                                                                                     
+                                                                                                                      
+==\                                                                                                                  
+===> Creating BOSH Director                                                                                           
+==/                                                                                                                   
+                                                                                                                      
+Deployment manifest: '/Users/pj/bosh-env/virtualbox/bosh-deployment/bosh.yml'                                         
+Deployment state: 'state.json'                                                                                        
+                                                                                                                      
+Started validating                                                                                                    
+  Downloading release 'bosh'... Finished (00:03:16)                                                                   
+  Validating release 'bosh'... Finished (00:00:00)                                                                    
+  Downloading release 'bosh-virtualbox-cpi'... Finished (00:13:23)                                                    
+  Validating release 'bosh-virtualbox-cpi'... Finished (00:00:00)                                                     
+  Downloading release 'bosh-warden-cpi'... Finished (00:03:35)                                                        
+  Validating release 'bosh-warden-cpi'... Finished (00:00:00)                                                         
+  Downloading release 'os-conf'... Finished (00:00:02)                                                               
+  Validating release 'os-conf'... Finished (00:00:00)                                                                
+  Downloading release 'garden-runc'... Finished (00:02:59)                                                            
+  Validating release 'garden-runc'... Finished (00:00:00)                                                             
+  Downloading release 'uaa'... Finished (00:03:02)  
+  Validating release 'uaa'... Finished (00:00:00)                                                                     
+  Downloading release 'credhub'... Finished (00:01:40)                                                                
+  Validating release 'credhub'... Finished (00:00:00)                                                                
+  Validating cpi release... Finished (00:00:00)                                                                       
+  Validating deployment manifest... Finished (00:00:00)
+  Validating deployment manifest... Finished (00:00:00)                                                       [92/150]
+  Downloading stemcell... Finished (00:07:26)                                                                         
+  Validating stemcell... Finished (00:00:00)                                                                          
+Finished validating (00:35:32)                                                                                        
+                                                                                                                      
+Started installing CPI                                                                                                
+  Compiling package 'golang-1.10-linux/48c842421b6f05acf88dc6ec17f7574dade28a86'... Finished (00:00:19)               
+  Compiling package 'golang-1.10-darwin/9eacb8fc6b1b693e4280be4e916e2000f375bfbf'... Finished (00:00:19)              
+  Compiling package 'virtualbox_cpi/491b894473950429800ed1ce9dbe1940aac37307'... Finished (00:00:13)                  
+  Installing packages... Finished (00:00:06)                                                                          
+  Rendering job templates... Finished (00:00:00)                                                                      
+  Installing job 'virtualbox_cpi'... Finished (00:00:00)                                                             
+Finished installing CPI (00:01:00)                                                                                    
+
+Started installing CPI
+  Compiling package 'golang-1.10-linux/48c842421b6f05acf88dc6ec17f7574dade28a86'... Finished (00:00:19)
+  Compiling package 'golang-1.10-darwin/9eacb8fc6b1b693e4280be4e916e2000f375bfbf'... Finished (00:00:19)
+  Compiling package 'virtualbox_cpi/491b894473950429800ed1ce9dbe1940aac37307'... Finished (00:00:13)
+  Installing packages... Finished (00:00:06)
+  Rendering job templates... Finished (00:00:00)
+  Installing job 'virtualbox_cpi'... Finished (00:00:00)
+Finished installing CPI (00:01:00)
+
+Starting registry... Finished (00:00:00)
+Uploading stemcell 'bosh-vsphere-esxi-ubuntu-trusty-go_agent/3541.10'... Finished (00:00:10)
+
+Started deploying
+  Creating VM for instance 'bosh/0' from stemcell 'sc-68c173a0-302a-4b49-698a-1ae468f0797b'... Finished (00:00:01)
+  Waiting for the agent on VM 'vm-34ae245b-3ec9-4cd4-5aea-cd48f06752a3' to be ready... Finished (00:00:36)
+  Creating disk... Finished (00:00:00)
+  Attaching disk 'disk-1ad2d88e-2ffe-4e8a-72fd-af9a22259c45' to VM 'vm-34ae245b-3ec9-4cd4-5aea-cd48f06752a3'... Finished (00:00:05)
+  Rendering job templates... Finished (00:00:13)
+  Compiling package 'apparmor/3789c10fa8ef4349f58badae51723eec7855d59b9bb6c1bb7ee21a264fae1dbb'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'golang/d0d1b2a5863243f82a949288cef9a3d5fc9d000e9be2904aea6d04650a0149b0'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'libseccomp/0594acc533fd2801a347d6b725d0db9f3591c583d06f1e53201e701b12e09824'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'golang-1.10-linux/48c842421b6f05acf88dc6ec17f7574dade28a86'... Skipped [Package already compiled] (00:00:01)
+  Compiling package 'ruby-2.4-r3/8471dec5da9ecc321686b8990a5ad2cc84529254'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'mysql/b7e73acc0bfe05f1c6cbfd97bf92d39b0d3155d5'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'libpq/3afb51e921e950abb31e5d039d2144591a41482d'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'openjdk_1.8.0/79f1f63caaa90ccb6e43861ac34a5aa5afb17ce8'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'runc/0de96bc356b3bb61592a2a4bddcfe1123086b589708e0b2b8f609e1b10066e90'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'bosh-gcscli/fce60f2d82653ea7e08c768f077c9c4a738d0c39'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'runc/0de96bc356b3bb61592a2a4bddcfe1123086b589708e0b2b8f609e1b10066e90'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'bosh-gcscli/fce60f2d82653ea7e08c768f077c9c4a738d0c39'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'verify_multidigest/8fc5d654cebad7725c34bb08b3f60b912db7094a'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'tar/1de08f190630baf01c0741c86773a02f7c88c2786db1f219152e46e8853f1ccc'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'warden_cpi/5a07ecf85c489cd4c32ae26d3092513027e14b86'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'uaa/af17a1d37d665421678c2cc70ad7ae57f2e96736'... Skipped [Package already compiled] (00:00:01)
+  Compiling package 's3cli/b6e38c619dd5575e16ea9fcabc4b7c500effdd26'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'davcli/2672d0a96a775f5252fef6ac7bbab3928aa41599'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'garden-idmapper/557e57eeae91fc614b4d4e2ccf2440a93e725ed0b6a895a35fe8d94d2c764fa2'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'gonats/73ec55f11c24dd7c02288cdffa24446023678cc2'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'director/0d042598ac5a6964d7de6b19b38a0d625386a8d6'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'credhub/929572a392d431ce448016a80155712c8bec35ac'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'busybox/eab1896633e23c0eea7e07b91b27c2c090d16efd7fe07de1adbd8e5a1b16578e'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'guardian/d6db6a35ccdab8f813b3aabde4bc09400aef1a994879a65e8d67299ab720b87e'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'postgres-9.4/52b3a31d7b0282d342aa7a0d62d8b419358c6b6b'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'lunaclient/b922e045db5246ec742f0c4d1496844942d6167a'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'uaa_utils/20557445bf996af17995a5f13bf5f87000600f2e'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'nginx/3518a530de39c41ec65abf1194c27aadae23b711'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'health_monitor/a0b5a680f1cbfda4a17b2fedff93cc9b9d9d959c'... Skipped [Package already compiled] (00:00:00)
+  Compiling package 'iptables/85ef0fef60ac079fb75b36d0693cce704a662b23b0727c824f15d58713476f13'... Skipped [Package already compiled] (00:00:00)
+  Updating instance 'bosh/0'... Finished (00:01:12)                           
+  Waiting for instance 'bosh/0' to be running... Finished (00:01:04)
+  Running the post-start scripts 'bosh/0'... Finished (00:00:07)
+Finished deploying (00:03:32)               
+                              
+Stopping registry... Finished (00:00:00)
+Cleaning up rendered CPI jobs... Finished (00:00:00)
+                                                                                                       
+Succeeded                                                                                               
+                                                                                                    
+                                            
+==\                                             
+===> Adding Network Routes (sudo is required)           
+==/                               
+
+add net 10.244.0.0: gateway 192.168.50.6
+                                                                                            
+
+==\              
+===> Generating .envrc                                                                                            
+==/                                                                                                       
+                                      
+Succeeded                                                                                                                          
+                                                
+                                                                                                                                                
+==\                                                                                                                                           
+===> Configuring Environment Alias                                                                                                                
+==/                                                                                                                              
+                                                                                                                           
+Using environment '192.168.50.6' as client 'admin'                                                                   
+                                                                                                                     
+Name      bosh-lite                                                                                                          
+UUID      7224a31c-e869-417f
+Version   265.2.0 (00000000)                                                                                                                           
+CPI       warden_cpi                                                                                                              
+Features  compiled_package_cache: disabled                                                                                                 
+          config_server: enabled                                                                                          
+          dns: disabled                                                                                            
+          snapshots: disabled                                                                                        
+User      admin                                                                                                       
+                                                                                                                                                       
+Succeeded                                                                                                             
+                                                                                                                        
+                                                                                                                       
+==\                                                                                                                                            
+===> Updating Cloud Config                                                                                                                      
+==/                                                                                                                         
+                                                                                                                          
+Succeeded                                                                                                                
+                                                                                                                     
+                                                                                                                              
+==\                                                                                                                                             
+===> Completed                                                                                                                                                                                                                                
+==/                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                              
+Credentials for your environment have been generated and stored in creds.yml.                                                                          
+Details about the state of your VM have been stored in state.json.
+You should keep these files for future updates and to destroy your environment.                                                    
+                                                                    
+BOSH Director is now running. You may need to run the following before using bosh commands:                                                     
+                                                                                                                                              
+    source .envrc
+
+

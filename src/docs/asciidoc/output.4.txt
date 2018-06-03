@@ -1,0 +1,1677 @@
+Using environment '192.168.50.6' as client 'admin'
+
+Using deployment 'cf'
+
+Release 'cf-networking/1.13.0' already exists.
+
+Release 'binary-buildpack/1.0.18' already exists.
+
+Release 'cf-smoke-tests/40.0.5' already exists.
+
+Release 'cf-mysql/36.14.0' already exists.
+
+Release 'capi/1.59.0' already exists.
+
+Release 'cf-syslog-drain/6.5' already exists.
+
+Release 'cflinuxfs2/1.211.0' already exists.
+
+Release 'consul/193' already exists.
+
+Release 'dotnet-core-buildpack/2.0.6' already exists.
+
+Release 'diego/2.8.0' already exists.
+
+Release 'garden-runc/1.13.3' already exists.
+
+Release 'go-buildpack/1.8.21' already exists.
+
+Release 'java-buildpack/4.12' already exists.
+
+Release 'loggregator/102.1' already exists.
+
+Release 'nats/24' already exists.
+
+Release 'nodejs-buildpack/1.6.23' already exists.
+
+Release 'php-buildpack/4.3.54' already exists.
+
+Release 'ruby-buildpack/1.7.18' already exists.
+
+Release 'python-buildpack/1.6.15' already exists.
+
+Release 'routing/0.178.0' already exists.
+
+Release 'staticfile-buildpack/1.4.27' already exists.
+
+Release 'statsd-injector/1.3.0' already exists.
+
+Release 'uaa/59' already exists.
+
++ azs:
++ - name: z1
++ - name: z2
++ - name: z3
+  
++ vm_types:
++ - name: default
+  
++ compilation:
++   az: z1
++   network: default
++   reuse_compilation_vms: true
++   vm_type: default
++   workers: 5
+  
++ networks:
++ - name: default
++   subnets:
++   - azs:
++     - z1
++     - z2
++     - z3
++     dns:
++     - 8.8.8.8
++     gateway: 10.244.0.1
++     range: 10.244.0.0/24
++     reserved: []
++     static:
++     - 10.244.0.34
++   type: manual
+  
++ disk_types:
++ - disk_size: 1024
++   name: default
+  
++ stemcells:
++ - alias: default
++   os: ubuntu-trusty
++   version: '3586.16'
+  
++ releases:
++ - name: binary-buildpack
++   sha1: e903612106b20b6cf969be83dfb2bdd0bb4d9db2
++   url: https://bosh.io/d/github.com/cloudfoundry/binary-buildpack-release?v=1.0.18
++   version: 1.0.18
++ - name: capi
++   sha1: 7186a29f2dd437479731ed267ccd4e60d2b27606
++   url: https://bosh.io/d/github.com/cloudfoundry/capi-release?v=1.59.0
++   version: 1.59.0
++ - name: cf-mysql
++   sha1: 383f70fd4d776bf91d9043d8fd9ad79516cc8478
++   url: https://bosh.io/d/github.com/cloudfoundry/cf-mysql-release?v=36.14.0
++   version: 36.14.0
++ - name: cf-networking
++   sha1: 0433fb00ad31c3534e8cea5fa57c572cd7eaff8b
++   url: https://bosh.io/d/github.com/cloudfoundry/cf-networking-release?v=1.13.0
++   version: 1.13.0
++ - name: cf-smoke-tests
++   sha1: 6f6081d24490a82c5b9fea73283e0cfe21cbf207
++   url: https://bosh.io/d/github.com/cloudfoundry/cf-smoke-tests-release?v=40.0.5
++   version: 40.0.5
++ - name: cf-syslog-drain
++   sha1: 2764d9ad86e71b354dc127238895c0db8352d5eb
++   url: https://bosh.io/d/github.com/cloudfoundry/cf-syslog-drain-release?v=6.5
++   version: '6.5'
++ - name: cflinuxfs2
++   sha1: 2548d659203f59a937bdf5fe4b587dc07a86046e
++   url: https://bosh.io/d/github.com/cloudfoundry/cflinuxfs2-release?v=1.211.0
++   version: 1.211.0
++ - name: consul
++   sha1: 3596fa1a1692d9e48d2e28789b60e0c72e984d31
++   url: https://bosh.io/d/github.com/cloudfoundry-incubator/consul-release?v=193
++   version: '193'
++ - name: diego
++   sha1: 8ff6e2120af4d0ee5b42f440dc7ab432bf41a763
++   url: https://bosh.io/d/github.com/cloudfoundry/diego-release?v=2.8.0
++   version: 2.8.0
++ - name: dotnet-core-buildpack
++   sha1: acc2cda9b79d875842f82e888ceb88fea377a88b
++   url: https://bosh.io/d/github.com/cloudfoundry/dotnet-core-buildpack-release?v=2.0.6
++   version: 2.0.6
++ - name: garden-runc
++   sha1: 8868157d567c0e51eb19d3ccadeed951c7616975
++   url: https://bosh.io/d/github.com/cloudfoundry/garden-runc-release?v=1.13.3
++   version: 1.13.3
++ - name: go-buildpack
++   sha1: 7ed54d5d1449c946eead324089e79faadf87a87a
++   url: https://bosh.io/d/github.com/cloudfoundry/go-buildpack-release?v=1.8.21
++   version: 1.8.21
++ - name: java-buildpack
++   sha1: 4932d769feb5987fdd6fcc60c9c132746e14dade
++   url: https://bosh.io/d/github.com/cloudfoundry/java-buildpack-release?v=4.12
++   version: '4.12'
++ - name: loggregator
++   sha1: 61949aff688e368a11d03daa18855800517666d3
++   url: https://bosh.io/d/github.com/cloudfoundry/loggregator-release?v=102.1
++   version: '102.1'
++ - name: nats
++   sha1: 65d8efc68d86a03d0f51562e16763075c37e419d
++   url: https://bosh.io/d/github.com/cloudfoundry/nats-release?v=24
++   version: '24'
++ - name: nodejs-buildpack
++   sha1: a180c41f57659298a87cd6457b38697c4be14e0a
++   url: https://bosh.io/d/github.com/cloudfoundry/nodejs-buildpack-release?v=1.6.23
++   version: 1.6.23
++ - name: php-buildpack
++   sha1: dcaae5abdb771de2c5d99c064fc52b22a662130c
++   url: https://bosh.io/d/github.com/cloudfoundry/php-buildpack-release?v=4.3.54
++   version: 4.3.54
++ - name: python-buildpack
++   sha1: 5ee37271b3fa18fd6e5c1f0687db60c106e49995
++   url: https://bosh.io/d/github.com/cloudfoundry/python-buildpack-release?v=1.6.15
++   version: 1.6.15
++ - name: routing
++   sha1: b07e1e0e2d7bd56b754d065867649f276896f783
++   url: https://bosh.io/d/github.com/cloudfoundry-incubator/cf-routing-release?v=0.178.0
++   version: 0.178.0
++ - name: ruby-buildpack
++   sha1: 00a7af65f477429cc802da4b116e9f94ade276f1
++   url: https://bosh.io/d/github.com/cloudfoundry/ruby-buildpack-release?v=1.7.18
++   version: 1.7.18
++ - name: staticfile-buildpack
++   sha1: b4abd75f2b34e4eac2ee9814a8405f580c193a07
++   url: https://bosh.io/d/github.com/cloudfoundry/staticfile-buildpack-release?v=1.4.27
++   version: 1.4.27
++ - name: statsd-injector
++   sha1: 5b9357484032e5217cead8f20362f5802c751de0
++   url: https://bosh.io/d/github.com/cloudfoundry/statsd-injector-release?v=1.3.0
++   version: 1.3.0
++ - name: uaa
++   sha1: 6aa5cd78892f4ea09070c0cf5155aa7a12c17d13
++   url: https://bosh.io/d/github.com/cloudfoundry/uaa-release?v=59
++   version: '59'
+  
++ update:
++   canaries: 1
++   canary_watch_time: 30000-1200000
++   max_in_flight: 1
++   serial: false
++   update_watch_time: 5000-1200000
+  
++ addons:
++ - exclude:
++     jobs:
++     - name: smoke_tests
++       release: cf-smoke-tests
++   include:
++     stemcell:
++     - os: ubuntu-trusty
++   jobs:
++   - name: metron_agent
++     properties:
++       loggregator:
++         tls:
++           ca_cert: "<redacted>"
++           metron:
++             cert: "<redacted>"
++             key: "<redacted>"
++     release: loggregator
++   name: metron_agent
+  
++ instance_groups:
++ - azs:
++   - z1
++   instances: 1
++   jobs:
++   - name: smoke_tests
++     properties:
++       smoke_tests:
++         api: "<redacted>"
++         apps_domain: "<redacted>"
++         cf_dial_timeout_in_seconds: "<redacted>"
++         org: "<redacted>"
++         password: "<redacted>"
++         skip_ssl_validation: "<redacted>"
++         space: "<redacted>"
++         user: "<redacted>"
++     release: cf-smoke-tests
++   lifecycle: errand
++   name: smoke-tests
++   networks:
++   - name: default
++   stemcell: default
++   update:
++     serial: true
++   vm_type: minimal
++ - azs:
++   - z1
++   - z2
++   - z3
++   instances: 1
++   jobs:
++   - consumes:
++       consul_client:
++         from: consul_client_link
++       consul_common:
++         from: consul_common_link
++       consul_server:
++         from: consul_server_link
++     name: consul_agent
++     properties:
++       consul:
++         agent:
++           domain: "<redacted>"
++           mode: "<redacted>"
++         agent_cert: "<redacted>"
++         agent_key: "<redacted>"
++         ca_cert: "<redacted>"
++         encrypt_keys:
++         - "<redacted>"
++         server_cert: "<redacted>"
++         server_key: "<redacted>"
++     provides:
++       consul_client:
++         as: consul_client_link
++         shared: true
++       consul_common:
++         as: consul_common_link
++         shared: true
++       consul_server:
++         as: consul_server_link
++         shared: true
++     release: consul
++   name: consul
++   networks:
++   - name: default
++   persistent_disk_type: 5GB
++   stemcell: default
++   update:
++     serial: true
++   vm_type: minimal
++ - azs:
++   - z1
++   - z2
++   instances: 1
++   jobs:
++   - consumes:
++       consul_client:
++         from: consul_client_link
++       consul_common:
++         from: consul_common_link
++       consul_server: nil
++     name: consul_agent
++     release: consul
++   - name: nats
++     properties:
++       nats:
++         password: "<redacted>"
++         user: "<redacted>"
++     provides:
++       nats:
++         as: nats
++         shared: true
++     release: nats
++   name: nats
++   networks:
++   - name: default
++   stemcell: default
++   vm_type: minimal
++ - azs:
++   - z1
++   - z2
++   instances: 1
++   jobs:
++   - consumes:
++       consul_client:
++         from: consul_client_link
++       consul_common:
++         from: consul_common_link
++       consul_server: nil
++     name: consul_agent
++     release: consul
++   - name: adapter
++     properties:
++       scalablesyslog:
++         adapter:
++           logs:
++             addr: "<redacted>"
++           tls:
++             ca: "<redacted>"
++             cert: "<redacted>"
++             cn: "<redacted>"
++             key: "<redacted>"
++         adapter_rlp:
++           tls:
++             ca: "<redacted>"
++             cert: "<redacted>"
++             cn: "<redacted>"
++             key: "<redacted>"
++     release: cf-syslog-drain
++   name: adapter
++   networks:
++   - name: default
++   stemcell: default
++   vm_type: minimal
++ - azs:
++   - z1
++   instances: 1
++   jobs:
++   - consumes:
++       consul_client:
++         from: consul_client_link
++       consul_common:
++         from: consul_common_link
++       consul_server: nil
++     name: consul_agent
++     release: consul
++   - name: mysql
++     properties:
++       cf_mysql:
++         mysql:
++           admin_password: "<redacted>"
++           binlog_enabled: "<redacted>"
++           cluster_health:
++             password: "<redacted>"
++           galera_healthcheck:
++             db_password: "<redacted>"
++             endpoint_password: "<redacted>"
++             endpoint_username: "<redacted>"
++           port: "<redacted>"
++           seeded_databases:
++           - name: "<redacted>"
++             password: "<redacted>"
++             username: "<redacted>"
++           - name: "<redacted>"
++             password: "<redacted>"
++             username: "<redacted>"
++           - name: "<redacted>"
++             password: "<redacted>"
++             username: "<redacted>"
++           - name: "<redacted>"
++             password: "<redacted>"
++             username: "<redacted>"
++           - name: "<redacted>"
++             password: "<redacted>"
++             username: "<redacted>"
++           - name: "<redacted>"
++             password: "<redacted>"
++             username: "<redacted>"
++           - name: "<redacted>"
++             password: "<redacted>"
++             username: "<redacted>"
++     release: cf-mysql
++   - name: proxy
++     properties:
++       cf_mysql:
++         proxy:
++           api_password: "<redacted>"
++           consul_enabled: "<redacted>"
++           consul_service_name: "<redacted>"
++     release: cf-mysql
++   migrated_from:
++   - name: mysql
++   - name: singleton-database
++   name: database
++   networks:
++   - name: default
++   persistent_disk_type: 10GB
++   stemcell: default
++   update:
++     serial: true
++   vm_type: small
++ - azs:
++   - z1
++   - z2
++   instances: 1
++   jobs:
++   - consumes:
++       consul_client:
++         from: consul_client_link
++       consul_common:
++         from: consul_common_link
++       consul_server: nil
++     name: consul_agent
++     properties:
++       consul:
++         agent:
++           services:
++             silk-controller:
++               name: "<redacted>"
++     release: consul
++   - name: cfdot
++     properties:
++       tls:
++         ca_certificate: "<redacted>"
++         certificate: "<redacted>"
++         private_key: "<redacted>"
++     release: diego
++   - name: bbs
++     properties:
++       diego:
++         bbs:
++           active_key_label: "<redacted>"
++           auctioneer:
++             ca_cert: "<redacted>"
++             client_cert: "<redacted>"
++             client_key: "<redacted>"
++           ca_cert: "<redacted>"
++           encryption_keys:
++           - label: "<redacted>"
++             passphrase: "<redacted>"
++           rep:
++             ca_cert: "<redacted>"
++             client_cert: "<redacted>"
++             client_key: "<redacted>"
++             require_tls: "<redacted>"
++           server_cert: "<redacted>"
++           server_key: "<redacted>"
++           sql:
++             db_driver: "<redacted>"
++             db_host: "<redacted>"
++             db_password: "<redacted>"
++             db_port: "<redacted>"
++             db_schema: "<redacted>"
++             db_username: "<redacted>"
++       logging:
++         format:
++           timestamp: "<redacted>"
++       loggregator:
++         ca_cert: "<redacted>"
++         cert: "<redacted>"
++         key: "<redacted>"
++         use_v2_api: "<redacted>"
++     release: diego
++   - name: silk-controller
++     properties:
++       cf_networking:
++         silk_controller:
++           ca_cert: "<redacted>"
++           database:
++             host: "<redacted>"
++             name: "<redacted>"
++             password: "<redacted>"
++             port: "<redacted>"
++             type: "<redacted>"
++             username: "<redacted>"
++           server_cert: "<redacted>"
++           server_key: "<redacted>"
++         silk_daemon:
++           ca_cert: "<redacted>"
++           client_cert: "<redacted>"
++           client_key: "<redacted>"
++     release: cf-networking
++   - name: locket
++     properties:
++       diego:
++         locket:
++           sql:
++             db_driver: "<redacted>"
++             db_host: "<redacted>"
++             db_password: "<redacted>"
++             db_port: "<redacted>"
++             db_schema: "<redacted>"
++             db_username: "<redacted>"
++       logging:
++         format:
++           timestamp: "<redacted>"
++       loggregator:
++         ca_cert: "<redacted>"
++         cert: "<redacted>"
++         key: "<redacted>"
++         use_v2_api: "<redacted>"
++       tls:
++         ca_cert: "<redacted>"
++         cert: "<redacted>"
++         key: "<redacted>"
++     release: diego
++   migrated_from:
++   - name: diego-bbs
++   name: diego-api
++   networks:
++   - name: default
++   stemcell: default
++   update:
++     serial: true
++   vm_type: small
++ - azs:
++   - z1
++   - z2
++   instances: 1
++   jobs:
++   - consumes:
++       consul_client:
++         from: consul_client_link
++       consul_common:
++         from: consul_common_link
++       consul_server: nil
++     name: consul_agent
++     properties:
++       consul:
++         agent:
++           services:
++             uaa: {}
++     release: consul
++   - name: uaa
++     properties:
++       encryption:
++         active_key_label: "<redacted>"
++         encryption_keys:
++         - label: "<redacted>"
++           passphrase: "<redacted>"
++       login:
++         saml:
++           activeKeyId: "<redacted>"
++           keys:
++             key-1:
++               certificate: "<redacted>"
++               key: "<redacted>"
++               passphrase: "<redacted>"
++       uaa:
++         admin:
++           client_secret: "<redacted>"
++         clients:
++           cc-service-dashboards:
++             authorities: "<redacted>"
++             authorized-grant-types: "<redacted>"
++             scope: "<redacted>"
++             secret: "<redacted>"
++           cc_routing:
++             authorities: "<redacted>"
++             authorized-grant-types: "<redacted>"
++             secret: "<redacted>"
++           cc_service_key_client:
++             authorities: "<redacted>"
++             authorized-grant-types: "<redacted>"
++             secret: "<redacted>"
++           cf:
++             access-token-validity: "<redacted>"
++             authorities: "<redacted>"
++             authorized-grant-types: "<redacted>"
++             override: "<redacted>"
++             refresh-token-validity: "<redacted>"
++             scope: "<redacted>"
++             secret: "<redacted>"
++           cloud_controller_username_lookup:
++             authorities: "<redacted>"
++             authorized-grant-types: "<redacted>"
++             secret: "<redacted>"
++           doppler:
++             authorities: "<redacted>"
++             authorized-grant-types: "<redacted>"
++             override: "<redacted>"
++             secret: "<redacted>"
++           gorouter:
++             authorities: "<redacted>"
++             authorized-grant-types: "<redacted>"
++             secret: "<redacted>"
++           network-policy:
++             authorities: "<redacted>"
++             authorized-grant-types: "<redacted>"
++             secret: "<redacted>"
++           routing_api_client:
++             authorities: "<redacted>"
++             authorized-grant-types: "<redacted>"
++             secret: "<redacted>"
++           ssh-proxy:
++             authorized-grant-types: "<redacted>"
++             autoapprove: "<redacted>"
++             override: "<redacted>"
++             redirect-uri: "<redacted>"
++             scope: "<redacted>"
++             secret: "<redacted>"
++           tcp_emitter:
++             authorities: "<redacted>"
++             authorized-grant-types: "<redacted>"
++             secret: "<redacted>"
++           tcp_router:
++             authorities: "<redacted>"
++             authorized-grant-types: "<redacted>"
++             secret: "<redacted>"
++         jwt:
++           policy:
++             active_key_id: "<redacted>"
++             keys:
++               key-1:
++                 signingKey: "<redacted>"
++         logging_level: "<redacted>"
++         scim:
++           users:
++           - groups:
++             - "<redacted>"
++             - "<redacted>"
++             - "<redacted>"
++             - "<redacted>"
++             - "<redacted>"
++             - "<redacted>"
++             - "<redacted>"
++             - "<redacted>"
++             name: "<redacted>"
++             password: "<redacted>"
++           - groups:
++             - "<redacted>"
++             - "<redacted>"
++             - "<redacted>"
++             - "<redacted>"
++             - "<redacted>"
++             - "<redacted>"
++             - "<redacted>"
++             name: "<redacted>"
++             password: "<redacted>"
++         sslCertificate: "<redacted>"
++         sslPrivateKey: "<redacted>"
++         url: "<redacted>"
++         zones:
++           internal:
++             hostnames:
++             - "<redacted>"
++       uaadb:
++         databases:
++         - name: "<redacted>"
++           tag: "<redacted>"
++         db_scheme: "<redacted>"
++         port: "<redacted>"
++         roles:
++         - name: "<redacted>"
++           password: "<redacted>"
++           tag: "<redacted>"
++     release: uaa
++   - name: route_registrar
++     properties:
++       route_registrar:
++         routes:
++         - health_check:
++             name: "<redacted>"
++             script_path: "<redacted>"
++           name: "<redacted>"
++           port: "<redacted>"
++           registration_interval: "<redacted>"
++           tags:
++             component: "<redacted>"
++           uris:
++           - "<redacted>"
++           - "<redacted>"
++           - "<redacted>"
++           - "<redacted>"
++     release: routing
++   - name: statsd_injector
++     properties:
++       loggregator:
++         tls:
++           ca_cert: "<redacted>"
++           statsd_injector:
++             cert: "<redacted>"
++             key: "<redacted>"
++     release: statsd-injector
++   name: uaa
++   networks:
++   - name: default
++   stemcell: default
++   vm_type: minimal
++ - azs:
++   - z1
++   instances: 1
++   jobs:
++   - consumes:
++       consul_client:
++         from: consul_client_link
++       consul_common:
++         from: consul_common_link
++       consul_server: nil
++     name: consul_agent
++     properties:
++       consul:
++         agent:
++           services:
++             blobstore: {}
++     release: consul
++   - name: blobstore
++     properties:
++       blobstore:
++         admin_users:
++         - password: "<redacted>"
++           username: "<redacted>"
++         secure_link:
++           secret: "<redacted>"
++         tls:
++           cert: "<redacted>"
++           private_key: "<redacted>"
++       system_domain: "<redacted>"
++     release: capi
++   - name: route_registrar
++     properties:
++       route_registrar:
++         routes:
++         - name: "<redacted>"
++           port: "<redacted>"
++           registration_interval: "<redacted>"
++           tags:
++             component: "<redacted>"
++           uris:
++           - "<redacted>"
++     release: routing
++   migrated_from:
++   - name: blobstore
++   name: singleton-blobstore
++   networks:
++   - name: default
++   persistent_disk_type: 100GB
++   stemcell: default
++   update:
++     serial: true
++   vm_type: small
++ - azs:
++   - z1
++   - z2
++   instances: 1
++   jobs:
++   - consumes:
++       consul_client:
++         from: consul_client_link
++       consul_common:
++         from: consul_common_link
++       consul_server: nil
++     name: consul_agent
++     properties:
++       consul:
++         agent:
++           services:
++             cloud_controller_ng: {}
++             policy-server-internal:
++               name: "<redacted>"
++             routing-api: {}
++     release: consul
++   - name: cloud_controller_ng
++     properties:
++       app_domains:
++       - "<redacted>"
++       app_ssh:
++         host_key_fingerprint: "<redacted>"
++       cc:
++         buildpacks:
++           blobstore_type: "<redacted>"
++           webdav_config:
++             blobstore_timeout: "<redacted>"
++             ca_cert: "<redacted>"
++             password: "<redacted>"
++             private_endpoint: "<redacted>"
++             public_endpoint: "<redacted>"
++             username: "<redacted>"
++         bulk_api_password: "<redacted>"
++         db_encryption_key: "<redacted>"
++         default_app_memory: "<redacted>"
++         default_running_security_groups:
++         - "<redacted>"
++         - "<redacted>"
++         - "<redacted>"
++         default_staging_security_groups:
++         - "<redacted>"
++         - "<redacted>"
++         droplets:
++           blobstore_type: "<redacted>"
++           webdav_config:
++             blobstore_timeout: "<redacted>"
++             ca_cert: "<redacted>"
++             password: "<redacted>"
++             private_endpoint: "<redacted>"
++             public_endpoint: "<redacted>"
++             username: "<redacted>"
++         install_buildpacks:
++         - name: "<redacted>"
++           package: "<redacted>"
++         - name: "<redacted>"
++           package: "<redacted>"
++         - name: "<redacted>"
++           package: "<redacted>"
++         - name: "<redacted>"
++           package: "<redacted>"
++         - name: "<redacted>"
++           package: "<redacted>"
++         - name: "<redacted>"
++           package: "<redacted>"
++         - name: "<redacted>"
++           package: "<redacted>"
++         - name: "<redacted>"
++           package: "<redacted>"
++         - name: "<redacted>"
++           package: "<redacted>"
++         internal_api_password: "<redacted>"
++         mutual_tls:
++           ca_cert: "<redacted>"
++           private_key: "<redacted>"
++           public_cert: "<redacted>"
++         packages:
++           blobstore_type: "<redacted>"
++           webdav_config:
++             blobstore_timeout: "<redacted>"
++             ca_cert: "<redacted>"
++             password: "<redacted>"
++             private_endpoint: "<redacted>"
++             public_endpoint: "<redacted>"
++             username: "<redacted>"
++         resource_pool:
++           blobstore_type: "<redacted>"
++           webdav_config:
++             blobstore_timeout: "<redacted>"
++             ca_cert: "<redacted>"
++             password: "<redacted>"
++             private_endpoint: "<redacted>"
++             public_endpoint: "<redacted>"
++             username: "<redacted>"
++         security_group_definitions:
++         - name: "<redacted>"
++           rules:
++           - destination: "<redacted>"
++             protocol: "<redacted>"
++           - destination: "<redacted>"
++             protocol: "<redacted>"
++           - destination: "<redacted>"
++             protocol: "<redacted>"
++           - destination: "<redacted>"
++             protocol: "<redacted>"
++           - destination: "<redacted>"
++             protocol: "<redacted>"
++         - name: "<redacted>"
++           rules:
++           - destination: "<redacted>"
++             ports: "<redacted>"
++             protocol: "<redacted>"
++           - destination: "<redacted>"
++             ports: "<redacted>"
++             protocol: "<redacted>"
++         - name: "<redacted>"
++           rules:
++           - destination: "<redacted>"
++             protocol: "<redacted>"
++         stacks:
++         - description: "<redacted>"
++           name: "<redacted>"
++         staging_upload_password: "<redacted>"
++         staging_upload_user: "<redacted>"
++       ccdb:
++         databases:
++         - name: "<redacted>"
++           tag: "<redacted>"
++         db_scheme: "<redacted>"
++         port: "<redacted>"
++         roles:
++         - name: "<redacted>"
++           password: "<redacted>"
++           tag: "<redacted>"
++       router:
++         route_services_secret: "<redacted>"
++       routing_api:
++         enabled: "<redacted>"
++       ssl:
++         skip_cert_verify: "<redacted>"
++       system_domain: "<redacted>"
++       uaa:
++         ca_cert: "<redacted>"
++         clients:
++           cc-service-dashboards:
++             secret: "<redacted>"
++           cc_routing:
++             secret: "<redacted>"
++           cc_service_key_client:
++             secret: "<redacted>"
++           cloud_controller_username_lookup:
++             secret: "<redacted>"
++         url: "<redacted>"
++     provides:
++       cloud_controller:
++         as: cloud_controller
++         shared: true
++     release: capi
++   - name: binary-buildpack
++     release: binary-buildpack
++   - name: dotnet-core-buildpack
++     release: dotnet-core-buildpack
++   - name: go-buildpack
++     release: go-buildpack
++   - name: java-buildpack
++     release: java-buildpack
++   - name: nodejs-buildpack
++     release: nodejs-buildpack
++   - name: php-buildpack
++     release: php-buildpack
++   - name: python-buildpack
++     release: python-buildpack
++   - name: ruby-buildpack
++     release: ruby-buildpack
++   - name: staticfile-buildpack
++     release: staticfile-buildpack
++   - name: route_registrar
++     properties:
++       route_registrar:
++         routes:
++         - health_check:
++             name: "<redacted>"
++             script_path: "<redacted>"
++             timeout: "<redacted>"
++           name: "<redacted>"
++           port: "<redacted>"
++           registration_interval: "<redacted>"
++           tags:
++             component: "<redacted>"
++           uris:
++           - "<redacted>"
++         - name: "<redacted>"
++           port: "<redacted>"
++           registration_interval: "<redacted>"
++           uris:
++           - "<redacted>"
++     release: routing
++   - name: statsd_injector
++     properties:
++       loggregator:
++         tls:
++           ca_cert: "<redacted>"
++           statsd_injector:
++             cert: "<redacted>"
++             key: "<redacted>"
++     release: statsd-injector
++   - name: file_server
++     properties:
++       logging:
++         format:
++           timestamp: "<redacted>"
++       loggregator:
++         ca_cert: "<redacted>"
++         cert: "<redacted>"
++         key: "<redacted>"
++         use_v2_api: "<redacted>"
++     release: diego
++   - name: routing-api
++     properties:
++       routing_api:
++         locket:
++           api_location: "<redacted>"
++           ca_cert: "<redacted>"
++           client_cert: "<redacted>"
++           client_key: "<redacted>"
++         router_groups:
++         - name: "<redacted>"
++           reservable_ports: "<redacted>"
++           type: "<redacted>"
++         sqldb:
++           host: "<redacted>"
++           password: "<redacted>"
++           port: "<redacted>"
++           schema: "<redacted>"
++           type: "<redacted>"
++           username: "<redacted>"
++         system_domain: "<redacted>"
++       uaa:
++         ca_cert: "<redacted>"
++         tls_port: "<redacted>"
++     release: routing
++   - name: policy-server
++     properties:
++       cf_networking:
++         policy_server:
++           database:
++             host: "<redacted>"
++             name: "<redacted>"
++             password: "<redacted>"
++             port: "<redacted>"
++             type: "<redacted>"
++             username: "<redacted>"
++           uaa_ca: "<redacted>"
++           uaa_client_secret: "<redacted>"
++     release: cf-networking
++   - name: policy-server-internal
++     properties:
++       cf_networking:
++         policy_server_internal:
++           ca_cert: "<redacted>"
++           server_cert: "<redacted>"
++           server_key: "<redacted>"
++     release: cf-networking
++   - name: cc_uploader
++     properties:
++       capi:
++         cc_uploader:
++           cc:
++             ca_cert: "<redacted>"
++             client_cert: "<redacted>"
++             client_key: "<redacted>"
++           mutual_tls:
++             ca_cert: "<redacted>"
++             server_cert: "<redacted>"
++             server_key: "<redacted>"
++     release: capi
++   name: api
++   networks:
++   - name: default
++   stemcell: default
++   vm_extensions:
++   - 50GB_ephemeral_disk
++   vm_type: small
++ - azs:
++   - z1
++   - z2
++   instances: 1
++   jobs:
++   - consumes:
++       consul_client:
++         from: consul_client_link
++       consul_common:
++         from: consul_common_link
++       consul_server: nil
++     name: consul_agent
++     release: consul
++   - name: cloud_controller_worker
++     properties:
++       cc:
++         buildpacks:
++           blobstore_type: "<redacted>"
++           webdav_config:
++             blobstore_timeout: "<redacted>"
++             ca_cert: "<redacted>"
++             password: "<redacted>"
++             private_endpoint: "<redacted>"
++             public_endpoint: "<redacted>"
++             username: "<redacted>"
++         db_encryption_key: "<redacted>"
++         droplets:
++           blobstore_type: "<redacted>"
++           webdav_config:
++             blobstore_timeout: "<redacted>"
++             ca_cert: "<redacted>"
++             password: "<redacted>"
++             private_endpoint: "<redacted>"
++             public_endpoint: "<redacted>"
++             username: "<redacted>"
++         internal_api_password: "<redacted>"
++         mutual_tls:
++           ca_cert: "<redacted>"
++           private_key: "<redacted>"
++           public_cert: "<redacted>"
++         packages:
++           blobstore_type: "<redacted>"
++           webdav_config:
++             blobstore_timeout: "<redacted>"
++             ca_cert: "<redacted>"
++             password: "<redacted>"
++             private_endpoint: "<redacted>"
++             public_endpoint: "<redacted>"
++             username: "<redacted>"
++         resource_pool:
++           blobstore_type: "<redacted>"
++           webdav_config:
++             blobstore_timeout: "<redacted>"
++             ca_cert: "<redacted>"
++             password: "<redacted>"
++             private_endpoint: "<redacted>"
++             public_endpoint: "<redacted>"
++             username: "<redacted>"
++         staging_upload_password: "<redacted>"
++         staging_upload_user: "<redacted>"
++       ccdb:
++         databases:
++         - name: "<redacted>"
++           tag: "<redacted>"
++         db_scheme: "<redacted>"
++         port: "<redacted>"
++         roles:
++         - name: "<redacted>"
++           password: "<redacted>"
++           tag: "<redacted>"
++       routing_api:
++         enabled: "<redacted>"
++       ssl:
++         skip_cert_verify: "<redacted>"
++       system_domain: "<redacted>"
++       uaa:
++         ca_cert: "<redacted>"
++         clients:
++           cc-service-dashboards:
++             secret: "<redacted>"
++           cc_routing:
++             secret: "<redacted>"
++     release: capi
++   name: cc-worker
++   networks:
++   - name: default
++   stemcell: default
++   vm_type: minimal
++ - azs:
++   - z1
++   - z2
++   instances: 1
++   jobs:
++   - consumes:
++       consul_client:
++         from: consul_client_link
++       consul_common:
++         from: consul_common_link
++       consul_server: nil
++     name: consul_agent
++     properties:
++       consul:
++         agent:
++           services:
++             gorouter: {}
++     release: consul
++   - name: gorouter
++     properties:
++       router:
++         enable_ssl: "<redacted>"
++         route_services_secret: "<redacted>"
++         status:
++           password: "<redacted>"
++           user: "<redacted>"
++         tls_pem:
++         - cert_chain: "<redacted>"
++           private_key: "<redacted>"
++         tracing:
++           enable_zipkin: "<redacted>"
++       routing_api:
++         enabled: "<redacted>"
++       uaa:
++         ca_cert: "<redacted>"
++         clients:
++           gorouter:
++             secret: "<redacted>"
++         ssl:
++           port: "<redacted>"
++     release: routing
++   - name: ssh_proxy
++     properties:
++       diego:
++         ssh_proxy:
++           bbs:
++             ca_cert: "<redacted>"
++             client_cert: "<redacted>"
++             client_key: "<redacted>"
++           enable_cf_auth: "<redacted>"
++           host_key: "<redacted>"
++           uaa:
++             port: "<redacted>"
++           uaa_secret: "<redacted>"
++         ssl:
++           skip_cert_verify: "<redacted>"
++       logging:
++         format:
++           timestamp: "<redacted>"
++       loggregator:
++         ca_cert: "<redacted>"
++         cert: "<redacted>"
++         key: "<redacted>"
++         use_v2_api: "<redacted>"
++     release: diego
++   name: router
++   networks:
++   - name: default
++     static_ips:
++     - 10.244.0.34
++   stemcell: default
++   update:
++     serial: true
++   vm_extensions:
++   - ssh-proxy-and-router-lb
++   vm_type: minimal
++ - azs:
++   - z1
++   - z2
++   instances: 1
++   jobs:
++   - consumes:
++       consul_client:
++         from: consul_client_link
++       consul_common:
++         from: consul_common_link
++       consul_server: nil
++     name: consul_agent
++     release: consul
++   - name: tcp_router
++     properties:
++       tcp_router:
++         oauth_secret: "<redacted>"
++         router_group: "<redacted>"
++       uaa:
++         ca_cert: "<redacted>"
++         tls_port: "<redacted>"
++     release: routing
++   name: tcp-router
++   networks:
++   - name: default
++   stemcell: default
++   vm_extensions:
++   - cf-tcp-router-network-properties
++   vm_type: minimal
++ - azs:
++   - z1
++   - z2
++   instances: 1
++   jobs:
++   - consumes:
++       consul_client:
++         from: consul_client_link
++       consul_common:
++         from: consul_common_link
++       consul_server: nil
++     name: consul_agent
++     release: consul
++   - name: cfdot
++     properties:
++       tls:
++         ca_certificate: "<redacted>"
++         certificate: "<redacted>"
++         private_key: "<redacted>"
++     release: diego
++   - name: auctioneer
++     properties:
++       diego:
++         auctioneer:
++           bbs:
++             ca_cert: "<redacted>"
++             client_cert: "<redacted>"
++             client_key: "<redacted>"
++           ca_cert: "<redacted>"
++           rep:
++             ca_cert: "<redacted>"
++             client_cert: "<redacted>"
++             client_key: "<redacted>"
++             require_tls: "<redacted>"
++           server_cert: "<redacted>"
++           server_key: "<redacted>"
++       logging:
++         format:
++           timestamp: "<redacted>"
++       loggregator:
++         ca_cert: "<redacted>"
++         cert: "<redacted>"
++         key: "<redacted>"
++         use_v2_api: "<redacted>"
++     release: diego
++   - name: cloud_controller_clock
++     properties:
++       cc:
++         buildpacks:
++           blobstore_type: "<redacted>"
++           webdav_config:
++             blobstore_timeout: "<redacted>"
++             ca_cert: "<redacted>"
++             password: "<redacted>"
++             private_endpoint: "<redacted>"
++             public_endpoint: "<redacted>"
++             username: "<redacted>"
++         db_encryption_key: "<redacted>"
++         droplets:
++           blobstore_type: "<redacted>"
++           webdav_config:
++             blobstore_timeout: "<redacted>"
++             ca_cert: "<redacted>"
++             password: "<redacted>"
++             private_endpoint: "<redacted>"
++             public_endpoint: "<redacted>"
++             username: "<redacted>"
++         internal_api_password: "<redacted>"
++         mutual_tls:
++           ca_cert: "<redacted>"
++           private_key: "<redacted>"
++           public_cert: "<redacted>"
++         packages:
++           blobstore_type: "<redacted>"
++           webdav_config:
++             blobstore_timeout: "<redacted>"
++             ca_cert: "<redacted>"
++             password: "<redacted>"
++             private_endpoint: "<redacted>"
++             public_endpoint: "<redacted>"
++             username: "<redacted>"
++         resource_pool:
++           blobstore_type: "<redacted>"
++           webdav_config:
++             blobstore_timeout: "<redacted>"
++             ca_cert: "<redacted>"
++             password: "<redacted>"
++             private_endpoint: "<redacted>"
++             public_endpoint: "<redacted>"
++             username: "<redacted>"
++         staging_upload_password: "<redacted>"
++         staging_upload_user: "<redacted>"
++       ccdb:
++         databases:
++         - name: "<redacted>"
++           tag: "<redacted>"
++         db_scheme: "<redacted>"
++         port: "<redacted>"
++         roles:
++         - name: "<redacted>"
++           password: "<redacted>"
++           tag: "<redacted>"
++       routing_api:
++         enabled: "<redacted>"
++       system_domain: "<redacted>"
++       uaa:
++         ca_cert: "<redacted>"
++         clients:
++           cc-service-dashboards:
++             secret: "<redacted>"
++           cc_routing:
++             secret: "<redacted>"
++         ssl:
++           port: "<redacted>"
++     release: capi
++   - name: statsd_injector
++     properties:
++       loggregator:
++         tls:
++           ca_cert: "<redacted>"
++           statsd_injector:
++             cert: "<redacted>"
++             key: "<redacted>"
++     release: statsd-injector
++   - name: tps
++     properties:
++       capi:
++         tps:
++           bbs:
++             ca_cert: "<redacted>"
++             client_cert: "<redacted>"
++             client_key: "<redacted>"
++           cc:
++             ca_cert: "<redacted>"
++             client_cert: "<redacted>"
++             client_key: "<redacted>"
++           listener_enabled: "<redacted>"
++           watcher:
++             locket:
++               api_location: "<redacted>"
++     release: capi
++   - name: scheduler
++     properties:
++       scalablesyslog:
++         scheduler:
++           api:
++             url: "<redacted>"
++           tls:
++             api:
++               ca: "<redacted>"
++               cert: "<redacted>"
++               cn: "<redacted>"
++               key: "<redacted>"
++             client:
++               adapter_cn: "<redacted>"
++               ca: "<redacted>"
++               cert: "<redacted>"
++               key: "<redacted>"
++     release: cf-syslog-drain
++   migrated_from:
++   - name: cc-bridge
++   - name: cc-clock
++   - name: diego-brain
++   name: scheduler
++   networks:
++   - name: default
++   stemcell: default
++   update:
++     serial: true
++   vm_type: minimal
++ - azs:
++   - z1
++   - z2
++   instances: 1
++   jobs:
++   - consumes:
++       consul_client:
++         from: consul_client_link
++       consul_common:
++         from: consul_common_link
++       consul_server: nil
++     name: consul_agent
++     properties:
++       consul:
++         agent:
++           services:
++             doppler:
++               name: "<redacted>"
++     release: consul
++   - name: doppler
++     properties:
++       doppler:
++         disable_announce: "<redacted>"
++       loggregator:
++         disable_syslog_drains: "<redacted>"
++         tls:
++           ca_cert: "<redacted>"
++           doppler:
++             cert: "<redacted>"
++             key: "<redacted>"
++     provides:
++       doppler:
++         as: doppler
++         shared: true
++     release: loggregator
++   name: doppler
++   networks:
++   - name: default
++   stemcell: default
++   vm_type: minimal
++ - azs:
++   - z1
++   - z2
++   instances: 1
++   jobs:
++   - consumes:
++       consul_client:
++         from: consul_client_link
++       consul_common:
++         from: consul_common_link
++       consul_server: nil
++     name: consul_agent
++     properties:
++       consul:
++         agent:
++           node_name_includes_id: "<redacted>"
++     release: consul
++   - name: cflinuxfs2-rootfs-setup
++     properties:
++       cflinuxfs2-rootfs:
++         trusted_certs: "<redacted>"
++     release: cflinuxfs2
++   - name: garden
++     properties:
++       garden:
++         cleanup_process_dirs_on_wait: "<redacted>"
++         debug_listen_address: "<redacted>"
++         default_container_grace_time: "<redacted>"
++         deny_networks:
++         - "<redacted>"
++         destroy_containers_on_start: "<redacted>"
++         network_plugin: "<redacted>"
++         network_plugin_extra_args:
++         - "<redacted>"
++         persistent_image_list:
++         - "<redacted>"
++       grootfs:
++         reserved_space_for_other_jobs_in_mb: "<redacted>"
++     release: garden-runc
++   - name: rep
++     properties:
++       containers:
++         trusted_ca_certificates:
++         - "<redacted>"
++       diego:
++         executor:
++           instance_identity_ca_cert: "<redacted>"
++           instance_identity_key: "<redacted>"
++         rep:
++           evacuation_timeout_in_seconds: "<redacted>"
++           preloaded_rootfses:
++           - "<redacted>"
++       enable_declarative_healthcheck: "<redacted>"
++       logging:
++         format:
++           timestamp: "<redacted>"
++       loggregator:
++         ca_cert: "<redacted>"
++         cert: "<redacted>"
++         key: "<redacted>"
++         use_v2_api: "<redacted>"
++       tls:
++         ca_cert: "<redacted>"
++         cert: "<redacted>"
++         key: "<redacted>"
++     release: diego
++   - name: cfdot
++     properties:
++       tls:
++         ca_certificate: "<redacted>"
++         certificate: "<redacted>"
++         private_key: "<redacted>"
++     release: diego
++   - name: route_emitter
++     properties:
++       diego:
++         route_emitter:
++           bbs:
++             ca_cert: "<redacted>"
++             client_cert: "<redacted>"
++             client_key: "<redacted>"
++           local_mode: "<redacted>"
++       logging:
++         format:
++           timestamp: "<redacted>"
++       loggregator:
++         ca_cert: "<redacted>"
++         cert: "<redacted>"
++         key: "<redacted>"
++         use_v2_api: "<redacted>"
++       tcp:
++         enabled: "<redacted>"
++       uaa:
++         ca_cert: "<redacted>"
++         client_secret: "<redacted>"
++     release: diego
++   - name: garden-cni
++     release: cf-networking
++   - name: netmon
++     release: cf-networking
++   - name: vxlan-policy-agent
++     properties:
++       cf_networking:
++         vxlan_policy_agent:
++           ca_cert: "<redacted>"
++           client_cert: "<redacted>"
++           client_key: "<redacted>"
++     release: cf-networking
++   - name: silk-daemon
++     properties:
++       cf_networking:
++         silk_daemon:
++           ca_cert: "<redacted>"
++           client_cert: "<redacted>"
++           client_key: "<redacted>"
++     release: cf-networking
++   - name: cni
++     release: cf-networking
++   name: diego-cell
++   networks:
++   - name: default
++   stemcell: default
++   vm_extensions:
++   - 100GB_ephemeral_disk
++   vm_type: small-highmem
++ - azs:
++   - z1
++   - z2
++   instances: 1
++   jobs:
++   - consumes:
++       consul_client:
++         from: consul_client_link
++       consul_common:
++         from: consul_common_link
++       consul_server: nil
++     name: consul_agent
++     properties:
++       consul:
++         agent:
++           services:
++             loggregator_trafficcontroller: {}
++             reverse_log_proxy: {}
++     release: consul
++   - consumes:
++       doppler:
++         from: doppler
++     name: loggregator_trafficcontroller
++     properties:
++       cc:
++         internal_service_hostname: "<redacted>"
++         mutual_tls:
++           ca_cert: "<redacted>"
++         tls_port: "<redacted>"
++       loggregator:
++         tls:
++           ca_cert: "<redacted>"
++           cc_trafficcontroller:
++             cert: "<redacted>"
++             key: "<redacted>"
++           trafficcontroller:
++             cert: "<redacted>"
++             key: "<redacted>"
++         uaa:
++           client_secret: "<redacted>"
++       ssl:
++         skip_cert_verify: "<redacted>"
++       system_domain: "<redacted>"
++       uaa:
++         ca_cert: "<redacted>"
++         internal_url: "<redacted>"
++     release: loggregator
++   - name: reverse_log_proxy
++     properties:
++       loggregator:
++         tls:
++           ca_cert: "<redacted>"
++           reverse_log_proxy:
++             cert: "<redacted>"
++             key: "<redacted>"
++     provides:
++       reverse_log_proxy:
++         as: reverse_log_proxy
++         shared: true
++     release: loggregator
++   - name: route_registrar
++     properties:
++       route_registrar:
++         routes:
++         - name: "<redacted>"
++           port: "<redacted>"
++           registration_interval: "<redacted>"
++           uris:
++           - "<redacted>"
++         - name: "<redacted>"
++           port: "<redacted>"
++           registration_interval: "<redacted>"
++           uris:
++           - "<redacted>"
++           - "<redacted>"
++     release: routing
++   name: log-api
++   networks:
++   - name: default
++   stemcell: default
++   update:
++     serial: true
++   vm_type: minimal
+  
++ manifest_version: v1.38.0
+  
++ name: cf
+  
++ variables: []
+  
++ vm_extensions: []
+
+Continue? [yN]: y
+
+Task 60
+
+Task 60 | 15:04:33 | Preparing deployment: Preparing deployment (00:00:00)
+                   L Error: Instance group 'smoke-tests' references an unknown vm type 'minimal'
+Task 60 | 15:04:33 | Error: Instance group 'smoke-tests' references an unknown vm type 'minimal'
+
+Task 60 Started  Sun Jun  3 15:04:33 UTC 2018
+Task 60 Finished Sun Jun  3 15:04:33 UTC 2018
+Task 60 Duration 00:00:00
+Task 60 error
+
+Updating deployment:
+  Expected task '60' to succeed but state is 'error'
+
+Exit code 1
+

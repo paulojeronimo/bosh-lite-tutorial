@@ -1,0 +1,141 @@
+= Bosh Tutorial
+Paulo Jerônimo <pj@paulojeronimo.com>; {localdatetime}
+:toc:
+:icons: font
+
+:uri-bosh-lite: https://github.com/cloudfoundry/bosh-lite
+:uri-cloudfoundry-uaa: https://github.com/cloudfoundry/uaa
+
+Here are my steps to put {uri-bosh-lite}[Bosh Lite] running in a macOS environment.
+My intention is to prepare an environment to deploy some {uri-cloudfoundry-uaa}[UAA] labs that I'll write in a nearby future.
+
+NOTE: This is a work in progress.
+
+== Prerequisites
+
+* References:
+** http://bosh.io/docs/quick-start/#prerequisites
+** http://bosh.io/docs/cli-v2-install/
+
+----
+$ brew install cloudfoundry/tap/bosh-cli
+$ bosh -v
+version 4.0.1-a18c7230-2018-05-23T23:11:20Z
+
+Succeeded
+----
+
+== Install
+
+* References:
+** http://bosh.io/docs/quick-start/#install
+
+----
+$ mkdir -p ~/bosh-env/virtualbox && cd $_
+$ git clone https://github.com/cloudfoundry/bosh-deployment.git
+$ ./bosh-deployment/virtualbox/create-env.sh
+include::output.1.txt[]
+$ source .envrc
+$ bosh -e vbox env
+Using environment '192.168.50.6' as client 'admin'
+
+Name      bosh-lite
+UUID      7224a31c-e869-417f-aa70-788776766873
+Version   265.2.0 (00000000)
+CPI       warden_cpi
+Features  compiled_package_cache: disabled
+          config_server: enabled
+          dns: disabled
+          snapshots: disabled
+User      admin
+
+Succeeded
+----
+
+== Deploy
+
+* References:
+** https://ultimateguidetobosh.com/tutorials/bosh-lite-virtualbox/
+
+----
+$ bosh -e vbox upload-stemcell https://bosh.io/d/stemcells/bosh-warden-boshlite-ubuntu-trusty-go_agent?v=3468.17 --sha1 1dad6d85d6e132810439daba7ca05694cec208ab
+Using environment '192.168.50.6' as client 'admin'
+
+Task 1
+
+Task 1 | 09:54:27 | Update stemcell: Downloading remote stemcell
+
+ (00:09:55)
+Task 1 | 10:04:22 | Update stemcell: Verifying remote stemcell (00:00:00)
+Task 1 | 10:04:22 | Update stemcell: Extracting stemcell archive (00:00:03)
+Task 1 | 10:04:25 | Update stemcell: Verifying stemcell manifest (00:00:00)
+Task 1 | 10:04:25 | Update stemcell: Checking if this stemcell already exists (00:00:00)
+Task 1 | 10:04:25 (00:00:10)temcell: Uploading stemcell bosh-warden-boshlite-ubuntu-trusty-go_agent/3468.17 to the cloud
+Task 1 | 10:04:35 | Update stemcell: Save stemcell bosh-warden-boshlite-ubuntu-trusty-go_agent/3468.17 (aeceaba9-0919-4330-78e2-7c4b236f710c) (00:00:00)
+
+Task 1 Started  Sat Jun  2 09:54:27 UTC 2018
+Task 1 Finished Sat Jun  2 10:04:35 UTC 2018
+Task 1 Duration 00:10:08
+Task 1 done
+
+Succeeded
+----
+
+----
+$ bosh -e vbox -d zookeeper deploy <(wget -O- https://raw.githubusercontent.com/cppforlife/zookeeper-release/master/manifests/zookeeper.yml)
+include::output.2.txt[]
+----
+
+----
+$ bosh -e vbox -d zookeeper run-errand smoke-tests
+include::output.3.txt[]
+----
+
+NOTE: We can repeat this command many times if we want. Only the task number will be incremented.
+
+== Enabling SSH Access
+
+* References:
+** http://bosh.io/docs/jumpbox/
+** http://bosh.io/docs/terminology/#jumpbox
+** https://github.com/cloudfoundry/cli-workstation/blob/master/scripts/deploy-cf/bosh-lite-cheat.md
+
+----
+$ bosh int creds.yml --path /jumpbox_ssh/private_key > jumpbox.key 
+$ chmod 600 jumpbox.key
+$ bosh -e vbox env
+Using environment '192.168.50.6' as client 'admin'
+...
+$ ssh jumpbox@192.168.50.6 -i jumpbox.key
+----
+
+== Deploy Cloud Foundry
+
+* References:
+** https://starkandwayne.com/blog/running-cloud-foundry-locally-on-bosh-lite-with-bosh2/
+** https://docs.cloudfoundry.org/cf-cli/getting-started.html
+
+----
+$ git clone https://github.com/cloudfoundry/cf-deployment
+$ cd cf-deployment
+$ bosh -e vbox -d cf deploy cf-deployment.yml \
+  -o operations/bosh-lite.yml \
+  --vars-store deployment-vars.yml \
+  -v system_domain=bosh-lite.com
+include::output.4.txt[]
+----
+
+== Additional References
+
+* https://bosh.io/docs/cli-v2/
+* https://github.com/starkandwayne/ultimate-guide-to-bosh/
+* https://www.altoros.com/blog/how-to-install-cloud-foundry-locally-with-bosh-lite/
+* https://stackoverflow.com/questions/36596743/how-to-install-cloudfoundry-on-local-server
+* https://starkandwayne.com/blog/bosh-lite-on-virtualbox-with-bosh2/
+* https://starkandwayne.com/blog/running-cloud-foundry-locally-with-bosh-lite/
+* https://starkandwayne.com/blog/running-cloud-foundry-locally-on-bosh-lite-with-bosh2/
+* https://medium.com/@ravijagannathan/install-cloud-foundry-on-bosh-lite-6d3b9a1e416a
+* https://github.com/cloudfoundry/summit-training-classes
+* http://basics-workshop.cloudfoundry.org/
+* https://github.com/cloudfoundry-community/bosh-lite-demo
+* https://github.com/EngineerBetter/training-zero-to-hero
