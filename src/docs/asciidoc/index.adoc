@@ -1,40 +1,51 @@
-= Bosh Tutorial
+= Cloud Foundry installation tutorial on a MacBook Pro (through Bosh Lite)
 Paulo Jerônimo <pj@paulojeronimo.com>; {localdatetime}
-:toc:
+:toc: left
 :icons: font
+:numbered:
 
+:uri-cloudfoundry: https://www.cloudfoundry.org/
 :uri-bosh-lite: https://github.com/cloudfoundry/bosh-lite
 :uri-cloudfoundry-uaa: https://github.com/cloudfoundry/uaa
 
-Here are my steps to put {uri-bosh-lite}[Bosh Lite] running in a macOS environment.
+Here I show you my steps to put {uri-cloudfoundry}[Cloud Foundry] running on my MacBook Pro through {uri-bosh-lite}[Bosh Lite].
 My intention is to prepare an environment to deploy some {uri-cloudfoundry-uaa}[UAA] labs that I'll write in a nearby future.
+I'm not detailing concepts, writing comments or explaining each command at this moment.
+I just show you the command and its output.
+So, if you need details, read the references.
 
 NOTE: This is a work in progress.
 
 == Prerequisites
 
-* References:
-** http://bosh.io/docs/quick-start/#prerequisites
-** http://bosh.io/docs/cli-v2-install/
-
 ----
 $ brew install cloudfoundry/tap/bosh-cli
+----
+
+----
 $ bosh -v
 version 4.0.1-a18c7230-2018-05-23T23:11:20Z
 
 Succeeded
 ----
 
+* References:
+** http://bosh.io/docs/quick-start/#prerequisites
+** http://bosh.io/docs/cli-v2-install/
+
 == Install
 
-* References:
-** http://bosh.io/docs/quick-start/#install
+----
+$ rm -rf ~/bosh-env && mkdir -p $_/virtualbox && cd $_
+$ git clone https://github.com/cloudfoundry/bosh-deployment.git
+----
 
 ----
-$ mkdir -p ~/bosh-env/virtualbox && cd $_
-$ git clone https://github.com/cloudfoundry/bosh-deployment.git
 $ ./bosh-deployment/virtualbox/create-env.sh
 include::output.1.txt[]
+----
+
+----
 $ source .envrc
 $ bosh -e vbox env
 Using environment '192.168.50.6' as client 'admin'
@@ -52,34 +63,23 @@ User      admin
 Succeeded
 ----
 
-== Deploy
+* References:
+** http://bosh.io/docs/quick-start/#install
+
+== Stemcell upload
+
+//$ bosh -e vbox upload-stemcell https://bosh.io/d/stemcells/bosh-warden-boshlite-ubuntu-trusty-go_agent?v=3468.17 --sha1 1dad6d85d6e132810439daba7ca05694cec208ab
+----
+$ bosh -e vbox upload-stemcell https://bosh.io/d/stemcells/bosh-warden-boshlite-ubuntu-trusty-go_agent?v=3586.16
+include::output.6.txt[]
+----
 
 * References:
-** https://ultimateguidetobosh.com/tutorials/bosh-lite-virtualbox/
+** http://bosh.io/docs/quick-start/#install
 
-----
-$ bosh -e vbox upload-stemcell https://bosh.io/d/stemcells/bosh-warden-boshlite-ubuntu-trusty-go_agent?v=3468.17 --sha1 1dad6d85d6e132810439daba7ca05694cec208ab
-Using environment '192.168.50.6' as client 'admin'
+== Zookeper Deploy (optional)
 
-Task 1
-
-Task 1 | 09:54:27 | Update stemcell: Downloading remote stemcell
-
- (00:09:55)
-Task 1 | 10:04:22 | Update stemcell: Verifying remote stemcell (00:00:00)
-Task 1 | 10:04:22 | Update stemcell: Extracting stemcell archive (00:00:03)
-Task 1 | 10:04:25 | Update stemcell: Verifying stemcell manifest (00:00:00)
-Task 1 | 10:04:25 | Update stemcell: Checking if this stemcell already exists (00:00:00)
-Task 1 | 10:04:25 (00:00:10)temcell: Uploading stemcell bosh-warden-boshlite-ubuntu-trusty-go_agent/3468.17 to the cloud
-Task 1 | 10:04:35 | Update stemcell: Save stemcell bosh-warden-boshlite-ubuntu-trusty-go_agent/3468.17 (aeceaba9-0919-4330-78e2-7c4b236f710c) (00:00:00)
-
-Task 1 Started  Sat Jun  2 09:54:27 UTC 2018
-Task 1 Finished Sat Jun  2 10:04:35 UTC 2018
-Task 1 Duration 00:10:08
-Task 1 done
-
-Succeeded
-----
+NOTE: You can skip this steps and go directly to <<cloudfoundry-deploy>> if you want.
 
 ----
 $ bosh -e vbox -d zookeeper deploy <(wget -O- https://raw.githubusercontent.com/cppforlife/zookeeper-release/master/manifests/zookeeper.yml)
@@ -93,15 +93,16 @@ include::output.3.txt[]
 
 NOTE: We can repeat this command many times if we want. Only the task number will be incremented.
 
-== Enabling SSH Access
-
 * References:
-** http://bosh.io/docs/jumpbox/
-** http://bosh.io/docs/terminology/#jumpbox
-** https://github.com/cloudfoundry/cli-workstation/blob/master/scripts/deploy-cf/bosh-lite-cheat.md
+** https://ultimateguidetobosh.com/tutorials/bosh-lite-virtualbox/
+** https://github.com/starkandwayne/ultimate-guide-to-bosh/
+
+== Enabling SSH Access (optional)
+
+NOTE: You can skip this steps and go directly to <<cloudfoundry-deploy>> if you want.
 
 ----
-$ bosh int creds.yml --path /jumpbox_ssh/private_key > jumpbox.key 
+$ bosh int creds.yml --path /jumpbox_ssh/private_key > jumpbox.key
 $ chmod 600 jumpbox.key
 $ bosh -e vbox env
 Using environment '192.168.50.6' as client 'admin'
@@ -109,15 +110,25 @@ Using environment '192.168.50.6' as client 'admin'
 $ ssh jumpbox@192.168.50.6 -i jumpbox.key
 ----
 
-== Deploy Cloud Foundry
-
 * References:
-** https://starkandwayne.com/blog/running-cloud-foundry-locally-on-bosh-lite-with-bosh2/
-** https://docs.cloudfoundry.org/cf-cli/getting-started.html
+** http://bosh.io/docs/jumpbox/
+** http://bosh.io/docs/terminology/#jumpbox
+** https://github.com/cloudfoundry/cli-workstation/blob/master/scripts/deploy-cf/bosh-lite-cheat.md
+
+[[cloudfoundry-deploy]]
+== Cloud Foundry Deploy
 
 ----
 $ git clone https://github.com/cloudfoundry/cf-deployment
 $ cd cf-deployment
+----
+
+----
+$ bosh -e vbox update-cloud-config iaas-support/bosh-lite/cloud-config.yml
+include::output.5.txt[]
+----
+
+----
 $ bosh -e vbox -d cf deploy cf-deployment.yml \
   -o operations/bosh-lite.yml \
   --vars-store deployment-vars.yml \
@@ -125,17 +136,237 @@ $ bosh -e vbox -d cf deploy cf-deployment.yml \
 include::output.4.txt[]
 ----
 
+* References:
+** https://starkandwayne.com/blog/running-cloud-foundry-locally-on-bosh-lite-with-bosh2/
+** https://docs.cloudfoundry.org/cf-cli/getting-started.html
+
+== Logging into the CF API
+
+----
+$ sudo route add -net 10.244.0.0/16 192.168.50.6
+----
+
+----
+$ cf api https://api.bosh-lite.com --skip-ssl-validation
+Setting api endpoint to https://api.bosh-lite.com...
+OK
+
+api endpoint:   https://api.bosh-lite.com
+api version:    2.113.0
+----
+
+----
+$ export CF_ADMIN_PASSWORD=$(bosh int ./deployment-vars.yml --path /cf_admin_password)
+$ cf auth admin $CF_ADMIN_PASSWORD
+API endpoint: https://api.bosh-lite.com
+Authenticating...
+OK
+Use 'cf target' to view or set your target org and space.
+----
+
+----
+$ cf create-org paulojeronimo-org
+Creating org paulojeronimo-org as admin...
+OK
+
+Assigning role OrgManager to user admin in org paulojeronimo-org ...
+OK
+
+TIP: Use 'cf target -o "paulojeronimo-org"' to target new org
+----
+
+----
+$ cf orgs
+Getting orgs as admin...
+
+name
+paulojeronimo-org
+system
+----
+
+----
+$ cf target -o paulojeronimo-org
+api endpoint:   https://api.bosh-lite.com
+api version:    2.113.0
+user:           admin
+org:            paulojeronimo-org
+No space targeted, use 'cf target -s SPACE'
+----
+
+----
+$ cf create-space paulojeronimo-dev
+Creating space paulojeronimo-dev in org paulojeronimo-org as admin...
+OK
+Assigning role RoleSpaceManager to user admin in org paulojeronimo-org / space paulojeronimo-dev as admin...
+OK
+Assigning role RoleSpaceDeveloper to user admin in org paulojeronimo-org / space paulojeronimo-dev as admin...
+OK
+
+TIP: Use 'cf target -o "paulojeronimo-org" -s "paulojeronimo-dev"' to target new space
+----
+
+----
+$ cf target -o "paulojeronimo-org" -s "paulojeronimo-dev"
+api endpoint:   https://api.bosh-lite.com
+api version:    2.113.0
+user:           admin
+org:            paulojeronimo-org
+space:          paulojeronimo-dev
+----
+
+== Deploy a sample app
+
+----
+$ cd ~/bosh-env
+$ git clone https://github.com/cloudfoundry-samples/spring-music
+$ cd spring-music
+$ ./gradlew assemble
+----
+
+----
+$ cf push --hostname spring-music
+include::output.7.txt[]
+----
+
+Open http://spring-music-bright-oryx.bosh-lite.com/
+
+* References:
+** https://pivotal.io/platform/pcf-tutorials/getting-started-with-pivotal-cloud-foundry-dev/deploy-the-sample-app
+
+== View the logs
+
+----
+$ cf apps
+Getting apps in org paulojeronimo-org / space paulojeronimo-dev as admin...
+OK
+
+name           requested state   instances   memory   disk   urls
+spring-music   started           1/1         1G       1G     spring-music-bright-oryx.bosh-lite.com
+----
+
+----
+$ cf logs spring-music --recent
+Retrieving logs for app spring-music in org paulojeronimo-org / space paulojeronimo-dev as admin...
+
+   2018-06-04T21:39:46.15+0100 [APP/PROC/WEB/0] OUT 2018-06-04 20:39:46.153  INFO 9 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
+...
+----
+
+----
+$ cf logs spring-music
+----
+
+* References:
+** https://pivotal.io/platform/pcf-tutorials/getting-started-with-pivotal-cloud-foundry-dev/view-the-logs
+
+== Connect a Database
+
+TODO
+
+* References:
+** https://pivotal.io/platform/pcf-tutorials/getting-started-with-pivotal-cloud-foundry-dev/connect-a-database
+
+== Scale the app
+
+TODO
+
+* References:
+** https://pivotal.io/platform/pcf-tutorials/getting-started-with-pivotal-cloud-foundry-dev/scale-the-app
+
+== Additional Commands
+
+----
+$ bosh stemcells
+Using environment '192.168.50.6' as client 'admin'
+
+Name                                         Version   OS             CPI  CID  
+bosh-warden-boshlite-ubuntu-trusty-go_agent  3586.16*  ubuntu-trusty  -    6ae8420f-def0-404e-76eb-57d123dc94cf  
+~                                            3468.17   ubuntu-trusty  -    aeceaba9-0919-4330-78e2-7c4b236f710c  
+
+(*) Currently deployed
+
+2 stemcells
+
+Succeeded
+----
+
+----
+$ bosh releases
+Using environment '192.168.50.6' as client 'admin'
+
+Name                   Version   Commit Hash  
+binary-buildpack       1.0.18*   193affb  
+capi                   1.59.0*   8f8a261  
+cf-mysql               36.14.0*  aa04a97  
+cf-networking          1.13.0*   e773941b  
+cf-smoke-tests         40.0.5*   d6aaf1f  
+cf-syslog-drain        6.5*      5ac23f0  
+cflinuxfs2             1.211.0*  9158166  
+consul                 193*      c8a25e6  
+diego                  2.8.0*    a9251c7  
+dotnet-core-buildpack  2.0.6*    e800772  
+garden-runc            1.13.3*   9669fb2  
+go-buildpack           1.8.21*   7ad4e41  
+java-buildpack         4.12*     a170800  
+loggregator            102.1*    8d6cd797  
+nats                   24*       30e7a82  
+nodejs-buildpack       1.6.23*   5ab2b14  
+php-buildpack          4.3.54*   6c0d605  
+python-buildpack       1.6.15*   a4c4c93  
+routing                0.178.0*  76fa9ea  
+ruby-buildpack         1.7.18*   88035f4  
+staticfile-buildpack   1.4.27*   6f2d88b  
+statsd-injector        1.3.0*    39e5179  
+uaa                    59*       9544761  
+zookeeper              0.0.9     2a1985a  
+
+(*) Currently deployed
+(+) Uncommitted changes
+
+24 releases
+
+Succeeded
+----
+
+----
+$ bosh vms
+Using environment '192.168.50.6' as client 'admin'
+
+Task 69. Done
+
+Deployment 'cf'
+
+Instance                                                  Process State  AZ  IPs           VM CID                                VM Type        Active  
+adapter/37826fef-1c2e-4025-884b-ca3675ee6c7b              running        z1  10.244.0.130  86ebc9ba-4e82-4a62-4a0d-33265cdf0a0c  minimal        -  
+api/0810ef32-7ab1-4d77-a7e2-83595c3dd546                  running        z1  10.244.0.135  2327f386-f582-404f-75bf-517821c1e5c6  small          -  
+cc-worker/4d3e075f-b16d-4470-99df-2a9512486cd5            running        z1  10.244.0.136  e1411cb8-c297-490e-5a14-a429fa07c35c  minimal        -  
+consul/eb16556e-a929-48cf-a985-799b1d822425               running        z1  10.244.0.128  84d42e29-41ab-45fa-7e97-a74a38dc186d  minimal        -  
+database/dc67c481-461b-471a-ac21-5e0eb81f3f85             running        z1  10.244.0.131  d1c7b60c-b01f-4539-4024-c74cb3ea2f84  small          -  
+diego-api/37a98a57-6173-440e-be12-8c90b6c7d9cd            running        z1  10.244.0.132  01ecb464-d23c-4192-77e1-57ccc82b4814  small          -  
+diego-cell/056a257a-9c08-4002-82d0-9ad94c5657f1           running        z1  10.244.0.140  c9ff6bd4-1a73-4ce6-7ad8-424dde282ec5  small-highmem  -  
+doppler/58cecfa8-c078-4e6d-9826-a2ecb17eb14d              running        z1  10.244.0.139  8e4c2acf-849b-4413-63e3-a58be837d549  minimal        -  
+log-api/b804e84c-9044-4ee6-b03f-19f6759da1f3              running        z1  10.244.0.141  a54adf76-cf35-49d6-6e35-38047a6e84e1  minimal        -  
+nats/7e564693-7f96-47ad-b555-c1b0e4edcfd5                 running        z1  10.244.0.129  63fa56d6-8262-4eb0-77c6-13fa7ee9d167  minimal        -  
+router/292a0b6e-33b9-4f00-8113-575a9dfab979               running        z1  10.244.0.34   97099abc-ff04-4e26-5a2d-ba3aa9621a37  minimal        -  
+scheduler/d70116e6-9a30-4230-ba7c-3be6b911e6fe            running        z1  10.244.0.138  3b3458d1-5e51-4044-72b2-bee62cd2134a  minimal        -  
+singleton-blobstore/fdff0331-52c3-4c43-be2b-37830eb08251  running        z1  10.244.0.134  3665731e-b6dd-419d-6422-acdd41df3a6c  small          -  
+tcp-router/901466c1-6316-4ca0-b79b-f0a5cf9e3ef5           running        z1  10.244.0.137  6926000f-58fb-4ee6-5a4c-5dbb470e7546  minimal        -  
+uaa/be62cfec-95e1-473a-bac1-3903cfcc2c2d                  running        z1  10.244.0.133  1c6a1f46-b1b4-44c2-40da-4f5f5cc5d46e  minimal        -  
+
+15 vms
+
+Succeeded
+----
+
 == Additional References
 
-* https://bosh.io/docs/cli-v2/
-* https://github.com/starkandwayne/ultimate-guide-to-bosh/
-* https://www.altoros.com/blog/how-to-install-cloud-foundry-locally-with-bosh-lite/
+* http://basics-workshop.cloudfoundry.org/
+** https://github.com/cloudfoundry/summit-training-classes
 * https://stackoverflow.com/questions/36596743/how-to-install-cloudfoundry-on-local-server
 * https://starkandwayne.com/blog/bosh-lite-on-virtualbox-with-bosh2/
 * https://starkandwayne.com/blog/running-cloud-foundry-locally-with-bosh-lite/
-* https://starkandwayne.com/blog/running-cloud-foundry-locally-on-bosh-lite-with-bosh2/
 * https://medium.com/@ravijagannathan/install-cloud-foundry-on-bosh-lite-6d3b9a1e416a
-* https://github.com/cloudfoundry/summit-training-classes
-* http://basics-workshop.cloudfoundry.org/
+* https://www.altoros.com/blog/how-to-install-cloud-foundry-locally-with-bosh-lite/
 * https://github.com/cloudfoundry-community/bosh-lite-demo
 * https://github.com/EngineerBetter/training-zero-to-hero
+* http://www.xenonique.co.uk/blog/2018/01/19/how-to-deploy-bosh-lite-and-cloud-foundry-locally-on-mac-book-pro/
