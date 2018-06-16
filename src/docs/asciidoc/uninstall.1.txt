@@ -1,0 +1,41 @@
+This will destroy BOSH from VirtualBox.
+
+Continue? [yN] y
+
+
+==\
+===> Deleting BOSH Director
+==/
+
+Deployment manifest: '/Users/pj/bosh-env/virtualbox/bosh-deployment/bosh.yml'
+Deployment state: 'state.json'
+
+Started validating
+  Downloading release 'bosh-virtualbox-cpi'... Skipped [Found in local cache] (00:00:00)
+  Validating release 'bosh-virtualbox-cpi'... Finished (00:00:00)
+  Validating cpi release... Finished (00:00:00)
+Finished validating (00:00:01)
+
+Started installing CPI
+  Compiling package 'golang-1.10-linux/48c842421b6f05acf88dc6ec17f7574dade28a86'... Finished (00:00:00)
+  Compiling package 'golang-1.10-darwin/9eacb8fc6b1b693e4280be4e916e2000f375bfbf'... Finished (00:00:00)
+  Compiling package 'virtualbox_cpi/491b894473950429800ed1ce9dbe1940aac37307'... Finished (00:00:00)
+  Installing packages... Finished (00:00:08)
+  Rendering job templates... Finished (00:00:00)
+  Installing job 'virtualbox_cpi'... Finished (00:00:00)
+Finished installing CPI (00:00:08)
+
+Starting registry... Finished (00:00:00)
+
+Started deleting deployment
+  Waiting for the agent on VM 'vm-b3b7e973-3528-404b-4b28-48d6e9f3974f'... Failed (00:00:10)
+  Deleting VM 'vm-b3b7e973-3528-404b-4b28-48d6e9f3974f'... Finished (00:00:02)
+  Deleting disk 'disk-53ae1bc2-eabc-4528-71d9-8a26906871a7'... Finished (00:00:00)
+  Deleting stemcell 'sc-0621422d-366d-4227-6510-39a20f4f3fc3'... Finished (00:00:00)
+Finished deleting deployment (00:00:13)
+
+Uninstalling local artifacts for CPI and deployment... Finished (00:00:02)
+Stopping registry... Finished (00:00:00)
+Cleaning up rendered CPI jobs... Finished (00:00:00)
+
+Succeeded

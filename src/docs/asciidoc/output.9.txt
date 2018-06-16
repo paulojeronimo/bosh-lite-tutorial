@@ -1,0 +1,5 @@
+Getting apps in org paulojeronimo-org / space paulojeronimo-dev as admin...
+OK
+
+name           requested state   instances   memory   disk   urls
+spring-music   started           1/1         1G       1G     spring-music-brash-genet.bosh-lite.com

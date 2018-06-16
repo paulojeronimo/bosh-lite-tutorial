@@ -2,16 +2,17 @@ Using environment '192.168.50.6' as client 'admin'
 
 Task 1
 
-Task 1 | 22:41:29 | Update stemcell: Downloading remote stemcell (00:02:00)
-Task 1 | 22:43:29 | Update stemcell: Extracting stemcell archive (00:00:03)
-Task 1 | 22:43:32 | Update stemcell: Verifying stemcell manifest (00:00:00)
-Task 1 | 22:43:33 | Update stemcell: Checking if this stemcell already exists (00:00:00)
-Task 1 | 22:43:33 | Update stemcell: Uploading stemcell bosh-warden-boshlite-ubuntu-trusty-go_agent/3586.16 to the cloud (00:00:14)
-Task 1 | 22:43:47 | Update stemcell: Save stemcell bosh-warden-boshlite-ubuntu-trusty-go_agent/3586.16 (77723053-e73c-4d26-4542-84b8fed82444) (00:00:00)
+Task 1 | 22:32:14 | Update stemcell: Downloading remote stemcell (00:04:09)
+Task 1 | 22:36:23 | Update stemcell: Verifying remote stemcell (00:00:01)
+Task 1 | 22:36:24 | Update stemcell: Extracting stemcell archive (00:00:03)
+Task 1 | 22:36:27 | Update stemcell: Verifying stemcell manifest (00:00:00)
+Task 1 | 22:36:27 | Update stemcell: Checking if this stemcell already exists (00:00:00)
+Task 1 | 22:36:27 | Update stemcell: Uploading stemcell bosh-warden-boshlite-ubuntu-trusty-go_agent/3586.23 to the cloud (00:00:14)
+Task 1 | 22:36:41 | Update stemcell: Save stemcell bosh-warden-boshlite-ubuntu-trusty-go_agent/3586.23 (00b89948-488b-41bc-4aab-864582c8e09f) (00:00:00)
 
-Task 1 Started  Mon Jun  4 22:41:29 UTC 2018
-Task 1 Finished Mon Jun  4 22:43:47 UTC 2018
-Task 1 Duration 00:02:18
+Task 1 Started  Fri Jun 15 22:32:14 UTC 2018
+Task 1 Finished Fri Jun 15 22:36:41 UTC 2018
+Task 1 Duration 00:04:27
 Task 1 done
 
 Succeeded

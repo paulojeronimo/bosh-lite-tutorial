@@ -1,0 +1,13 @@
+Using environment '192.168.50.6' as client 'admin'
+
+Name      bosh-lite  
+UUID      3ae6747e-463b-4ad1-ab63-8f0bdeae10a6  
+Version   263.1.0 (00000000)  
+CPI       warden_cpi  
+Features  compiled_package_cache: disabled  
+          config_server: enabled  
+          dns: disabled  
+          snapshots: disabled  
+User      admin  
+
+Succeeded

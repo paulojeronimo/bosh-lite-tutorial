@@ -3,602 +3,615 @@ Using environment '192.168.50.6' as client 'admin'
 Using deployment 'cf'
 
 Task 2
-Task 6
-Task 5
-Task 3
 Task 4
-Task 2 | 22:47:07 | Downloading remote release: Downloading remote release
-Task 3 | 22:47:07 | Downloading remote release: Downloading remote release
-Task 4 | 22:47:07 | Downloading remote release: Downloading remote release
-Task 3 | 22:47:13 | Downloading remote release: Downloading remote release (00:00:06)
-Task 3 | 22:47:13 | Verifying remote release: Verifying remote release (00:00:00)
-Task 3 | 22:47:13 | Extracting release: Extracting release (00:00:00)
-Task 3 | 22:47:13 | Verifying manifest: Verifying manifest (00:00:00)
-Task 3 | 22:47:13 | Resolving package dependencies: Resolving package dependencies (00:00:00)
-Task 3 | 22:47:13 | Creating new packages: binary-buildpack/20cff07f853ad836cebe09b317b49e6fd3bedb38
-Task 5 | 22:47:13 | Downloading remote release: Downloading remote release
-Task 3 | 22:47:13 | Creating new packages: binary-buildpack/20cff07f853ad836cebe09b317b49e6fd3bedb38 (00:00:00)
-Task 3 | 22:47:13 | Creating new jobs: binary-buildpack/d63d9d7f35282f82abb2617f907d8539f4a55f19 (00:00:00)
-Task 3 | 22:47:13 | Release has been created: binary-buildpack/1.0.18 (00:00:00)
+Task 3
+Task 6
+Task 2 | 10:47:00 | Downloading remote release: Downloading remote release
+Task 5
+Task 3 | 10:47:01 | Downloading remote release: Downloading remote release
+Task 4 | 10:47:01 | Downloading remote release: Downloading remote release (00:00:04)
+Task 4 | 10:47:05 | Verifying remote release: Verifying remote release (00:00:00)
+Task 4 | 10:47:05 | Extracting release: Extracting release (00:00:00)
+Task 4 | 10:47:05 | Verifying manifest: Verifying manifest (00:00:00)
+Task 4 | 10:47:05 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 4 | 10:47:05 | Creating new packages: binary-buildpack/102cf73d907019ec80dd4abd10dcd21e01042cf9 (00:00:01)
+Task 4 | 10:47:06 | Creating new jobs: binary-buildpack/d63d9d7f35282f82abb2617f907d8539f4a55f19 (00:00:00)
+Task 4 | 10:47:06 | Release has been created: binary-buildpack/1.0.19 (00:00:00)
 
-Task 3 Started  Mon Jun  4 22:47:07 UTC 2018
-Task 3 Finished Mon Jun  4 22:47:13 UTC 2018
-Task 3 Duration 00:00:06
-Task 3 done
+Task 4 Started  Sat Jun 16 10:47:01 UTC 2018
+Task 4 Finished Sat Jun 16 10:47:06 UTC 2018
+Task 4 Duration 00:00:05
+Task 4 done
 
 Task 7
-Task 2 | 22:49:02 | Downloading remote release: Downloading remote release (00:01:55)
-Task 2 | 22:49:02 | Verifying remote release: Verifying remote release (00:00:00)
-Task 2 | 22:49:02 | Extracting release: Extracting release
-Task 5 | 22:49:03 | Downloading remote release: Downloading remote release (00:01:50)
-Task 5 | 22:49:03 | Verifying remote release: Verifying remote release (00:00:00)
-Task 5 | 22:49:03 | Extracting release: Extracting release
-Task 2 | 22:49:05 | Extracting release: Extracting release (00:00:03)
-Task 2 | 22:49:05 | Verifying manifest: Verifying manifest (00:00:00)
-Task 2 | 22:49:05 | Resolving package dependencies: Resolving package dependencies (00:00:00)
-Task 5 | 22:49:05 | Extracting release: Extracting release (00:00:02)
-Task 5 | 22:49:05 | Verifying manifest: Verifying manifest (00:00:00)
-Task 2 | 22:49:05 | Creating new packages: blobstore_url_signer/0f74f8eddd8580d9cf97c0fda45efecbf70b7a4b5f4094e27766f4b273bf0c84 (00:00:00)
-Task 2 | 22:49:05 | Creating new packages: capi_utils/9a4f9cf161cb5ecc853a264fcbd15077e0ea2af3ec90e7a9a76f58000ea91e6e (00:00:00)
-Task 2 | 22:49:05 | Creating new packages: cc_uploader/36c76753d263584da7f478f9148c6d7e7298f978e2c55737b6e3217a4612eb9e (00:00:00)
-Task 2 | 22:49:05 | Creating new packages: cloud_controller_ng/73c28348428f325764e0df79539f40be6b8fa01ad983e74fa181d25ea136ae79
-Task 5 | 22:49:05 | Resolving package dependencies: Resolving package dependencies (00:00:00)
-Task 5 | 22:49:05 | Creating new packages: cli/d39cac5375039e4750c32e11675c1143cea19d2d (00:00:00)
-Task 5 | 22:49:05 | Creating new packages: golang/1e3f14023f54867deaf02dc187fc59f0afdae03b
-Task 2 | 22:49:06 | Creating new packages: cloud_controller_ng/73c28348428f325764e0df79539f40be6b8fa01ad983e74fa181d25ea136ae79 (00:00:01)
-Task 2 | 22:49:06 | Creating new packages: debian_nfs_server/f918879fc70d73cb84e00d0e7378d5f60c8236e0f25fa205f260822bd0021498 (00:00:00)
-Task 2 | 22:49:06 | Creating new packages: golang1.9/492fce63ab236ec3d01949398623824641c8ffbd02a04d952e90b33b4359a62b
-Task 6 | 22:49:07 | Downloading remote release: Downloading remote release
-Task 5 | 22:49:07 | Creating new packages: golang/1e3f14023f54867deaf02dc187fc59f0afdae03b (00:00:02)
-Task 5 | 22:49:07 | Creating new packages: smoke_tests/d7431ee32cb8ecedb7d925aff891bbb61b19d476 (00:00:00)
-Task 5 | 22:49:07 | Creating new jobs: smoke_tests/d3a77a384ca0e6ca4939f730d2d90f0cc22bf012 (00:00:00)
-Task 5 | 22:49:07 | Release has been created: cf-smoke-tests/40.0.5 (00:00:00)
+Task 5 | 10:47:06 | Downloading remote release: Downloading remote release
+Task 3 | 10:47:51 | Downloading remote release: Downloading remote release (00:00:50)
+Task 3 | 10:47:51 | Verifying remote release: Verifying remote release (00:00:01)
+Task 3 | 10:47:52 | Extracting release: Extracting release (00:00:01)
+Task 3 | 10:47:53 | Verifying manifest: Verifying manifest (00:00:00)
+Task 3 | 10:47:53 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 3 | 10:47:53 | Creating new packages: cf-networking-acceptance/b759abfac2a4fddcb3b831e6a85d4f55768afe85 (00:00:00)
+Task 3 | 10:47:53 | Creating new packages: cni/b6476c4a667a465d745a0ef98108718216d39ca2 (00:00:01)
+Task 3 | 10:47:54 | Creating new packages: ctl-utils/6f7ad2b0405b1c66e1a27fcd6a065af74135c4a2 (00:00:00)
+Task 3 | 10:47:54 | Creating new packages: golang-1.10-linux/48c842421b6f05acf88dc6ec17f7574dade28a86 (00:00:02)
+Task 3 | 10:47:56 | Creating new packages: iptables-logger/1fd7c799f604192c0dff26ffb44da92094b5aefb (00:00:00)
+Task 3 | 10:47:56 | Creating new packages: netmon/a7a4d08d8159b131eaaf2482e28730ae2ed62529 (00:00:00)
+Task 3 | 10:47:56 | Creating new packages: policy-server/693030e3cc4bef4370aa2d8a390c8a718ab510c8 (00:00:00)
+Task 3 | 10:47:56 | Creating new packages: runc-cni/713c77f20dd09518c8ecb15cbc608f2c1bf9db2f (00:00:00)
+Task 3 | 10:47:56 | Creating new packages: silk-controller/94c34df3c5d775ce7cea16cd967352440914bc7c (00:00:00)
+Task 3 | 10:47:56 | Creating new packages: silk-daemon/04aa09d20c4e50e0af16bfa95e44860b49190bbc (00:00:00)
+Task 3 | 10:47:56 | Creating new packages: vxlan-policy-agent/f5c94b3b7ff8a30dc7722b23fc6cbf8dad04640c (00:00:00)
+Task 3 | 10:47:56 | Creating new jobs: bbr-cfnetworkingdb/67cf6aec12c85d480a7f82716d985f4588fe07de (00:00:01)
+Task 3 | 10:47:57 | Creating new jobs: cf-networking-acceptance/9955651010be00523e48ad81a26ae6dbc9d86fb7 (00:00:00)
+Task 3 | 10:47:57 | Creating new jobs: cni/21b286cf9c83ac99846b1ba6c08128c06dc5b468 (00:00:00)
+Task 3 | 10:47:57 | Creating new jobs: garden-cni/07234fd529dfca5e8e667cd9215f5678d48b0341 (00:00:00)
+Task 3 | 10:47:57 | Creating new jobs: iptables-logger/5c14eb616b185c0ea39ef1f5065ff86da2a50aa4 (00:00:00)
+Task 3 | 10:47:57 | Creating new jobs: netmon/9cbe4560da06cd2953e72b13896df7a50f454a14 (00:00:00)
+Task 3 | 10:47:57 | Creating new jobs: policy-server/b6391b39d4bb58e7e56f3359f9eb3a7111a79359 (00:00:00)
+Task 3 | 10:47:57 | Creating new jobs: policy-server-internal/3cee1f0a7c57ceef185827b74beac776b88baa06 (00:00:00)
+Task 3 | 10:47:57 | Creating new jobs: silk-controller/d7fef18ac60f97192a7a6d92cbec8783ae6396d0 (00:00:00)
+Task 3 | 10:47:57 | Creating new jobs: silk-daemon/14bffd816d36d4cdc175be0658dc1648eb88b1db (00:00:00)
+Task 3 | 10:47:57 | Creating new jobs: vxlan-policy-agent/7f2676594e31c68cb0b5290be907952a3a2a4de2 (00:00:00)
+Task 3 | 10:47:57 | Release has been created: cf-networking/1.13.0 (00:00:00)
 
-Task 5 Started  Mon Jun  4 22:47:13 UTC 2018
-Task 5 Finished Mon Jun  4 22:49:07 UTC 2018
-Task 5 Duration 00:01:54
+Task 3 Started  Sat Jun 16 10:47:01 UTC 2018
+Task 3 Finished Sat Jun 16 10:47:57 UTC 2018
+Task 3 Duration 00:00:56
+Task 3 done
+
+Task 6 | 10:47:57 | Downloading remote release: Downloading remote release
+Task 8
+Task 5 | 10:47:58 | Downloading remote release: Downloading remote release (00:00:52)
+Task 5 | 10:47:58 | Verifying remote release: Verifying remote release (00:00:00)
+Task 5 | 10:47:58 | Extracting release: Extracting release (00:00:01)
+Task 5 | 10:47:59 | Verifying manifest: Verifying manifest (00:00:00)
+Task 5 | 10:47:59 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 5 | 10:47:59 | Creating new packages: bpm/3fe49cfa0140be3ebd8da4bdcadfa6b84d847e87 (00:00:00)
+Task 5 | 10:47:59 | Creating new packages: bpm-runc/c0b41921c5063378870a7c8867c6dc1aa84e7d85 (00:00:01)
+Task 5 | 10:48:00 | Creating new packages: golang/e3ca1c9440c29ad576d633e9ef6a2f7805a5e8b7 (00:00:02)
+Task 5 | 10:48:02 | Creating new packages: test-server/3b339931eb1160a6361bcd9ea7b647004093b999 (00:00:00)
+Task 5 | 10:48:02 | Creating new jobs: bpm/f18421d8c21c425e94bdb3b2df00f3eca2daef29 (00:00:00)
+Task 5 | 10:48:02 | Creating new jobs: test-server/7bf431f910d14259efe2633a922aaf00c9e0def6 (00:00:00)
+Task 5 | 10:48:02 | Release has been created: bpm/0.6.0 (00:00:00)
+
+Task 5 Started  Sat Jun 16 10:47:06 UTC 2018
+Task 5 Finished Sat Jun 16 10:48:02 UTC 2018
+Task 5 Duration 00:00:56
 Task 5 done
 
-Task 8
-Task 2 | 22:49:09 | Creating new packages: golang1.9/492fce63ab236ec3d01949398623824641c8ffbd02a04d952e90b33b4359a62b (00:00:03)
-Task 2 | 22:49:09 | Creating new packages: libpq/211d57d6b1cb796a123433fb736bec6b09fd7a322667c9b9010b970ff78d9bce (00:00:00)
-Task 2 | 22:49:09 | Creating new packages: mariadb_connector_c/214543bbb1d7499acdbdb44a7323430a635a77fa004f4fd4dbaf4e544291b072 (00:00:00)
-Task 2 | 22:49:09 | Creating new packages: nginx/897fa87c3f388360a7365018048bb25571ab0d27f436e938f0664d802fbf00ef (00:00:00)
-Task 2 | 22:49:09 | Creating new packages: nginx_newrelic_plugin/70737ccb2088b16e99e9f59a60ce36e8d5037c3a40b1d960bef02f51391f1fa4 (00:00:00)
-Task 2 | 22:49:09 | Creating new packages: nginx_webdav/219bbff55c17e25e5ccf090491cb9ffee77f4eefc12e2d21e7ed1d520f6b01be (00:00:00)
-Task 2 | 22:49:09 | Creating new packages: ruby-2.4/aa713a098334c00ad9a710f61a17b38d08c3565c1f9e5fe9b4c6907e8c34dd6e (00:00:01)
-Task 2 | 22:49:10 | Creating new packages: tps/0d276d7a8c7343fc3d12d7e7627aaf77a32b026bd43a3123c00b154227fa6b52 (00:00:00)
-Task 2 | 22:49:10 | Creating new jobs: bbr-cloudcontrollerdb/049cf95e631d0af9a357612c58c7927873e81605c1e80e6339e8755a12f82294 (00:00:00)
-Task 2 | 22:49:10 | Creating new jobs: blobstore/dec21b195ccf58dba67e47449ec313905848dca6062a403f2804e6c76312f5fd (00:00:00)
-Task 2 | 22:49:10 | Creating new jobs: cc_deployment_updater/8cdf8b925888a95386f61081f9ac03b33a622770ec5db311eacc60134725c8a8 (00:00:00)
-Task 2 | 22:49:10 | Creating new jobs: cc_route_syncer/f1d6f380e6cea214ef73642bfebdeab3bf7ec4b14fcd406f1a32668884fb2c77 (00:00:00)
-Task 2 | 22:49:10 | Creating new jobs: cc_uploader/48a27d57a9f2734d80a4d91028dac176dff87d75a445beed5ed3a15493f0b560 (00:00:00)
-Task 2 | 22:49:10 | Creating new jobs: cloud_controller_clock/9cda718340154a1dd618653ef9e1659022a7797915e3895532833b18c1efc232 (00:00:00)
-Task 2 | 22:49:10 | Creating new jobs: cloud_controller_ng/83bf164994287d14e65fad8bff60329035ba7ef358603986aff3ac22fe9419aa (00:00:00)
-Task 2 | 22:49:10 | Creating new jobs: cloud_controller_worker/c9ad7d1f2487daa7bb491623574be335bfddcc234ac2f79973ee911b317cc94f (00:00:00)
-Task 2 | 22:49:10 | Creating new jobs: debian_nfs_server/5ab07a180a535bb3d4381b8ecfc5131fab0bb190cc91f1b7426ae03d4e5b6fc1 (00:00:00)
-Task 2 | 22:49:10 | Creating new jobs: nfs_mounter/5e3da655195b58c2d1d1944a9eb3cc9f39a163751b48b8cada8858f95222a480 (00:00:00)
-Task 2 | 22:49:10 | Creating new jobs: tps/6352c39faa7f6192dcf8887ca462acf9837e52fb02022dabd707aa033ef6e9f0 (00:00:00)
-Task 2 | 22:49:10 | Release has been created: capi/1.59.0 (00:00:00)
+Task 7 | 10:48:02 | Downloading remote release: Downloading remote release
+Task 9
+Task 2 | 10:48:29 | Downloading remote release: Downloading remote release (00:01:29)
+Task 2 | 10:48:29 | Verifying remote release: Verifying remote release (00:00:00)
+Task 2 | 10:48:29 | Extracting release: Extracting release (00:00:03)
+Task 2 | 10:48:32 | Verifying manifest: Verifying manifest (00:00:00)
+Task 2 | 10:48:32 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 2 | 10:48:32 | Creating new packages: blobstore_url_signer/0f74f8eddd8580d9cf97c0fda45efecbf70b7a4b5f4094e27766f4b273bf0c84 (00:00:00)
+Task 2 | 10:48:32 | Creating new packages: capi_utils/9a4f9cf161cb5ecc853a264fcbd15077e0ea2af3ec90e7a9a76f58000ea91e6e (00:00:00)
+Task 2 | 10:48:32 | Creating new packages: cc_uploader/36c76753d263584da7f478f9148c6d7e7298f978e2c55737b6e3217a4612eb9e (00:00:00)
+Task 2 | 10:48:32 | Creating new packages: cloud_controller_ng/0082a1036bba0861de2f1879edb35e007cb90d3ef38baa3668a7c0293eddfcc7 (00:00:01)
+Task 2 | 10:48:33 | Creating new packages: debian_nfs_server/f918879fc70d73cb84e00d0e7378d5f60c8236e0f25fa205f260822bd0021498 (00:00:00)
+Task 2 | 10:48:33 | Creating new packages: golang1.9/492fce63ab236ec3d01949398623824641c8ffbd02a04d952e90b33b4359a62b (00:00:03)
+Task 2 | 10:48:36 | Creating new packages: libpq/211d57d6b1cb796a123433fb736bec6b09fd7a322667c9b9010b970ff78d9bce (00:00:00)
+Task 2 | 10:48:36 | Creating new packages: mariadb_connector_c/214543bbb1d7499acdbdb44a7323430a635a77fa004f4fd4dbaf4e544291b072 (00:00:00)
+Task 2 | 10:48:36 | Creating new packages: nginx/897fa87c3f388360a7365018048bb25571ab0d27f436e938f0664d802fbf00ef (00:00:00)
+Task 2 | 10:48:36 | Creating new packages: nginx_newrelic_plugin/70737ccb2088b16e99e9f59a60ce36e8d5037c3a40b1d960bef02f51391f1fa4 (00:00:00)
+Task 2 | 10:48:36 | Creating new packages: nginx_webdav/219bbff55c17e25e5ccf090491cb9ffee77f4eefc12e2d21e7ed1d520f6b01be (00:00:00)
+Task 2 | 10:48:36 | Creating new packages: ruby-2.4/bc073fd71a2ac59aa428b9fe36b558c5d10edaa648189eb47fd76586441d4bd0 (00:00:01)
+Task 2 | 10:48:37 | Creating new packages: tps/025b7b83e82b47bdf90fd39990e430b023826f24b05bb611310fe04ec20a1c65 (00:00:00)
+Task 2 | 10:48:37 | Creating new jobs: bbr-cloudcontrollerdb/049cf95e631d0af9a357612c58c7927873e81605c1e80e6339e8755a12f82294 (00:00:00)
+Task 2 | 10:48:37 | Creating new jobs: blobstore/dec21b195ccf58dba67e47449ec313905848dca6062a403f2804e6c76312f5fd (00:00:00)
+Task 2 | 10:48:37 | Creating new jobs: cc_deployment_updater/26f40ae2113be54f17cee06c13d7478c879bc29ceddafd88cc7d810daad8b29f (00:00:00)
+Task 2 | 10:48:37 | Creating new jobs: cc_route_syncer/f1d6f380e6cea214ef73642bfebdeab3bf7ec4b14fcd406f1a32668884fb2c77 (00:00:00)
+Task 2 | 10:48:37 | Creating new jobs: cc_uploader/48a27d57a9f2734d80a4d91028dac176dff87d75a445beed5ed3a15493f0b560 (00:00:00)
+Task 2 | 10:48:37 | Creating new jobs: cloud_controller_clock/9cda718340154a1dd618653ef9e1659022a7797915e3895532833b18c1efc232 (00:00:00)
+Task 2 | 10:48:37 | Creating new jobs: cloud_controller_ng/2a6ae6f9a0274d93834717982da2f62ae7e7583b1d5b929c7a3456e049247909 (00:00:00)
+Task 2 | 10:48:37 | Creating new jobs: cloud_controller_worker/c9ad7d1f2487daa7bb491623574be335bfddcc234ac2f79973ee911b317cc94f (00:00:00)
+Task 2 | 10:48:37 | Creating new jobs: debian_nfs_server/5ab07a180a535bb3d4381b8ecfc5131fab0bb190cc91f1b7426ae03d4e5b6fc1 (00:00:01)
+Task 2 | 10:48:38 | Creating new jobs: nfs_mounter/5e3da655195b58c2d1d1944a9eb3cc9f39a163751b48b8cada8858f95222a480 (00:00:00)
+Task 2 | 10:48:38 | Creating new jobs: tps/6352c39faa7f6192dcf8887ca462acf9837e52fb02022dabd707aa033ef6e9f0 (00:00:00)
+Task 2 | 10:48:38 | Release has been created: capi/1.60.0 (00:00:00)
 
-Task 2 Started  Mon Jun  4 22:47:07 UTC 2018
-Task 2 Finished Mon Jun  4 22:49:10 UTC 2018
-Task 2 Duration 00:02:03
+Task 2 Started  Sat Jun 16 10:47:00 UTC 2018
+Task 2 Finished Sat Jun 16 10:48:38 UTC 2018
+Task 2 Duration 00:01:38
 Task 2 done
 
-Task 9
-Task 7 | 22:49:10 | Downloading remote release: Downloading remote release
-Task 6 | 22:50:02 | Downloading remote release: Downloading remote release (00:00:55)
-Task 6 | 22:50:02 | Verifying remote release: Verifying remote release (00:00:00)
-Task 6 | 22:50:02 | Extracting release: Extracting release (00:00:02)
-Task 6 | 22:50:04 | Verifying manifest: Verifying manifest (00:00:00)
-Task 6 | 22:50:04 | Resolving package dependencies: Resolving package dependencies (00:00:00)
-Task 6 | 22:50:04 | Creating new packages: cf-networking-acceptance/b759abfac2a4fddcb3b831e6a85d4f55768afe85 (00:00:00)
-Task 6 | 22:50:04 | Creating new packages: cni/b6476c4a667a465d745a0ef98108718216d39ca2 (00:00:00)
-Task 6 | 22:50:04 | Creating new packages: ctl-utils/6f7ad2b0405b1c66e1a27fcd6a065af74135c4a2 (00:00:00)
-Task 6 | 22:50:04 | Creating new packages: golang-1.10-linux/48c842421b6f05acf88dc6ec17f7574dade28a86
-Task 7 | 22:50:04 | Downloading remote release: Downloading remote release (00:00:54)
-Task 7 | 22:50:04 | Verifying remote release: Verifying remote release (00:00:01)
-Task 7 | 22:50:05 | Extracting release: Extracting release
-Task 6 | 22:50:07 | Creating new packages: golang-1.10-linux/48c842421b6f05acf88dc6ec17f7574dade28a86 (00:00:03)
-Task 6 | 22:50:07 | Creating new packages: iptables-logger/1fd7c799f604192c0dff26ffb44da92094b5aefb (00:00:00)
-Task 6 | 22:50:07 | Creating new packages: netmon/a7a4d08d8159b131eaaf2482e28730ae2ed62529 (00:00:00)
-Task 6 | 22:50:07 | Creating new packages: policy-server/693030e3cc4bef4370aa2d8a390c8a718ab510c8 (00:00:00)
-Task 6 | 22:50:07 | Creating new packages: runc-cni/713c77f20dd09518c8ecb15cbc608f2c1bf9db2f (00:00:00)
-Task 6 | 22:50:07 | Creating new packages: silk-controller/94c34df3c5d775ce7cea16cd967352440914bc7c
-Task 7 | 22:50:06 | Extracting release: Extracting release (00:00:01)
-Task 7 | 22:50:07 | Verifying manifest: Verifying manifest (00:00:00)
-Task 7 | 22:50:07 | Resolving package dependencies: Resolving package dependencies (00:00:00)
-Task 7 | 22:50:07 | Creating new packages: adapter/201eb1cef7aeae0ec8db77592d1305c95fe8181d2cea3640857354c49fd1dabd (00:00:00)
-Task 7 | 22:50:07 | Creating new packages: fake_consumer/9467ee8640c5cedd4dff67709e1a00c03b02aa9e81ac663852cef6a924600f71 (00:00:00)
-Task 7 | 22:50:07 | Creating new packages: fake_cups_provider/b72c076347c40720715ce068dc1e0d5d460d6b56dd642901fac1a16205fe8894 (00:00:00)
-Task 7 | 22:50:07 | Creating new packages: fake_logs_provider/ba3e5c41399e54ff490ee3dbb3fab2082295e4c1a35e29ec81e1da6e43e22d8e (00:00:00)
-Task 7 | 22:50:07 | Creating new packages: golang1.9.4/56d6cf267fef3a0a12c73da875e374ea19d6f23975808d813230cb904466404f
-Task 6 | 22:50:07 | Creating new packages: silk-controller/94c34df3c5d775ce7cea16cd967352440914bc7c (00:00:00)
-Task 6 | 22:50:07 | Creating new packages: silk-daemon/04aa09d20c4e50e0af16bfa95e44860b49190bbc (00:00:00)
-Task 6 | 22:50:07 | Creating new packages: vxlan-policy-agent/f5c94b3b7ff8a30dc7722b23fc6cbf8dad04640c (00:00:00)
-Task 6 | 22:50:08 | Creating new jobs: bbr-cfnetworkingdb/67cf6aec12c85d480a7f82716d985f4588fe07de (00:00:00)
-Task 6 | 22:50:08 | Creating new jobs: cf-networking-acceptance/9955651010be00523e48ad81a26ae6dbc9d86fb7 (00:00:00)
-Task 6 | 22:50:08 | Creating new jobs: cni/21b286cf9c83ac99846b1ba6c08128c06dc5b468 (00:00:00)
-Task 6 | 22:50:08 | Creating new jobs: garden-cni/07234fd529dfca5e8e667cd9215f5678d48b0341 (00:00:00)
-Task 6 | 22:50:08 | Creating new jobs: iptables-logger/5c14eb616b185c0ea39ef1f5065ff86da2a50aa4 (00:00:00)
-Task 6 | 22:50:08 | Creating new jobs: netmon/9cbe4560da06cd2953e72b13896df7a50f454a14 (00:00:00)
-Task 6 | 22:50:08 | Creating new jobs: policy-server/b6391b39d4bb58e7e56f3359f9eb3a7111a79359 (00:00:00)
-Task 6 | 22:50:08 | Creating new jobs: policy-server-internal/3cee1f0a7c57ceef185827b74beac776b88baa06 (00:00:00)
-Task 6 | 22:50:08 | Creating new jobs: silk-controller/d7fef18ac60f97192a7a6d92cbec8783ae6396d0 (00:00:00)
-Task 6 | 22:50:08 | Creating new jobs: silk-daemon/14bffd816d36d4cdc175be0658dc1648eb88b1db (00:00:00)
-Task 6 | 22:50:08 | Creating new jobs: vxlan-policy-agent/7f2676594e31c68cb0b5290be907952a3a2a4de2 (00:00:00)
-Task 6 | 22:50:08 | Release has been created: cf-networking/1.13.0 (00:00:00)
-
-Task 6 Started  Mon Jun  4 22:49:07 UTC 2018
-Task 6 Finished Mon Jun  4 22:50:08 UTC 2018
-Task 6 Duration 00:01:01
-Task 6 done
-
-Task 8 | 22:50:08 | Downloading remote release: Downloading remote release
 Task 10
-Task 7 | 22:50:10 | Creating new packages: golang1.9.4/56d6cf267fef3a0a12c73da875e374ea19d6f23975808d813230cb904466404f (00:00:03)
-Task 7 | 22:50:10 | Creating new packages: scheduler/93016742b2e51ef59efd7e2cda4894c28033581309941c4a0bceefccd84f75d0 (00:00:00)
-Task 7 | 22:50:10 | Creating new jobs: adapter/3c196c8591343e17bb5264450784aaef7983b33a8865a1ef16089397ed37ef17 (00:00:00)
-Task 7 | 22:50:10 | Creating new jobs: fake_consumer/40bb071cdfbaca141b766c59ee1fc7394e27b5c0fa59e4ef8fb14ace4c0c71f4 (00:00:01)
-Task 7 | 22:50:11 | Creating new jobs: fake_cups_provider/db0474fc0b0f9f281c2c1b476b215b9c0e2c2611b056dd97c778685d41e4e0c0 (00:00:00)
-Task 7 | 22:50:11 | Creating new jobs: fake_logs_provider/75df0aa8acccb8e7f473eea1c97c2ecb3f0124d9c8a537a72092aec408fbdae0 (00:00:00)
-Task 7 | 22:50:11 | Creating new jobs: scheduler/4be283c72e2b1b295983d620ff80c1269127c602ecaab7e8c406130b9f0c94ff
-Task 9 | 22:50:11 | Downloading remote release: Downloading remote release
-Task 7 | 22:50:11 | Creating new jobs: scheduler/4be283c72e2b1b295983d620ff80c1269127c602ecaab7e8c406130b9f0c94ff (00:00:00)
-Task 7 | 22:50:11 | Release has been created: cf-syslog-drain/6.5 (00:00:00)
+Task 8 | 10:48:38 | Downloading remote release: Downloading remote release
+Task 7 | 10:49:02 | Downloading remote release: Downloading remote release (00:01:00)
+Task 7 | 10:49:02 | Verifying remote release: Verifying remote release (00:00:00)
+Task 7 | 10:49:02 | Extracting release: Extracting release (00:00:01)
+Task 7 | 10:49:03 | Verifying manifest: Verifying manifest (00:00:00)
+Task 7 | 10:49:03 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 7 | 10:49:03 | Creating new packages: cli/d39cac5375039e4750c32e11675c1143cea19d2d (00:00:00)
+Task 7 | 10:49:03 | Creating new packages: golang/1e3f14023f54867deaf02dc187fc59f0afdae03b (00:00:02)
+Task 7 | 10:49:05 | Creating new packages: smoke_tests/d7431ee32cb8ecedb7d925aff891bbb61b19d476 (00:00:00)
+Task 7 | 10:49:05 | Creating new jobs: smoke_tests/d3a77a384ca0e6ca4939f730d2d90f0cc22bf012 (00:00:00)
+Task 7 | 10:49:05 | Release has been created: cf-smoke-tests/40.0.5 (00:00:00)
 
-Task 7 Started  Mon Jun  4 22:49:10 UTC 2018
-Task 7 Finished Mon Jun  4 22:50:11 UTC 2018
-Task 7 Duration 00:01:01
+Task 7 Started  Sat Jun 16 10:48:02 UTC 2018
+Task 7 Finished Sat Jun 16 10:49:05 UTC 2018
+Task 7 Duration 00:01:03
 Task 7 done
 
 Task 11
-Task 4 | 22:50:35 | Downloading remote release: Downloading remote release (00:03:28)
-Task 4 | 22:50:35 | Verifying remote release: Verifying remote release (00:00:06)
-Task 4 | 22:50:41 | Extracting release: Extracting release (00:00:04)
-Task 4 | 22:50:45 | Verifying manifest: Verifying manifest (00:00:00)
-Task 4 | 22:50:45 | Resolving package dependencies: Resolving package dependencies (00:00:00)
-Task 4 | 22:50:45 | Creating new packages: acceptance-tests/eb26bf3d396607454068cea0215d8b96d0a188dd (00:00:01)
-Task 4 | 22:50:46 | Creating new packages: boost/da228a9d552a039c63123f2a77e0901676a71e52 (00:00:02)
-Task 4 | 22:50:48 | Creating new packages: bootstrap/4f60fd28357e6c1d167b503f7983b8ce246a8557 (00:00:00)
-Task 4 | 22:50:48 | Creating new packages: cf-mysql-broker/6ef0de690738b9ae674a6ccb49af9673693c173f (00:00:00)
-Task 4 | 22:50:48 | Creating new packages: cf-mysql-cluster-health-logger/19dc5675219358b70d90ed438b68e745ec0a2a73 (00:00:00)
-Task 4 | 22:50:48 | Creating new packages: cf-mysql-common/441b7da1087463a29356e10d554d0827bcf1d46f (00:00:00)
-Task 4 | 22:50:48 | Creating new packages: check/d6811f25e9d56428a9b942631c27c9b24f5064dc (00:00:00)
-Task 4 | 22:50:48 | Creating new packages: cli/ffcc6e2f36ba09da3e082d4e0ad2a6ee76b9c1f8 (00:00:01)
-Task 4 | 22:50:49 | Creating new packages: cluster-schema-verifier/a2f8659250e5b51a7f5d0b0fdff5dbdc5ee98895 (00:00:00)
-Task 4 | 22:50:49 | Creating new packages: galera/f480a48c26d56d050bc0b579ed60750ccf52dadb (00:00:00)
-Task 4 | 22:50:49 | Creating new packages: galera-healthcheck/ea0e2e6288d084a9d23632f99711f85e1670bb60 (00:00:00)
-Task 4 | 22:50:49 | Creating new packages: generate-auto-tune-mysql/f41b75e326fab5af34f2c488b6be873a1a8ee40b (00:00:00)
-Task 4 | 22:50:49 | Creating new packages: golang/1e3f14023f54867deaf02dc187fc59f0afdae03b (00:00:06)
-Task 4 | 22:50:55 | Creating new packages: gra-log-purger/2cbbd66b8161a503378af6486f2a0d0ccc987fec (00:00:00)
-Task 4 | 22:50:55 | Creating new packages: mariadb/f793624c41281580123f2d0f356b52a4c80dd060 (00:00:01)
-Task 4 | 22:50:56 | Creating new packages: mariadb_ctrl/aa2d98f62993e091cc3cc0c5017db775953bd5bb (00:00:00)
-Task 4 | 22:50:56 | Creating new packages: mysqlclient/ce95f8ac566f76b650992987d5282ee473356e43 (00:00:00)
-Task 4 | 22:50:56 | Creating new packages: python/16de14b5e51a2eb13a9201ded0b7517c8e98f153 (00:00:00)
-Task 4 | 22:50:56 | Creating new packages: quota-enforcer/e338890e54acdeeb32af25d5db688e99a8043a90 (00:00:00)
-Task 4 | 22:50:56 | Creating new packages: ruby/e498f47a1aa30870c5f1d0fdb857052303c7127f (00:00:01)
-Task 4 | 22:50:57 | Creating new packages: scons/dbd49f7f2517cdb1853cd5e08eb59219731eb4c6 (00:00:00)
-Task 4 | 22:50:57 | Creating new packages: switchboard/96c4273ecad574f8e448d1d7fb3927efdd57e007 (00:00:00)
-Task 4 | 22:50:57 | Creating new packages: xtrabackup/e3be0425981cfbd68ce5971505962bf526ae02a4 (00:00:02)
-Task 4 | 22:50:59 | Creating new jobs: arbitrator/bf8d40ef35c0d1aa5b814065bd2ff41fc32d78d7 (00:00:00)
-Task 4 | 22:50:59 | Creating new jobs: bootstrap/4ca12ef06b2236261da2984bd956c0507e4a75ef (00:00:00)
-Task 4 | 22:50:59 | Creating new jobs: broker-registrar/842ab0cbc443c0c5929f6a7a7c2833a7a3be1893 (00:00:00)
-Task 4 | 22:50:59 | Creating new jobs: cf-mysql-broker/5cfb1fc7132306dff6a2f036d12bfa0dc0d2ffc7 (00:00:00)
-Task 4 | 22:50:59 | Creating new jobs: cf-mysql-broker-user/0cbe66c733d68c0c71711d5b139532a7728aa8d8 (00:00:00)
-Task 4 | 22:50:59 | Creating new jobs: deregister-and-purge-instances/94c073d24dac8393925181f85a6207498c7d0e61 (00:00:00)
-Task 4 | 22:50:59 | Creating new jobs: mysql/e43c4e3a2e2229dbb7c343a97102c272b90908ed (00:00:00)
-Task 4 | 22:50:59 | Creating new jobs: proxy/55ac0132cc7354288deb9291f1b06487f489cbf7 (00:00:00)
-Task 4 | 22:50:59 | Creating new jobs: rejoin-unsafe/a2b1c9c5017fbe80ff25e1921975026af6bc924a (00:00:00)
-Task 4 | 22:50:59 | Creating new jobs: smoke-tests/cabc2f763eb0556e526096a53ab96b15a977f92f (00:00:00)
-Task 4 | 22:50:59 | Creating new jobs: smoke-tests-user/a836a949e081486fd44a61db352d6d9bd335f1d0 (00:00:00)
-Task 4 | 22:50:59 | Creating new jobs: verify-cluster-schemas/2a049bb02c5a0e76582c6c90d4e06f510fb2638a (00:00:00)
-Task 4 | 22:50:59 | Release has been created: cf-mysql/36.14.0 (00:00:00)
+Task 9 | 10:49:05 | Downloading remote release: Downloading remote release
+Task 8 | 10:49:36 | Downloading remote release: Downloading remote release (00:00:58)
+Task 8 | 10:49:36 | Verifying remote release: Verifying remote release (00:00:01)
+Task 8 | 10:49:37 | Extracting release: Extracting release (00:00:01)
+Task 8 | 10:49:38 | Verifying manifest: Verifying manifest (00:00:00)
+Task 8 | 10:49:38 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 8 | 10:49:38 | Creating new packages: adapter/201eb1cef7aeae0ec8db77592d1305c95fe8181d2cea3640857354c49fd1dabd (00:00:00)
+Task 8 | 10:49:38 | Creating new packages: fake_consumer/9467ee8640c5cedd4dff67709e1a00c03b02aa9e81ac663852cef6a924600f71 (00:00:00)
+Task 8 | 10:49:38 | Creating new packages: fake_cups_provider/b72c076347c40720715ce068dc1e0d5d460d6b56dd642901fac1a16205fe8894 (00:00:00)
+Task 8 | 10:49:38 | Creating new packages: fake_logs_provider/ba3e5c41399e54ff490ee3dbb3fab2082295e4c1a35e29ec81e1da6e43e22d8e (00:00:00)
+Task 8 | 10:49:38 | Creating new packages: golang1.9.4/56d6cf267fef3a0a12c73da875e374ea19d6f23975808d813230cb904466404f (00:00:02)
+Task 8 | 10:49:40 | Creating new packages: scheduler/93016742b2e51ef59efd7e2cda4894c28033581309941c4a0bceefccd84f75d0 (00:00:00)
+Task 8 | 10:49:40 | Creating new jobs: adapter/3c196c8591343e17bb5264450784aaef7983b33a8865a1ef16089397ed37ef17 (00:00:00)
+Task 8 | 10:49:40 | Creating new jobs: fake_consumer/40bb071cdfbaca141b766c59ee1fc7394e27b5c0fa59e4ef8fb14ace4c0c71f4 (00:00:01)
+Task 8 | 10:49:41 | Creating new jobs: fake_cups_provider/db0474fc0b0f9f281c2c1b476b215b9c0e2c2611b056dd97c778685d41e4e0c0 (00:00:00)
+Task 8 | 10:49:41 | Creating new jobs: fake_logs_provider/75df0aa8acccb8e7f473eea1c97c2ecb3f0124d9c8a537a72092aec408fbdae0 (00:00:00)
+Task 8 | 10:49:41 | Creating new jobs: scheduler/4be283c72e2b1b295983d620ff80c1269127c602ecaab7e8c406130b9f0c94ff (00:00:00)
+Task 8 | 10:49:41 | Release has been created: cf-syslog-drain/6.5 (00:00:00)
 
-Task 4 Started  Mon Jun  4 22:47:07 UTC 2018
-Task 4 Finished Mon Jun  4 22:50:59 UTC 2018
-Task 4 Duration 00:03:52
-Task 4 done
-
-Task 10 | 22:50:59 | Downloading remote release: Downloading remote release
-Task 12
-Task 8 | 22:52:01 | Downloading remote release: Downloading remote release (00:01:53)
-Task 8 | 22:52:01 | Verifying remote release: Verifying remote release (00:00:02)
-Task 8 | 22:52:03 | Extracting release: Extracting release (00:00:03)
-Task 8 | 22:52:06 | Verifying manifest: Verifying manifest (00:00:00)
-Task 8 | 22:52:06 | Resolving package dependencies: Resolving package dependencies (00:00:00)
-Task 8 | 22:52:06 | Creating new packages: cflinuxfs2/ba83f71192f8882456f95fdd425e5c3871259446 (00:00:04)
-Task 8 | 22:52:10 | Creating new jobs: cflinuxfs2-rootfs-setup/db642f93f71de482f049b7289487160fac2c9d3c (00:00:00)
-Task 8 | 22:52:10 | Creating new jobs: cflinuxfs2-smoke-test/1fb4c1f9a4781f0a94fc4a7f10d2762361e8d3a5 (00:00:01)
-Task 8 | 22:52:11 | Release has been created: cflinuxfs2/1.211.0 (00:00:00)
-
-Task 8 Started  Mon Jun  4 22:50:08 UTC 2018
-Task 8 Finished Mon Jun  4 22:52:11 UTC 2018
-Task 8 Duration 00:02:03
+Task 8 Started  Sat Jun 16 10:48:38 UTC 2018
+Task 8 Finished Sat Jun 16 10:49:41 UTC 2018
+Task 8 Duration 00:01:03
 Task 8 done
 
-Task 11 | 22:52:11 | Downloading remote release: Downloading remote release
-Task 13
-Task 11 | 22:52:15 | Downloading remote release: Downloading remote release (00:00:04)
-Task 11 | 22:52:15 | Verifying remote release: Verifying remote release (00:00:00)
-Task 11 | 22:52:15 | Extracting release: Extracting release (00:00:00)
-Task 11 | 22:52:15 | Verifying manifest: Verifying manifest (00:00:00)
-Task 11 | 22:52:15 | Resolving package dependencies: Resolving package dependencies (00:00:00)
-Task 11 | 22:52:15 | Creating new packages: dotnet-core-buildpack/eddc4b31062721c546b401f3febd045a767c9dad (00:00:00)
-Task 11 | 22:52:15 | Creating new jobs: dotnet-core-buildpack/63b336e8dd3a1fa4b7f36ddcf33dd375560e154d (00:00:00)
-Task 11 | 22:52:15 | Release has been created: dotnet-core-buildpack/2.0.6 (00:00:00)
+Task 10 | 10:49:41 | Downloading remote release: Downloading remote release
+Task 12
+Task 6 | 10:50:47 | Downloading remote release: Downloading remote release (00:02:50)
+Task 6 | 10:50:47 | Verifying remote release: Verifying remote release (00:00:02)
+Task 6 | 10:50:49 | Extracting release: Extracting release (00:00:05)
+Task 6 | 10:50:54 | Verifying manifest: Verifying manifest (00:00:00)
+Task 6 | 10:50:54 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 6 | 10:50:54 | Creating new packages: acceptance-tests/eb26bf3d396607454068cea0215d8b96d0a188dd
+Task 9 | 10:50:55 | Downloading remote release: Downloading remote release (00:01:50)
+Task 9 | 10:50:55 | Verifying remote release: Verifying remote release
+Task 6 | 10:50:56 | Creating new packages: acceptance-tests/eb26bf3d396607454068cea0215d8b96d0a188dd (00:00:02)
+Task 6 | 10:50:56 | Creating new packages: boost/da228a9d552a039c63123f2a77e0901676a71e52 (00:00:02)
+Task 6 | 10:50:58 | Creating new packages: bootstrap/4f60fd28357e6c1d167b503f7983b8ce246a8557 (00:00:00)
+Task 6 | 10:50:58 | Creating new packages: cf-mysql-broker/6ef0de690738b9ae674a6ccb49af9673693c173f (00:00:01)
+Task 6 | 10:50:59 | Creating new packages: cf-mysql-cluster-health-logger/19dc5675219358b70d90ed438b68e745ec0a2a73 (00:00:00)
+Task 6 | 10:50:59 | Creating new packages: cf-mysql-common/441b7da1087463a29356e10d554d0827bcf1d46f (00:00:00)
+Task 6 | 10:50:59 | Creating new packages: check/d6811f25e9d56428a9b942631c27c9b24f5064dc (00:00:00)
+Task 6 | 10:50:59 | Creating new packages: cli/ffcc6e2f36ba09da3e082d4e0ad2a6ee76b9c1f8 (00:00:00)
+Task 6 | 10:50:59 | Creating new packages: cluster-schema-verifier/a2f8659250e5b51a7f5d0b0fdff5dbdc5ee98895 (00:00:00)
+Task 6 | 10:50:59 | Creating new packages: galera/f480a48c26d56d050bc0b579ed60750ccf52dadb (00:00:01)
+Task 6 | 10:51:00 | Creating new packages: galera-healthcheck/ea0e2e6288d084a9d23632f99711f85e1670bb60 (00:00:00)
+Task 6 | 10:51:00 | Creating new packages: generate-auto-tune-mysql/f41b75e326fab5af34f2c488b6be873a1a8ee40b (00:00:00)
+Task 6 | 10:51:00 | Creating new packages: golang/1e3f14023f54867deaf02dc187fc59f0afdae03b
+Task 9 | 10:51:03 | Verifying remote release: Verifying remote release (00:00:08)
+Task 9 | 10:51:03 | Extracting release: Extracting release
+Task 6 | 10:51:09 | Creating new packages: golang/1e3f14023f54867deaf02dc187fc59f0afdae03b (00:00:09)
+Task 6 | 10:51:09 | Creating new packages: gra-log-purger/2cbbd66b8161a503378af6486f2a0d0ccc987fec (00:00:00)
+Task 6 | 10:51:09 | Creating new packages: mariadb/f793624c41281580123f2d0f356b52a4c80dd060
+Task 9 | 10:51:11 | Extracting release: Extracting release (00:00:08)
+Task 9 | 10:51:11 | Verifying manifest: Verifying manifest (00:00:00)
+Task 9 | 10:51:11 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 9 | 10:51:11 | Creating new packages: cflinuxfs2/302f43b4fe9a4d20ef39bdcdbb916efab32976b3
+Task 6 | 10:51:11 | Creating new packages: mariadb/f793624c41281580123f2d0f356b52a4c80dd060 (00:00:02)
+Task 6 | 10:51:11 | Creating new packages: mariadb_ctrl/aa2d98f62993e091cc3cc0c5017db775953bd5bb (00:00:01)
+Task 6 | 10:51:12 | Creating new packages: mysqlclient/ce95f8ac566f76b650992987d5282ee473356e43 (00:00:00)
+Task 6 | 10:51:12 | Creating new packages: python/16de14b5e51a2eb13a9201ded0b7517c8e98f153 (00:00:01)
+Task 6 | 10:51:13 | Creating new packages: quota-enforcer/e338890e54acdeeb32af25d5db688e99a8043a90 (00:00:00)
+Task 6 | 10:51:13 | Creating new packages: ruby/e498f47a1aa30870c5f1d0fdb857052303c7127f (00:00:01)
+Task 6 | 10:51:14 | Creating new packages: scons/dbd49f7f2517cdb1853cd5e08eb59219731eb4c6 (00:00:00)
+Task 6 | 10:51:14 | Creating new packages: switchboard/96c4273ecad574f8e448d1d7fb3927efdd57e007 (00:00:01)
+Task 6 | 10:51:15 | Creating new packages: xtrabackup/e3be0425981cfbd68ce5971505962bf526ae02a4
+Task 9 | 10:51:17 | Creating new packages: cflinuxfs2/302f43b4fe9a4d20ef39bdcdbb916efab32976b3 (00:00:06)
+Task 9 | 10:51:17 | Creating new jobs: cflinuxfs2-rootfs-setup/db642f93f71de482f049b7289487160fac2c9d3c
+Task 11 | 10:51:17 | Downloading remote release: Downloading remote release
+Task 9 | 10:51:17 | Creating new jobs: cflinuxfs2-rootfs-setup/db642f93f71de482f049b7289487160fac2c9d3c (00:00:00)
+Task 9 | 10:51:17 | Creating new jobs: cflinuxfs2-smoke-test/1fb4c1f9a4781f0a94fc4a7f10d2762361e8d3a5 (00:00:00)
+Task 9 | 10:51:17 | Release has been created: cflinuxfs2/1.212.0 (00:00:00)
 
-Task 11 Started  Mon Jun  4 22:52:11 UTC 2018
-Task 11 Finished Mon Jun  4 22:52:15 UTC 2018
-Task 11 Duration 00:00:04
-Task 11 done
-
-Task 12 | 22:52:15 | Downloading remote release: Downloading remote release
-Task 14
-Task 10 | 22:52:47 | Downloading remote release: Downloading remote release (00:01:48)
-Task 10 | 22:52:47 | Verifying remote release: Verifying remote release (00:00:01)
-Task 10 | 22:52:48 | Extracting release: Extracting release (00:00:03)
-Task 10 | 22:52:51 | Verifying manifest: Verifying manifest (00:00:00)
-Task 10 | 22:52:51 | Resolving package dependencies: Resolving package dependencies (00:00:00)
-Task 10 | 22:52:51 | Creating new packages: auctioneer/63a480d0b21dae276857b94c3523d77396515b1ffa073e0474583330832dbbff (00:00:00)
-Task 10 | 22:52:51 | Creating new packages: bbs/c5cd5f7f5dda9a3d02846db29a9162192a937937434faa387fc5a21ce89a7967 (00:00:01)
-Task 10 | 22:52:52 | Creating new packages: benchmark-bbs/b5b8e1b7f703026ecd142ef71a246811d893c0c7d1979d6ffb323ef724d3cdcc (00:00:00)
-Task 10 | 22:52:52 | Creating new packages: buildpack_app_lifecycle/384c8e2a0abfe31f0f63a62f3a861328f9b924ffe42bf2960ecf24722bc08751 (00:00:00)
-Task 10 | 22:52:52 | Creating new packages: certsplitter/a9435b4f9f824b7ec2ada784c4d4fdb6133c16424213768daa82120fcc940a72 (00:00:00)
-Task 10 | 22:52:52 | Creating new packages: certsplitter_windows/9016a2e8fd34b4d818f037628ea35358164916dc9f50fba707c8f4e37dac11f5 (00:00:00)
-Task 10 | 22:52:52 | Creating new packages: cfdot/ab9ecdfee6224984160156db7061fbede28107f678c30be46043617504efc673 (00:00:00)
-Task 10 | 22:52:52 | Creating new packages: diego-sshd/49f577b34b7a6a1b0a95dda14836e46f6279c08f15e4e82aec0e45d8b8f2da7e (00:00:00)
-Task 10 | 22:52:52 | Creating new packages: docker_app_lifecycle/dc9f4400ec38e34e65dbc943cf5795150a5df7b64043937e7bf6c0fdbe34d39c (00:00:01)
-Task 10 | 22:52:53 | Creating new packages: file_server/fe13baf887075aebef1c8b9367e4232eafd12e76f0cd0af6a3ebad1d793309ea (00:00:00)
-Task 10 | 22:52:53 | Creating new packages: golang/492fce63ab236ec3d01949398623824641c8ffbd02a04d952e90b33b4359a62b (00:00:10)
-Task 10 | 22:53:03 | Creating new packages: golang-windows/9ee402982c15009286050849365d1512b076a03aea6e4ad7273510efb10b10be
-Task 9 | 22:53:05 | Downloading remote release: Downloading remote release (00:02:54)
-Task 9 | 22:53:05 | Verifying remote release: Verifying remote release
-Task 10 | 22:53:05 | Creating new packages: golang-windows/9ee402982c15009286050849365d1512b076a03aea6e4ad7273510efb10b10be (00:00:02)
-Task 10 | 22:53:05 | Creating new packages: healthcheck/3148f3a84d44201a5f6d925a169c4613f9bcc80313f17c4a4ac45c016bee8c53 (00:00:00)
-Task 10 | 22:53:05 | Creating new packages: healthcheck_windows/06e29bc89c00eccfac9cebdfe94cc973a7edcbb4fefa1e4ae7ee37194527894f (00:00:00)
-Task 10 | 22:53:05 | Creating new packages: locket/7b524d83655e572ddfccc836c695656e1337bb4838f6e29259c680cbb0230abc (00:00:00)
-Task 10 | 22:53:05 | Creating new packages: pid_utils/498ce6b3f5227e8c65f6e7bb8686d9829f3940ff92de78819bdefac0921012ef (00:00:00)
-Task 10 | 22:53:05 | Creating new packages: proxy/ded8b4598b87c01df79482a531ba417902f229beb514d63edc3df6aab7c9b4e1 (00:00:01)
-Task 10 | 22:53:06 | Creating new packages: rep/6d2478a938bf9834bfeec2d90070d6c7f19f46dd71e1eb9d4cd24cf6a0b7137f (00:00:00)
-Task 10 | 22:53:06 | Creating new packages: rep_windows/8119004c9800901607d12493c13eee38e7ed15d160d11241c4483f39c4026946 (00:00:00)
-Task 10 | 22:53:06 | Creating new packages: route_emitter/3f78d64d475e2c3293f6af2e1610e1a373c4e5c35d06c789d77bded372912211 (00:00:00)
-Task 10 | 22:53:06 | Creating new packages: route_emitter_windows/8f1ee9b74fb6cd5180fd591b758963ecb8ab40da72a4c7f0395fb3fb2fec08a7 (00:00:00)
-Task 10 | 22:53:06 | Creating new packages: ssh_proxy/daa56f038251953e0a76cc11e6e52415697d0928d2263fe35c1d906455034f60 (00:00:00)
-Task 10 | 22:53:06 | Creating new packages: vizzini/e52cc875594448ddc926e9c2d959823b3c4d2464da0f97acf1c307461163952e (00:00:01)
-Task 10 | 22:53:07 | Creating new packages: windows_app_lifecycle/8f3eb8b55f576f644bb406756f90f00a2388f75faabed48be626b2c496f5bd26 (00:00:00)
-Task 10 | 22:53:07 | Creating new jobs: auctioneer/0d4056a5df34f4460c0685d4175f6aacbcd8052643641dce843fc4c6b0e88827 (00:00:00)
-Task 10 | 22:53:07 | Creating new jobs: bbs/b15c69b432262d34ad117bbdc2fabf7f14c7787e4d635db2d693cd8b2f316d43 (00:00:00)
-Task 10 | 22:53:07 | Creating new jobs: benchmark-bbs/45a6f5a43542562decca9e8f7c5427716f0bcc0e02769ace93141e35103f8f5a (00:00:00)
-Task 10 | 22:53:07 | Creating new jobs: cfdot/cd29b0fdd1270e125038627badbfd58144926817d4c31a414aef63ad9a255a3a (00:00:00)
-Task 10 | 22:53:07 | Creating new jobs: file_server/5822ea4b2c171a78a3a4f0843b1bd8018b035f45487552d78ed5bb655ba5bb96 (00:00:00)
-Task 10 | 22:53:07 | Creating new jobs: locket/bdca75207c16d854a7f073b2f023626b862e331379430123776a88d9982a3935 (00:00:00)
-Task 10 | 22:53:07 | Creating new jobs: rep/222c1c8610ff166cb948fd3d7678de986f1c97903758abd48732e43a39c2caa2 (00:00:00)
-Task 10 | 22:53:07 | Creating new jobs: rep_windows/ba439992fd77a5a5d428562a40d1b9ec015ca9b972cbb74cffa58ec3f783bca1 (00:00:00)
-Task 10 | 22:53:07 | Creating new jobs: route_emitter/e63d2143a5d478440862ba1d5d7382dee8315805535e8f33b4a4758d275e1740 (00:00:00)
-Task 10 | 22:53:07 | Creating new jobs: route_emitter_windows/041a94aaa6c3f013bbc5f517aa26e37af5c6de2d9b81a3467189ad1aacf0d47d (00:00:00)
-Task 10 | 22:53:07 | Creating new jobs: ssh_proxy/40fa4228c25cf8189ddd6bf3f9b60a014edf82785f73d9fd8874319607360bd5 (00:00:00)
-Task 10 | 22:53:07 | Creating new jobs: vizzini/b30dbff3b64f1ab0975526e1ae6f4e9a8742dde6f8e718c5f638340cc9b036d8 (00:00:00)
-Task 10 | 22:53:07 | Release has been created: diego/2.8.0 (00:00:00)
-
-Task 10 Started  Mon Jun  4 22:50:59 UTC 2018
-Task 10 Finished Mon Jun  4 22:53:07 UTC 2018
-Task 10 Duration 00:02:08
-Task 10 done
-
-Task 15
-Task 13 | 22:53:08 | Downloading remote release: Downloading remote release
-Task 9 | 22:53:10 | Verifying remote release: Verifying remote release (00:00:05)
-Task 9 | 22:53:10 | Extracting release: Extracting release
-Task 13 | 22:53:15 | Downloading remote release: Downloading remote release (00:00:07)
-Task 13 | 22:53:15 | Verifying remote release: Verifying remote release (00:00:00)
-Task 13 | 22:53:15 | Extracting release: Extracting release (00:00:00)
-Task 13 | 22:53:15 | Verifying manifest: Verifying manifest (00:00:00)
-Task 13 | 22:53:15 | Resolving package dependencies: Resolving package dependencies (00:00:00)
-Task 13 | 22:53:15 | Creating new packages: go-buildpack/26a26e37cbc33f2bb8fde3ea31382b62b3c3dd40 (00:00:00)
-Task 13 | 22:53:15 | Creating new jobs: go-buildpack/1b3dd6154fd683285d74c4f7606a0e26b9a77f2d (00:00:00)
-Task 13 | 22:53:15 | Release has been created: go-buildpack/1.8.21 (00:00:00)
-
-Task 13 Started  Mon Jun  4 22:53:08 UTC 2018
-Task 13 Finished Mon Jun  4 22:53:15 UTC 2018
-Task 13 Duration 00:00:07
-Task 13 done
-
-Task 9 | 22:53:15 | Extracting release: Extracting release (00:00:05)
-Task 9 | 22:53:15 | Verifying manifest: Verifying manifest (00:00:00)
-Task 9 | 22:53:15 | Resolving package dependencies: Resolving package dependencies (00:00:00)
-Task 9 | 22:53:15 | Creating new packages: acceptance-tests/2cd721558dc1dca9bc68daccf0297d9aebffd8a3
-Task 14 | 22:53:15 | Downloading remote release: Downloading remote release
-Task 16
-Task 9 | 22:53:16 | Creating new packages: acceptance-tests/2cd721558dc1dca9bc68daccf0297d9aebffd8a3 (00:00:01)
-Task 9 | 22:53:16 | Creating new packages: acceptance-tests-windows/7eb8128dfc1b1f8b1fb6faf9e598f42fe9a1a038 (00:00:00)
-Task 9 | 22:53:16 | Creating new packages: confab/85382b43999179f4ede147c9b13cf881c2b9adb7 (00:00:01)
-Task 9 | 22:53:17 | Creating new packages: confab-windows/1cafe78508ffc48276ee694d394c4ca26fbe5671 (00:00:00)
-Task 9 | 22:53:17 | Creating new packages: consul/6049d3016cd34ac64ccbf7837b06b6db81942102 (00:00:00)
-Task 9 | 22:53:17 | Creating new packages: consul-windows/2a8e0b7ce1424d1d5efe5c7184791481a0c26424
-Task 14 | 22:53:18 | Downloading remote release: Downloading remote release (00:00:03)
-Task 14 | 22:53:18 | Verifying remote release: Verifying remote release (00:00:00)
-Task 14 | 22:53:18 | Extracting release: Extracting release (00:00:00)
-Task 14 | 22:53:18 | Verifying manifest: Verifying manifest (00:00:00)
-Task 14 | 22:53:18 | Resolving package dependencies: Resolving package dependencies
-Task 9 | 22:53:18 | Creating new packages: consul-windows/2a8e0b7ce1424d1d5efe5c7184791481a0c26424 (00:00:01)
-Task 9 | 22:53:18 | Creating new packages: golang-1.8-linux/a96c82386c30ac6ca67bcde2ee7b8ed8d9e5116a
-Task 14 | 22:53:18 | Resolving package dependencies: Resolving package dependencies (00:00:00)
-Task 14 | 22:53:18 | Creating new packages: java-buildpack/f10829b5fe1a61835e0f75c5a5407407fd7bf9ab (00:00:00)
-Task 14 | 22:53:18 | Creating new jobs: java-buildpack/f48d71296d8f88ccab03f95dc44d14fb3584c5f7 (00:00:00)
-Task 14 | 22:53:18 | Release has been created: java-buildpack/4.12 (00:00:00)
-
-Task 14 Started  Mon Jun  4 22:53:15 UTC 2018
-Task 14 Finished Mon Jun  4 22:53:18 UTC 2018
-Task 14 Duration 00:00:03
-Task 14 done
-
-Task 15 | 22:53:18 | Downloading remote release: Downloading remote release
-Task 17
-Task 9 | 22:53:21 | Creating new packages: golang-1.8-linux/a96c82386c30ac6ca67bcde2ee7b8ed8d9e5116a (00:00:03)
-Task 9 | 22:53:21 | Creating new packages: golang-1.8-windows/821f4f7419d0c92ef4c09aa893b4fb969014e774 (00:00:04)
-Task 9 | 22:53:25 | Creating new packages: golang-1.9-linux/39df05b363c89f1abccf002e7b3a7e996bfdacfd (00:00:02)
-Task 9 | 22:53:27 | Creating new packages: golang-1.9-windows/7c276112e0b920266176deab6dcd1a208be10d1d (00:00:02)
-Task 9 | 22:53:29 | Creating new jobs: acceptance-tests/2403cdd4d82cc679caa09ca9730e23c1f28db9b0 (00:00:00)
-Task 9 | 22:53:29 | Creating new jobs: consul-test-consumer/e53255ffbe50a64d5dcda5fb7cc95dec72929561 (00:00:00)
-Task 9 | 22:53:29 | Creating new jobs: consul-test-consumer-windows/b372a6ef00519707d2d311c4c4c58865f19f40c2 (00:00:00)
-Task 9 | 22:53:29 | Creating new jobs: consul_agent/040a06649d652d56e406115a5f31f8252e0ab18c (00:00:00)
-Task 9 | 22:53:29 | Creating new jobs: consul_agent_windows/5b29e55dc084be2e2f5b1d3da1b8243a3137fd9c (00:00:00)
-Task 9 | 22:53:29 | Creating new jobs: fake-dns-server/4a1fb0b41931ef77444027e4ef3e25749b6c34bb (00:00:00)
-Task 9 | 22:53:29 | Release has been created: consul/193 (00:00:00)
-
-Task 9 Started  Mon Jun  4 22:50:11 UTC 2018
-Task 9 Finished Mon Jun  4 22:53:29 UTC 2018
-Task 9 Duration 00:03:18
+Task 9 Started  Sat Jun 16 10:49:05 UTC 2018
+Task 9 Finished Sat Jun 16 10:51:17 UTC 2018
+Task 9 Duration 00:02:12
 Task 9 done
 
-Task 16 | 22:53:30 | Downloading remote release: Downloading remote release
-Task 18
-Task 15 | 22:54:32 | Downloading remote release: Downloading remote release (00:01:14)
-Task 15 | 22:54:32 | Verifying remote release: Verifying remote release (00:00:01)
-Task 15 | 22:54:33 | Extracting release: Extracting release (00:00:01)
-Task 15 | 22:54:34 | Verifying manifest: Verifying manifest (00:00:00)
-Task 15 | 22:54:34 | Resolving package dependencies: Resolving package dependencies (00:00:00)
-Task 15 | 22:54:34 | Creating new packages: doppler/0c5852261b0823db1c661d401844ecc35c72d1299ef700179f320e1d472dfd48 (00:00:01)
-Task 15 | 22:54:35 | Creating new packages: golang1.9.4/56d6cf267fef3a0a12c73da875e374ea19d6f23975808d813230cb904466404f
-Task 12 | 22:54:37 | Downloading remote release: Downloading remote release (00:02:22)
-Task 12 | 22:54:37 | Verifying remote release: Verifying remote release (00:00:01)
-Task 12 | 22:54:38 | Extracting release: Extracting release
-Task 16 | 22:54:38 | Downloading remote release: Downloading remote release (00:01:08)
-Task 16 | 22:54:38 | Verifying remote release: Verifying remote release (00:00:00)
-Task 16 | 22:54:38 | Extracting release: Extracting release (00:00:02)
-Task 16 | 22:54:40 | Verifying manifest: Verifying manifest (00:00:00)
-Task 16 | 22:54:40 | Resolving package dependencies: Resolving package dependencies (00:00:00)
-Task 16 | 22:54:40 | Creating new packages: gnatsd/4614b4e2f059001cd26d79e7ef7ece6677db3e38
-Task 15 | 22:54:40 | Creating new packages: golang1.9.4/56d6cf267fef3a0a12c73da875e374ea19d6f23975808d813230cb904466404f (00:00:05)
-Task 15 | 22:54:40 | Creating new packages: golang1.9.4-windows/84703de4d02563d10a08eb782a3770fb6c313abc801e1f5f2712a9e4bb661f1d
-Task 16 | 22:54:40 | Creating new packages: gnatsd/4614b4e2f059001cd26d79e7ef7ece6677db3e38 (00:00:00)
-Task 16 | 22:54:40 | Creating new packages: golang-1.10-linux/1baefde79e99ed3d1df72084315333032a294e59 (00:00:03)
-Task 16 | 22:54:44 | Creating new packages: nats-common/b8bd70d9e4b9a186667e2658af74568e7ea3d564 (00:00:00)
-Task 16 | 22:54:44 | Creating new packages: nats-smoke/88d8997b3efcd94543d27afe76a17d605d45055f (00:00:00)
-Task 17 | 22:54:45 | Downloading remote release: Downloading remote release
-Task 15 | 22:54:44 | Creating new packages: golang1.9.4-windows/84703de4d02563d10a08eb782a3770fb6c313abc801e1f5f2712a9e4bb661f1d (00:00:04)
-Task 15 | 22:54:44 | Creating new packages: loggregator_trafficcontroller/424c16530e0095abbfb4c30ad334a59d92f43f30c74f2dbe0aba4c4d55b02757 (00:00:01)
-Task 15 | 22:54:45 | Creating new packages: metron_agent/3f25b33163be7a8150a2cb825ef34803ad85fb0a5f3f507047ab9c91bdd424cf (00:00:00)
-Task 15 | 22:54:45 | Creating new packages: metron_agent_windows/cbc73e08e8a73c6aead1dc9f38d6357d86008bb36f4c7747ed4154944504003e
-Task 12 | 22:54:44 | Extracting release: Extracting release (00:00:06)
-Task 12 | 22:54:44 | Verifying manifest: Verifying manifest (00:00:00)
-Task 12 | 22:54:44 | Resolving package dependencies: Resolving package dependencies (00:00:00)
-Task 12 | 22:54:44 | Creating new packages: apparmor/0133a2288b0f71d05d89bd117c957297ad19cd19c0253236ba0ce4dedeb27186 (00:00:01)
-Task 12 | 22:54:45 | Creating new packages: autoconf/4f8914a0ada02006da32066d2e374e2a065d3acafbceb60ffd45ea146df7af1f (00:00:00)
-Task 12 | 22:54:45 | Creating new packages: automake/f11b0c20f9b9a5de955bbe1cb877e836a8841ddf88407b25ebbe9d31e3992858
-Task 16 | 22:54:44 | Creating new jobs: nats/ab4d5587789da45bb0eb81f1bfd57f6077e0dbdb (00:00:00)
-Task 16 | 22:54:44 | Creating new jobs: smoke-tests/37d3d137bc9eb58eee40e971ad72a0aa1644428f (00:00:00)
-Task 16 | 22:54:44 | Release has been created: nats/24 (00:00:00)
+Task 13
+Task 6 | 10:51:19 | Creating new packages: xtrabackup/e3be0425981cfbd68ce5971505962bf526ae02a4 (00:00:04)
+Task 6 | 10:51:19 | Creating new jobs: arbitrator/bf8d40ef35c0d1aa5b814065bd2ff41fc32d78d7 (00:00:00)
+Task 6 | 10:51:19 | Creating new jobs: bootstrap/4ca12ef06b2236261da2984bd956c0507e4a75ef (00:00:00)
+Task 6 | 10:51:19 | Creating new jobs: broker-registrar/842ab0cbc443c0c5929f6a7a7c2833a7a3be1893 (00:00:00)
+Task 6 | 10:51:19 | Creating new jobs: cf-mysql-broker/5cfb1fc7132306dff6a2f036d12bfa0dc0d2ffc7 (00:00:00)
+Task 6 | 10:51:19 | Creating new jobs: cf-mysql-broker-user/0cbe66c733d68c0c71711d5b139532a7728aa8d8 (00:00:00)
+Task 6 | 10:51:19 | Creating new jobs: deregister-and-purge-instances/94c073d24dac8393925181f85a6207498c7d0e61 (00:00:00)
+Task 6 | 10:51:19 | Creating new jobs: mysql/e43c4e3a2e2229dbb7c343a97102c272b90908ed (00:00:00)
+Task 6 | 10:51:19 | Creating new jobs: proxy/55ac0132cc7354288deb9291f1b06487f489cbf7 (00:00:01)
+Task 6 | 10:51:20 | Creating new jobs: rejoin-unsafe/a2b1c9c5017fbe80ff25e1921975026af6bc924a (00:00:00)
+Task 6 | 10:51:20 | Creating new jobs: smoke-tests/cabc2f763eb0556e526096a53ab96b15a977f92f (00:00:00)
+Task 6 | 10:51:20 | Creating new jobs: smoke-tests-user/a836a949e081486fd44a61db352d6d9bd335f1d0 (00:00:00)
+Task 6 | 10:51:20 | Creating new jobs: verify-cluster-schemas/2a049bb02c5a0e76582c6c90d4e06f510fb2638a (00:00:00)
+Task 6 | 10:51:20 | Release has been created: cf-mysql/36.14.0 (00:00:00)
 
-Task 16 Started  Mon Jun  4 22:53:30 UTC 2018
-Task 16 Finished Mon Jun  4 22:54:44 UTC 2018
-Task 16 Duration 00:01:14
-Task 16 done
+Task 6 Started  Sat Jun 16 10:47:57 UTC 2018
+Task 6 Finished Sat Jun 16 10:51:20 UTC 2018
+Task 6 Duration 00:03:23
+Task 6 done
 
-Task 19
-Task 15 | 22:54:45 | Creating new packages: metron_agent_windows/cbc73e08e8a73c6aead1dc9f38d6357d86008bb36f4c7747ed4154944504003e (00:00:00)
-Task 15 | 22:54:45 | Creating new packages: reverse_log_proxy/32f62636fc08c27f38dfce6b596faad4748500f0baff470ef58b93df98831937 (00:00:00)
-Task 15 | 22:54:45 | Creating new jobs: doppler/e6d8bc7a8e0bd3c4317c58c63c20238f31b713fc7017fbda4b83ec2eadc081c9 (00:00:00)
-Task 15 | 22:54:45 | Creating new jobs: loggregator_trafficcontroller/52dd6aab9ca50c0a4322acbfeeca2f28c9c052d1a28088b826ea7040d0b091d3 (00:00:00)
-Task 15 | 22:54:45 | Creating new jobs: metron_agent/1b206c6e03905fc7aad66837c86ec5a08081811a360b10615fea31f790ca1977 (00:00:00)
-Task 15 | 22:54:45 | Creating new jobs: metron_agent_windows/a3a6636d495584fee0db60a208880f457da83f07cb7504675a80c5c51eaee69c (00:00:00)
-Task 15 | 22:54:45 | Creating new jobs: reverse_log_proxy/60833bebe4cf6043949619f9747f482be836bb86efdc76f8ce0ea57e3f715c52
-Task 12 | 22:54:45 | Creating new packages: automake/f11b0c20f9b9a5de955bbe1cb877e836a8841ddf88407b25ebbe9d31e3992858 (00:00:00)
-Task 12 | 22:54:45 | Creating new packages: busybox/02b86e9e891e78294e366cfc3361514b752308952f56b954f7a6ae31961f859c (00:00:00)
-Task 12 | 22:54:45 | Creating new packages: containerd/088356cb73289efab051045d8ca72f209315b057297a955559bcb66ad8353900
-Task 15 | 22:54:45 | Creating new jobs: reverse_log_proxy/60833bebe4cf6043949619f9747f482be836bb86efdc76f8ce0ea57e3f715c52 (00:00:00)
-Task 15 | 22:54:45 | Release has been created: loggregator/102.1 (00:00:00)
+Task 12 | 10:51:20 | Downloading remote release: Downloading remote release
+Task 14
+Task 12 | 10:51:25 | Downloading remote release: Downloading remote release (00:00:05)
+Task 12 | 10:51:25 | Verifying remote release: Verifying remote release (00:00:01)
+Task 12 | 10:51:26 | Extracting release: Extracting release (00:00:00)
+Task 12 | 10:51:26 | Verifying manifest: Verifying manifest (00:00:00)
+Task 12 | 10:51:26 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 12 | 10:51:26 | Creating new packages: dotnet-core-buildpack/3ce6e22e498ec0e6793f6c24f5b2b062456208db
+Task 13 | 10:51:26 | Downloading remote release: Downloading remote release
+Task 12 | 10:51:26 | Creating new packages: dotnet-core-buildpack/3ce6e22e498ec0e6793f6c24f5b2b062456208db (00:00:00)
+Task 12 | 10:51:26 | Creating new jobs: dotnet-core-buildpack/63b336e8dd3a1fa4b7f36ddcf33dd375560e154d (00:00:00)
+Task 12 | 10:51:26 | Release has been created: dotnet-core-buildpack/2.0.7 (00:00:00)
 
-Task 15 Started  Mon Jun  4 22:53:18 UTC 2018
-Task 15 Finished Mon Jun  4 22:54:45 UTC 2018
-Task 15 Duration 00:01:27
-Task 15 done
-
-Task 12 | 22:54:46 | Creating new packages: containerd/088356cb73289efab051045d8ca72f209315b057297a955559bcb66ad8353900 (00:00:01)
-Task 12 | 22:54:46 | Creating new packages: garden-idmapper/0af0d14f49452fc822cfc6dad78a6df18d7ff2adefb030e8c62e427f69648f60 (00:00:00)
-Task 12 | 22:54:46 | Creating new packages: golang/7bfed9f967fc1f622097d3f75ab1170f1d12ee8eab3e5664f22e2577a8331cf9
-Task 18 | 22:54:45 | Downloading remote release: Downloading remote release
-Task 20
-Task 18 | 22:54:47 | Downloading remote release: Downloading remote release (00:00:02)
-Task 18 | 22:54:47 | Verifying remote release: Verifying remote release (00:00:00)
-Task 18 | 22:54:47 | Extracting release: Extracting release (00:00:00)
-Task 18 | 22:54:47 | Verifying manifest: Verifying manifest (00:00:00)
-Task 18 | 22:54:47 | Resolving package dependencies: Resolving package dependencies (00:00:00)
-Task 18 | 22:54:47 | Creating new packages: php-buildpack/3655185b7c5b37b31865042463d7d66109c6224f (00:00:00)
-Task 18 | 22:54:47 | Creating new jobs: php-buildpack/7470895d95cb72d4cb06972e2980207ae01f25d1 (00:00:00)
-Task 18 | 22:54:47 | Release has been created: php-buildpack/4.3.54 (00:00:00)
-
-Task 18 Started  Mon Jun  4 22:54:45 UTC 2018
-Task 18 Finished Mon Jun  4 22:54:47 UTC 2018
-Task 18 Duration 00:00:02
-Task 18 done
-
-Task 19 | 22:54:48 | Downloading remote release: Downloading remote release
-Task 21
-Task 12 | 22:54:49 | Creating new packages: golang/7bfed9f967fc1f622097d3f75ab1170f1d12ee8eab3e5664f22e2577a8331cf9 (00:00:03)
-Task 12 | 22:54:49 | Creating new packages: golang-1.10/429f43ed541faaa2b7292503311b14f676b8078a3ab4ec0deedc1bc185346235
-Task 17 | 22:54:50 | Downloading remote release: Downloading remote release (00:00:05)
-Task 17 | 22:54:50 | Verifying remote release: Verifying remote release (00:00:00)
-Task 17 | 22:54:50 | Extracting release: Extracting release (00:00:00)
-Task 17 | 22:54:50 | Verifying manifest: Verifying manifest (00:00:00)
-Task 17 | 22:54:50 | Resolving package dependencies: Resolving package dependencies (00:00:00)
-Task 17 | 22:54:50 | Creating new packages: nodejs-buildpack/6b44b528026ddb0e4872f7acb5fdaf124fc87f01 (00:00:00)
-Task 17 | 22:54:50 | Creating new jobs: nodejs-buildpack/aa6066bb57b523ad80c31c48062e7eed6b3445e4 (00:00:00)
-Task 17 | 22:54:50 | Release has been created: nodejs-buildpack/1.6.23 (00:00:00)
-
-Task 17 Started  Mon Jun  4 22:54:45 UTC 2018
-Task 17 Finished Mon Jun  4 22:54:50 UTC 2018
-Task 17 Duration 00:00:05
-Task 17 done
-
-Task 22
-Task 20 | 22:54:50 | Downloading remote release: Downloading remote release
-Task 12 | 22:54:51 | Creating new packages: golang-1.10/429f43ed541faaa2b7292503311b14f676b8078a3ab4ec0deedc1bc185346235 (00:00:02)
-Task 12 | 22:54:51 | Creating new packages: golang-windows/b4781a2fa3cb3b37c346eb605aad084f6d4881ba3511b367b57175abc7d3fb83 (00:00:03)
-Task 12 | 22:54:54 | Creating new packages: greenskeeper/2b56e6534ed6bc8b3d622a308984b9c9b7d81f0097cdc972d0c42ea1ee93f51f (00:00:00)
-Task 12 | 22:54:54 | Creating new packages: grootfs/429115a41dc070926af8c90ae72d2ac190203bca26868f14e344ade27dbbee26 (00:00:01)
-Task 12 | 22:54:55 | Creating new packages: guardian/74c432d0dc9c74cf7b279343a67f9ebf4da0a0d5d1109ff44d353a55f1bf0884 (00:00:00)
-Task 12 | 22:54:55 | Creating new packages: guardian-windows/2cf84a09d74f3b9f994bb495b8e8140c4d0aac3f4c7eca19ae49947cd03e85ec (00:00:00)
-Task 12 | 22:54:55 | Creating new packages: iptables/7a3108e45160133ba44434781ff364f395c197ba2c92db6b31cced950cf7a37a (00:00:00)
-Task 12 | 22:54:55 | Creating new packages: libseccomp/11f3a8e12b881d4d6f660d84df70d3fe99b12e1621f9e93ff66e120aec12ec96 (00:00:00)
-Task 12 | 22:54:55 | Creating new packages: libtool/3e211ee9e3aab09a9e8a9ff55ab9ce9ba81590d945640e2d29c078597db33a94 (00:00:00)
-Task 12 | 22:54:55 | Creating new packages: lzo/7ec718ef29da337d56f08e90534f561c138c2c88b576dc5da5185d85fdd42b20 (00:00:00)
-Task 12 | 22:54:55 | Creating new packages: pkg-config/278dbe10dcc428102e39936da0c7ddd2254cb0029ec0c9b06f545b228484187a (00:00:00)
-Task 12 | 22:54:55 | Creating new packages: runc/16e92ae589da1dc24b072fa7e56ab50659139f330d45368cc361e451cac33c63 (00:00:00)
-Task 12 | 22:54:55 | Creating new packages: tar/f922f97b27619f8331332e4186c1f9c63fa5b4ddd213c4a02c7ed7cf68fced21 (00:00:00)
-Task 12 | 22:54:55 | Creating new packages: thresholder/51cbfd1dbe3b43690166ca5398d11e2ade11ec1a1d857b560e55d319db175a20 (00:00:01)
-Task 12 | 22:54:56 | Creating new packages: util-linux/6310f68e8294c980de62481bced2fc915f449e3a2cc2d13a7a2a49c4a612d825 (00:00:00)
-Task 12 | 22:54:56 | Creating new packages: xfs-progs/6ce014f88e05f358621a25ce48ee036d78bdb1a935a8eb556974d3de26c8614d (00:00:01)
-Task 12 | 22:54:57 | Creating new packages: zlib/98e4e7f5eebfe3831cf312d32a44f71281fcbc2577770fffd7b9601991ab31de (00:00:00)
-Task 12 | 22:54:57 | Creating new jobs: containerd/36fbbcac9872bedaf204966d76022fe356fbb211f3a50c7308f811f0dbdce2ef (00:00:00)
-Task 12 | 22:54:57 | Creating new jobs: garden/8b0524753eacf76c1dc94558b573a8177a986bb601edc37f76ab2740bab7f921 (00:00:00)
-Task 12 | 22:54:57 | Creating new jobs: garden-windows/a767911e690851aaf3b959e8ba779bda7de4e4856948ff7e8266a2df2ee35ae3 (00:00:00)
-Task 12 | 22:54:57 | Release has been created: garden-runc/1.13.3 (00:00:00)
-Task 21 | 22:54:57 | Downloading remote release: Downloading remote release
-
-Task 12 Started  Mon Jun  4 22:52:15 UTC 2018
-Task 12 Finished Mon Jun  4 22:54:57 UTC 2018
-Task 12 Duration 00:02:42
+Task 12 Started  Sat Jun 16 10:51:20 UTC 2018
+Task 12 Finished Sat Jun 16 10:51:26 UTC 2018
+Task 12 Duration 00:00:06
 Task 12 done
 
-Task 23
-Task 19 | 22:55:00 | Downloading remote release: Downloading remote release (00:00:12)
-Task 19 | 22:55:00 | Verifying remote release: Verifying remote release (00:00:00)
-Task 19 | 22:55:00 | Extracting release: Extracting release (00:00:00)
-Task 19 | 22:55:00 | Verifying manifest: Verifying manifest (00:00:00)
-Task 19 | 22:55:00 | Resolving package dependencies: Resolving package dependencies (00:00:00)
-Task 19 | 22:55:00 | Creating new packages: python-buildpack/d6abd2812d1e01a8f4bcd18974aa7dcc6b772c6d
-Task 22 | 22:55:00 | Downloading remote release: Downloading remote release
-Task 19 | 22:55:00 | Creating new packages: python-buildpack/d6abd2812d1e01a8f4bcd18974aa7dcc6b772c6d (00:00:00)
-Task 19 | 22:55:00 | Creating new jobs: python-buildpack/c5421aef7767e282e2191887b9379b03e9db4b2f (00:00:00)
-Task 19 | 22:55:00 | Release has been created: python-buildpack/1.6.15 (00:00:00)
+Task 15
+Task 10 | 10:52:02 | Downloading remote release: Downloading remote release (00:02:21)
+Task 10 | 10:52:02 | Verifying remote release: Verifying remote release (00:00:03)
+Task 10 | 10:52:05 | Extracting release: Extracting release (00:00:05)
+Task 10 | 10:52:10 | Verifying manifest: Verifying manifest (00:00:00)
+Task 10 | 10:52:10 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 10 | 10:52:10 | Creating new packages: acceptance-tests/2cd721558dc1dca9bc68daccf0297d9aebffd8a3 (00:00:00)
+Task 10 | 10:52:10 | Creating new packages: acceptance-tests-windows/7eb8128dfc1b1f8b1fb6faf9e598f42fe9a1a038 (00:00:00)
+Task 10 | 10:52:10 | Creating new packages: confab/85382b43999179f4ede147c9b13cf881c2b9adb7 (00:00:01)
+Task 10 | 10:52:11 | Creating new packages: confab-windows/1cafe78508ffc48276ee694d394c4ca26fbe5671 (00:00:01)
+Task 10 | 10:52:12 | Creating new packages: consul/6049d3016cd34ac64ccbf7837b06b6db81942102 (00:00:00)
+Task 10 | 10:52:12 | Creating new packages: consul-windows/2a8e0b7ce1424d1d5efe5c7184791481a0c26424 (00:00:00)
+Task 10 | 10:52:12 | Creating new packages: golang-1.8-linux/a96c82386c30ac6ca67bcde2ee7b8ed8d9e5116a (00:00:03)
+Task 10 | 10:52:15 | Creating new packages: golang-1.8-windows/821f4f7419d0c92ef4c09aa893b4fb969014e774 (00:00:01)
+Task 10 | 10:52:16 | Creating new packages: golang-1.9-linux/39df05b363c89f1abccf002e7b3a7e996bfdacfd (00:00:05)
+Task 10 | 10:52:21 | Creating new packages: golang-1.9-windows/7c276112e0b920266176deab6dcd1a208be10d1d (00:00:03)
+Task 10 | 10:52:24 | Creating new jobs: acceptance-tests/2403cdd4d82cc679caa09ca9730e23c1f28db9b0 (00:00:00)
+Task 10 | 10:52:24 | Creating new jobs: consul-test-consumer/e53255ffbe50a64d5dcda5fb7cc95dec72929561 (00:00:00)
+Task 10 | 10:52:24 | Creating new jobs: consul-test-consumer-windows/b372a6ef00519707d2d311c4c4c58865f19f40c2 (00:00:00)
+Task 10 | 10:52:24 | Creating new jobs: consul_agent/040a06649d652d56e406115a5f31f8252e0ab18c (00:00:00)
+Task 10 | 10:52:24 | Creating new jobs: consul_agent_windows/5b29e55dc084be2e2f5b1d3da1b8243a3137fd9c (00:00:01)
+Task 10 | 10:52:25 | Creating new jobs: fake-dns-server/4a1fb0b41931ef77444027e4ef3e25749b6c34bb (00:00:00)
+Task 10 | 10:52:25 | Release has been created: consul/193 (00:00:00)
 
-Task 19 Started  Mon Jun  4 22:54:48 UTC 2018
-Task 19 Finished Mon Jun  4 22:55:00 UTC 2018
-Task 19 Duration 00:00:12
+Task 10 Started  Sat Jun 16 10:49:41 UTC 2018
+Task 10 Finished Sat Jun 16 10:52:25 UTC 2018
+Task 10 Duration 00:02:44
+Task 10 done
+
+Task 16
+Task 14 | 10:52:25 | Downloading remote release: Downloading remote release (00:00:05)
+Task 14 | 10:52:30 | Verifying remote release: Verifying remote release (00:00:00)
+Task 14 | 10:52:30 | Extracting release: Extracting release (00:00:00)
+Task 14 | 10:52:30 | Verifying manifest: Verifying manifest (00:00:00)
+Task 14 | 10:52:30 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 14 | 10:52:30 | Creating new packages: go-buildpack/00e02cbcf53961f6dc2e25a0ee98fac1441f0a93 (00:00:00)
+Task 14 | 10:52:30 | Creating new jobs: go-buildpack/1b3dd6154fd683285d74c4f7606a0e26b9a77f2d (00:00:00)
+Task 14 | 10:52:30 | Release has been created: go-buildpack/1.8.23 (00:00:00)
+
+Task 14 Started  Sat Jun 16 10:52:25 UTC 2018
+Task 14 Finished Sat Jun 16 10:52:30 UTC 2018
+Task 14 Duration 00:00:05
+Task 14 done
+
+Task 17
+Task 15 | 10:52:30 | Downloading remote release: Downloading remote release (00:00:02)
+Task 15 | 10:52:32 | Verifying remote release: Verifying remote release (00:00:00)
+Task 15 | 10:52:32 | Extracting release: Extracting release (00:00:00)
+Task 15 | 10:52:32 | Verifying manifest: Verifying manifest (00:00:00)
+Task 15 | 10:52:32 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 15 | 10:52:32 | Creating new packages: java-buildpack/f10829b5fe1a61835e0f75c5a5407407fd7bf9ab (00:00:00)
+Task 15 | 10:52:32 | Creating new jobs: java-buildpack/f48d71296d8f88ccab03f95dc44d14fb3584c5f7
+Task 16 | 10:52:33 | Downloading remote release: Downloading remote release
+Task 15 | 10:52:33 | Creating new jobs: java-buildpack/f48d71296d8f88ccab03f95dc44d14fb3584c5f7 (00:00:01)
+Task 15 | 10:52:33 | Release has been created: java-buildpack/4.12 (00:00:00)
+
+Task 15 Started  Sat Jun 16 10:52:30 UTC 2018
+Task 15 Finished Sat Jun 16 10:52:33 UTC 2018
+Task 15 Duration 00:00:03
+Task 15 done
+
+Task 18
+Task 11 | 10:52:54 | Downloading remote release: Downloading remote release (00:01:37)
+Task 11 | 10:52:54 | Verifying remote release: Verifying remote release (00:00:02)
+Task 11 | 10:52:56 | Extracting release: Extracting release (00:00:02)
+Task 11 | 10:52:58 | Verifying manifest: Verifying manifest (00:00:00)
+Task 11 | 10:52:58 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 11 | 10:52:58 | Creating new packages: auctioneer/63a480d0b21dae276857b94c3523d77396515b1ffa073e0474583330832dbbff (00:00:01)
+Task 11 | 10:52:59 | Creating new packages: bbs/c5cd5f7f5dda9a3d02846db29a9162192a937937434faa387fc5a21ce89a7967 (00:00:00)
+Task 11 | 10:52:59 | Creating new packages: benchmark-bbs/b5b8e1b7f703026ecd142ef71a246811d893c0c7d1979d6ffb323ef724d3cdcc (00:00:00)
+Task 11 | 10:52:59 | Creating new packages: buildpack_app_lifecycle/384c8e2a0abfe31f0f63a62f3a861328f9b924ffe42bf2960ecf24722bc08751 (00:00:00)
+Task 11 | 10:52:59 | Creating new packages: certsplitter/a9435b4f9f824b7ec2ada784c4d4fdb6133c16424213768daa82120fcc940a72 (00:00:00)
+Task 11 | 10:52:59 | Creating new packages: certsplitter_windows/9016a2e8fd34b4d818f037628ea35358164916dc9f50fba707c8f4e37dac11f5 (00:00:00)
+Task 11 | 10:52:59 | Creating new packages: cfdot/ab9ecdfee6224984160156db7061fbede28107f678c30be46043617504efc673 (00:00:00)
+Task 11 | 10:52:59 | Creating new packages: diego-sshd/49f577b34b7a6a1b0a95dda14836e46f6279c08f15e4e82aec0e45d8b8f2da7e (00:00:01)
+Task 11 | 10:53:00 | Creating new packages: docker_app_lifecycle/dc9f4400ec38e34e65dbc943cf5795150a5df7b64043937e7bf6c0fdbe34d39c (00:00:00)
+Task 11 | 10:53:00 | Creating new packages: file_server/fe13baf887075aebef1c8b9367e4232eafd12e76f0cd0af6a3ebad1d793309ea (00:00:00)
+Task 11 | 10:53:00 | Creating new packages: golang/492fce63ab236ec3d01949398623824641c8ffbd02a04d952e90b33b4359a62b (00:00:12)
+Task 11 | 10:53:12 | Creating new packages: golang-windows/9ee402982c15009286050849365d1512b076a03aea6e4ad7273510efb10b10be (00:00:02)
+Task 11 | 10:53:14 | Creating new packages: healthcheck/3148f3a84d44201a5f6d925a169c4613f9bcc80313f17c4a4ac45c016bee8c53 (00:00:00)
+Task 11 | 10:53:14 | Creating new packages: healthcheck_windows/06e29bc89c00eccfac9cebdfe94cc973a7edcbb4fefa1e4ae7ee37194527894f (00:00:00)
+Task 11 | 10:53:14 | Creating new packages: locket/7b524d83655e572ddfccc836c695656e1337bb4838f6e29259c680cbb0230abc (00:00:00)
+Task 11 | 10:53:14 | Creating new packages: pid_utils/498ce6b3f5227e8c65f6e7bb8686d9829f3940ff92de78819bdefac0921012ef (00:00:00)
+Task 11 | 10:53:14 | Creating new packages: proxy/ded8b4598b87c01df79482a531ba417902f229beb514d63edc3df6aab7c9b4e1 (00:00:01)
+Task 11 | 10:53:15 | Creating new packages: rep/6d2478a938bf9834bfeec2d90070d6c7f19f46dd71e1eb9d4cd24cf6a0b7137f (00:00:00)
+Task 11 | 10:53:15 | Creating new packages: rep_windows/8119004c9800901607d12493c13eee38e7ed15d160d11241c4483f39c4026946 (00:00:00)
+Task 11 | 10:53:15 | Creating new packages: route_emitter/3f78d64d475e2c3293f6af2e1610e1a373c4e5c35d06c789d77bded372912211 (00:00:00)
+Task 11 | 10:53:15 | Creating new packages: route_emitter_windows/8f1ee9b74fb6cd5180fd591b758963ecb8ab40da72a4c7f0395fb3fb2fec08a7 (00:00:00)
+Task 11 | 10:53:15 | Creating new packages: ssh_proxy/daa56f038251953e0a76cc11e6e52415697d0928d2263fe35c1d906455034f60 (00:00:00)
+Task 11 | 10:53:15 | Creating new packages: vizzini/e52cc875594448ddc926e9c2d959823b3c4d2464da0f97acf1c307461163952e (00:00:01)
+Task 11 | 10:53:16 | Creating new packages: windows_app_lifecycle/8f3eb8b55f576f644bb406756f90f00a2388f75faabed48be626b2c496f5bd26 (00:00:00)
+Task 11 | 10:53:16 | Creating new jobs: auctioneer/0d4056a5df34f4460c0685d4175f6aacbcd8052643641dce843fc4c6b0e88827 (00:00:00)
+Task 11 | 10:53:16 | Creating new jobs: bbs/b15c69b432262d34ad117bbdc2fabf7f14c7787e4d635db2d693cd8b2f316d43 (00:00:00)
+Task 11 | 10:53:16 | Creating new jobs: benchmark-bbs/45a6f5a43542562decca9e8f7c5427716f0bcc0e02769ace93141e35103f8f5a (00:00:00)
+Task 11 | 10:53:16 | Creating new jobs: cfdot/cd29b0fdd1270e125038627badbfd58144926817d4c31a414aef63ad9a255a3a (00:00:00)
+Task 11 | 10:53:16 | Creating new jobs: file_server/5822ea4b2c171a78a3a4f0843b1bd8018b035f45487552d78ed5bb655ba5bb96 (00:00:00)
+Task 11 | 10:53:16 | Creating new jobs: locket/bdca75207c16d854a7f073b2f023626b862e331379430123776a88d9982a3935 (00:00:00)
+Task 11 | 10:53:16 | Creating new jobs: rep/222c1c8610ff166cb948fd3d7678de986f1c97903758abd48732e43a39c2caa2 (00:00:00)
+Task 11 | 10:53:16 | Creating new jobs: rep_windows/ba439992fd77a5a5d428562a40d1b9ec015ca9b972cbb74cffa58ec3f783bca1 (00:00:00)
+Task 11 | 10:53:16 | Creating new jobs: route_emitter/e63d2143a5d478440862ba1d5d7382dee8315805535e8f33b4a4758d275e1740 (00:00:01)
+Task 11 | 10:53:17 | Creating new jobs: route_emitter_windows/041a94aaa6c3f013bbc5f517aa26e37af5c6de2d9b81a3467189ad1aacf0d47d (00:00:00)
+Task 11 | 10:53:17 | Creating new jobs: ssh_proxy/40fa4228c25cf8189ddd6bf3f9b60a014edf82785f73d9fd8874319607360bd5 (00:00:00)
+Task 11 | 10:53:17 | Creating new jobs: vizzini/b30dbff3b64f1ab0975526e1ae6f4e9a8742dde6f8e718c5f638340cc9b036d8 (00:00:00)
+Task 11 | 10:53:17 | Release has been created: diego/2.8.0 (00:00:00)
+
+Task 11 Started  Sat Jun 16 10:51:17 UTC 2018
+Task 11 Finished Sat Jun 16 10:53:17 UTC 2018
+Task 11 Duration 00:02:00
+Task 11 done
+
+Task 17 | 10:53:17 | Downloading remote release: Downloading remote release
+Task 19
+Task 13 | 10:53:49 | Downloading remote release: Downloading remote release (00:02:23)
+Task 13 | 10:53:49 | Verifying remote release: Verifying remote release (00:00:03)
+Task 13 | 10:53:52 | Extracting release: Extracting release (00:00:05)
+Task 13 | 10:53:57 | Verifying manifest: Verifying manifest (00:00:00)
+Task 13 | 10:53:57 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 13 | 10:53:57 | Creating new packages: apparmor/0133a2288b0f71d05d89bd117c957297ad19cd19c0253236ba0ce4dedeb27186 (00:00:00)
+Task 13 | 10:53:57 | Creating new packages: autoconf/4f8914a0ada02006da32066d2e374e2a065d3acafbceb60ffd45ea146df7af1f (00:00:00)
+Task 13 | 10:53:57 | Creating new packages: automake/f11b0c20f9b9a5de955bbe1cb877e836a8841ddf88407b25ebbe9d31e3992858 (00:00:00)
+Task 13 | 10:53:57 | Creating new packages: busybox/02b86e9e891e78294e366cfc3361514b752308952f56b954f7a6ae31961f859c (00:00:00)
+Task 13 | 10:53:57 | Creating new packages: containerd/5f7067f8d3a62ff83eafd01b59630284821400afa9644bf0b279f1f67560511e (00:00:01)
+Task 13 | 10:53:58 | Creating new packages: garden-idmapper/4a1079066953806366544d9e1558bff456ac3b07f07993c9288619197a5579c0 (00:00:00)
+Task 13 | 10:53:58 | Creating new packages: golang/7bfed9f967fc1f622097d3f75ab1170f1d12ee8eab3e5664f22e2577a8331cf9 (00:00:05)
+Task 13 | 10:54:03 | Creating new packages: golang-1.10/429f43ed541faaa2b7292503311b14f676b8078a3ab4ec0deedc1bc185346235
+Task 16 | 10:54:02 | Downloading remote release: Downloading remote release (00:01:29)
+Task 16 | 10:54:03 | Verifying remote release: Verifying remote release
+Task 13 | 10:54:06 | Creating new packages: golang-1.10/429f43ed541faaa2b7292503311b14f676b8078a3ab4ec0deedc1bc185346235 (00:00:03)
+Task 13 | 10:54:06 | Creating new packages: golang-windows/b4781a2fa3cb3b37c346eb605aad084f6d4881ba3511b367b57175abc7d3fb83
+Task 17 | 10:54:07 | Downloading remote release: Downloading remote release (00:00:50)
+Task 17 | 10:54:07 | Verifying remote release: Verifying remote release
+Task 16 | 10:54:09 | Verifying remote release: Verifying remote release (00:00:06)
+Task 16 | 10:54:09 | Extracting release: Extracting release
+Task 17 | 10:54:09 | Verifying remote release: Verifying remote release (00:00:02)
+Task 17 | 10:54:09 | Extracting release: Extracting release (00:00:01)
+Task 17 | 10:54:10 | Verifying manifest: Verifying manifest (00:00:00)
+Task 17 | 10:54:11 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 17 | 10:54:11 | Creating new packages: gnatsd/4614b4e2f059001cd26d79e7ef7ece6677db3e38 (00:00:00)
+Task 17 | 10:54:11 | Creating new packages: golang-1.10-linux/1baefde79e99ed3d1df72084315333032a294e59 (00:00:01)
+Task 17 | 10:54:12 | Creating new packages: nats-common/b8bd70d9e4b9a186667e2658af74568e7ea3d564 (00:00:01)
+Task 17 | 10:54:13 | Creating new packages: nats-smoke/88d8997b3efcd94543d27afe76a17d605d45055f (00:00:00)
+Task 17 | 10:54:13 | Creating new jobs: nats/ab4d5587789da45bb0eb81f1bfd57f6077e0dbdb (00:00:00)
+Task 17 | 10:54:13 | Creating new jobs: smoke-tests/37d3d137bc9eb58eee40e971ad72a0aa1644428f (00:00:00)
+Task 17 | 10:54:13 | Release has been created: nats/24 (00:00:00)
+
+Task 17 Started  Sat Jun 16 10:53:17 UTC 2018
+Task 17 Finished Sat Jun 16 10:54:13 UTC 2018
+Task 17 Duration 00:00:56
+Task 17 done
+
+Task 20
+Task 18 | 10:54:14 | Downloading remote release: Downloading remote release
+Task 13 | 10:54:16 | Creating new packages: golang-windows/b4781a2fa3cb3b37c346eb605aad084f6d4881ba3511b367b57175abc7d3fb83 (00:00:10)
+Task 13 | 10:54:16 | Creating new packages: greenskeeper/d3568f9a7c02a5ea0b93f2b2681986d048405309c532205989ed02e01b71477f (00:00:00)
+Task 13 | 10:54:16 | Creating new packages: grootfs/52e0feea02283ebf4a84061710c9b81fd110396b3fe4da8726565ba8813dbe02 (00:00:01)
+Task 13 | 10:54:17 | Creating new packages: guardian/ab2241559531be43555e1c153f42fb7141b73cea35f472ef6b68bf64d4cf9565
+Task 16 | 10:54:17 | Extracting release: Extracting release (00:00:08)
+Task 16 | 10:54:17 | Verifying manifest: Verifying manifest (00:00:00)
+Task 16 | 10:54:18 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 16 | 10:54:18 | Creating new packages: doppler/8682084c4c078e1d9b2dcaa935a009e23fd5481b6ff078896d42790d0b3429dc
+Task 13 | 10:54:17 | Creating new packages: guardian/ab2241559531be43555e1c153f42fb7141b73cea35f472ef6b68bf64d4cf9565 (00:00:00)
+Task 13 | 10:54:17 | Creating new packages: guardian-windows/72921a0ebee61defa55dd00748d443db288d8bc8fd689fe86c94212031ebf436
+Task 16 | 10:54:18 | Creating new packages: doppler/8682084c4c078e1d9b2dcaa935a009e23fd5481b6ff078896d42790d0b3429dc (00:00:00)
+Task 16 | 10:54:18 | Creating new packages: golang1.9.6/492fce63ab236ec3d01949398623824641c8ffbd02a04d952e90b33b4359a62b
+Task 13 | 10:54:18 | Creating new packages: guardian-windows/72921a0ebee61defa55dd00748d443db288d8bc8fd689fe86c94212031ebf436 (00:00:01)
+Task 13 | 10:54:18 | Creating new packages: iptables/7a3108e45160133ba44434781ff364f395c197ba2c92db6b31cced950cf7a37a (00:00:00)
+Task 13 | 10:54:18 | Creating new packages: libseccomp/11f3a8e12b881d4d6f660d84df70d3fe99b12e1621f9e93ff66e120aec12ec96 (00:00:00)
+Task 13 | 10:54:18 | Creating new packages: libtool/3e211ee9e3aab09a9e8a9ff55ab9ce9ba81590d945640e2d29c078597db33a94 (00:00:00)
+Task 13 | 10:54:18 | Creating new packages: lzo/7ec718ef29da337d56f08e90534f561c138c2c88b576dc5da5185d85fdd42b20 (00:00:00)
+Task 13 | 10:54:18 | Creating new packages: netplugin-shim/1928a9fb4829a842ac6ea1238a8c8222147533fece3fbb17a34a00fb2287cb17 (00:00:01)
+Task 13 | 10:54:19 | Creating new packages: pkg-config/278dbe10dcc428102e39936da0c7ddd2254cb0029ec0c9b06f545b228484187a
+Task 18 | 10:54:19 | Downloading remote release: Downloading remote release (00:00:05)
+Task 18 | 10:54:19 | Verifying remote release: Verifying remote release (00:00:00)
+Task 18 | 10:54:19 | Extracting release: Extracting release (00:00:00)
+Task 18 | 10:54:19 | Verifying manifest: Verifying manifest (00:00:00)
+Task 18 | 10:54:19 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 18 | 10:54:19 | Creating new packages: nodejs-buildpack/ce4e53e42a3d18bc104b43326d8bd5cdd41971e4
+Task 13 | 10:54:19 | Creating new packages: pkg-config/278dbe10dcc428102e39936da0c7ddd2254cb0029ec0c9b06f545b228484187a (00:00:00)
+Task 13 | 10:54:19 | Creating new packages: runc/16e92ae589da1dc24b072fa7e56ab50659139f330d45368cc361e451cac33c63 (00:00:00)
+Task 13 | 10:54:19 | Creating new packages: tar/f922f97b27619f8331332e4186c1f9c63fa5b4ddd213c4a02c7ed7cf68fced21 (00:00:00)
+Task 13 | 10:54:19 | Creating new packages: thresholder/87654c832856f00922fad2604aeb4526c206dc91b5b4bf2d5300f0b9c6a72dff
+Task 18 | 10:54:19 | Creating new packages: nodejs-buildpack/ce4e53e42a3d18bc104b43326d8bd5cdd41971e4 (00:00:00)
+Task 18 | 10:54:19 | Creating new jobs: nodejs-buildpack/aa6066bb57b523ad80c31c48062e7eed6b3445e4 (00:00:00)
+Task 18 | 10:54:19 | Release has been created: nodejs-buildpack/1.6.25 (00:00:00)
+
+Task 18 Started  Sat Jun 16 10:54:14 UTC 2018
+Task 18 Finished Sat Jun 16 10:54:19 UTC 2018
+Task 18 Duration 00:00:05
+Task 18 done
+
+Task 21
+Task 19 | 10:54:19 | Downloading remote release: Downloading remote release
+Task 13 | 10:54:19 | Creating new packages: thresholder/87654c832856f00922fad2604aeb4526c206dc91b5b4bf2d5300f0b9c6a72dff (00:00:00)
+Task 13 | 10:54:19 | Creating new packages: util-linux/6310f68e8294c980de62481bced2fc915f449e3a2cc2d13a7a2a49c4a612d825 (00:00:01)
+Task 13 | 10:54:20 | Creating new packages: xfs-progs/6ce014f88e05f358621a25ce48ee036d78bdb1a935a8eb556974d3de26c8614d (00:00:00)
+Task 13 | 10:54:20 | Creating new packages: zlib/98e4e7f5eebfe3831cf312d32a44f71281fcbc2577770fffd7b9601991ab31de (00:00:00)
+Task 13 | 10:54:20 | Creating new jobs: containerd/b10b41cce4d028859894776dd5984a2240d24e857eeb054d77fc0db3ee88d476 (00:00:00)
+Task 13 | 10:54:20 | Creating new jobs: garden/6bb0076b6165c7b8e87ed3999c082aeb9c9d33b3b012772221929ac35a62be37 (00:00:00)
+Task 13 | 10:54:20 | Creating new jobs: garden-windows/a767911e690851aaf3b959e8ba779bda7de4e4856948ff7e8266a2df2ee35ae3 (00:00:00)
+Task 13 | 10:54:20 | Release has been created: garden-runc/1.14.0 (00:00:00)
+
+Task 13 Started  Sat Jun 16 10:51:26 UTC 2018
+Task 13 Finished Sat Jun 16 10:54:20 UTC 2018
+Task 13 Duration 00:02:54
+Task 13 done
+
+Task 22
+Task 20 | 10:54:21 | Downloading remote release: Downloading remote release
+Task 21 | 10:54:22 | Downloading remote release: Downloading remote release
+Task 19 | 10:54:22 | Downloading remote release: Downloading remote release (00:00:03)
+Task 19 | 10:54:22 | Verifying remote release: Verifying remote release (00:00:00)
+Task 19 | 10:54:22 | Extracting release: Extracting release (00:00:00)
+Task 19 | 10:54:22 | Verifying manifest: Verifying manifest (00:00:00)
+Task 19 | 10:54:22 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 19 | 10:54:22 | Creating new packages: php-buildpack/018d3ff34a5774e4133abdee6e32a80d71b8cad0 (00:00:00)
+Task 19 | 10:54:22 | Creating new jobs: php-buildpack/7470895d95cb72d4cb06972e2980207ae01f25d1 (00:00:00)
+Task 19 | 10:54:22 | Release has been created: php-buildpack/4.3.56 (00:00:00)
+
+Task 19 Started  Sat Jun 16 10:54:19 UTC 2018
+Task 19 Finished Sat Jun 16 10:54:22 UTC 2018
+Task 19 Duration 00:00:03
 Task 19 done
 
-Task 24
-Task 21 | 22:55:04 | Downloading remote release: Downloading remote release (00:00:07)
-Task 21 | 22:55:04 | Verifying remote release: Verifying remote release (00:00:00)
-Task 21 | 22:55:04 | Extracting release: Extracting release (00:00:00)
-Task 21 | 22:55:04 | Verifying manifest: Verifying manifest (00:00:00)
-Task 21 | 22:55:04 | Resolving package dependencies: Resolving package dependencies (00:00:00)
-Task 21 | 22:55:04 | Creating new packages: ruby-buildpack/23642a59353010e1c89d8ab57a8c4022e3bf7c74 (00:00:00)
-Task 21 | 22:55:04 | Creating new jobs: ruby-buildpack/e183b1aeac672f319fe32b35b2e3564581d43684 (00:00:00)
-Task 21 | 22:55:04 | Release has been created: ruby-buildpack/1.7.18 (00:00:00)
+Task 23
+Task 16 | 10:54:24 | Creating new packages: golang1.9.6/492fce63ab236ec3d01949398623824641c8ffbd02a04d952e90b33b4359a62b (00:00:06)
+Task 16 | 10:54:24 | Creating new packages: golang1.9.6-windows/5d245acf3512e8ac59dedc7fc817692dda814e1898e537c639728d1936616735
+Task 20 | 10:54:24 | Downloading remote release: Downloading remote release (00:00:03)
+Task 20 | 10:54:24 | Verifying remote release: Verifying remote release (00:00:00)
+Task 20 | 10:54:24 | Extracting release: Extracting release (00:00:01)
+Task 20 | 10:54:25 | Verifying manifest: Verifying manifest (00:00:00)
+Task 20 | 10:54:25 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 20 | 10:54:25 | Creating new packages: python-buildpack/83edaa16c9f53e86b1813def3802fdd8e5e02e2f
+Task 22 | 10:54:25 | Downloading remote release: Downloading remote release
+Task 20 | 10:54:25 | Creating new packages: python-buildpack/83edaa16c9f53e86b1813def3802fdd8e5e02e2f (00:00:00)
+Task 20 | 10:54:25 | Creating new jobs: python-buildpack/c5421aef7767e282e2191887b9379b03e9db4b2f (00:00:00)
+Task 20 | 10:54:25 | Release has been created: python-buildpack/1.6.17 (00:00:00)
 
-Task 21 Started  Mon Jun  4 22:54:57 UTC 2018
-Task 21 Finished Mon Jun  4 22:55:04 UTC 2018
-Task 21 Duration 00:00:07
-Task 21 done
-
-Task 23 | 22:55:05 | Downloading remote release: Downloading remote release
-Task 22 | 22:55:06 | Downloading remote release: Downloading remote release (00:00:06)
-Task 22 | 22:55:06 | Verifying remote release: Verifying remote release (00:00:00)
-Task 22 | 22:55:06 | Extracting release: Extracting release (00:00:00)
-Task 22 | 22:55:06 | Verifying manifest: Verifying manifest (00:00:00)
-Task 22 | 22:55:06 | Resolving package dependencies: Resolving package dependencies (00:00:00)
-Task 22 | 22:55:06 | Creating new packages: staticfile-buildpack/1af6f1c8b52f0b4aadc390707bf0143237c57e95 (00:00:00)
-Task 22 | 22:55:06 | Creating new jobs: staticfile-buildpack/f6198074ff2e538ccaf124a685465d92ab38fc6c (00:00:00)
-Task 22 | 22:55:06 | Release has been created: staticfile-buildpack/1.4.27 (00:00:00)
-
-Task 22 Started  Mon Jun  4 22:55:00 UTC 2018
-Task 22 Finished Mon Jun  4 22:55:06 UTC 2018
-Task 22 Duration 00:00:06
-Task 22 done
-
-Task 24 | 22:55:06 | Downloading remote release: Downloading remote release
-Task 20 | 22:55:46 | Downloading remote release: Downloading remote release (00:00:56)
-Task 20 | 22:55:46 | Verifying remote release: Verifying remote release (00:00:01)
-Task 20 | 22:55:47 | Extracting release: Extracting release
-Task 23 | 22:55:48 | Downloading remote release: Downloading remote release (00:00:43)
-Task 23 | 22:55:48 | Verifying remote release: Verifying remote release (00:00:01)
-Task 23 | 22:55:49 | Extracting release: Extracting release
-Task 20 | 22:55:50 | Extracting release: Extracting release (00:00:03)
-Task 20 | 22:55:50 | Verifying manifest: Verifying manifest (00:00:00)
-Task 20 | 22:55:50 | Resolving package dependencies: Resolving package dependencies (00:00:00)
-Task 20 | 22:55:50 | Creating new packages: acceptance_tests/f808296550d26de884f199ba68300ad48ad59322d0bcf61adcff435f64a42f1c (00:00:00)
-Task 20 | 22:55:50 | Creating new packages: cf-cli/c1b5de31d643bc91ef94d717c3b1898413cd529665d3d0a5b76e953521beed5e (00:00:01)
-Task 20 | 22:55:51 | Creating new packages: golang-1.10-linux/1baefde79e99ed3d1df72084315333032a294e59
-Task 23 | 22:55:51 | Extracting release: Extracting release (00:00:02)
-Task 23 | 22:55:51 | Verifying manifest: Verifying manifest (00:00:00)
-Task 23 | 22:55:51 | Resolving package dependencies: Resolving package dependencies (00:00:00)
-Task 23 | 22:55:51 | Creating new packages: golang1.9.4/56d6cf267fef3a0a12c73da875e374ea19d6f23975808d813230cb904466404f (00:00:09)
-Task 23 | 22:56:00 | Creating new packages: statsd_injector/0a87e3580066d3ad0ddad93b853ad2ac0c6af638aaf6fbc902176b2398eeb5b0 (00:00:00)
-Task 23 | 22:56:00 | Creating new jobs: statsd_injector/59cdb3bb81ba2db9745b206929e7c32a32efd3f5b17b510a49b4bfffa053c3eb (00:00:00)
-Task 23 | 22:56:00 | Release has been created: statsd-injector/1.3.0 (00:00:00)
-
-Task 23 Started  Mon Jun  4 22:55:05 UTC 2018
-Task 23 Finished Mon Jun  4 22:56:00 UTC 2018
-Task 23 Duration 00:00:55
-Task 23 done
-
-Task 20 | 22:56:01 | Creating new packages: golang-1.10-linux/1baefde79e99ed3d1df72084315333032a294e59 (00:00:10)
-Task 20 | 22:56:01 | Creating new packages: golang-1.9-linux/39df05b363c89f1abccf002e7b3a7e996bfdacfd (00:00:07)
-Task 20 | 22:56:08 | Creating new packages: gorouter/ec7ada167a6ee89a918a3c5cb973bc8afb53121bd80a8d8e096ac2e22e7c7329 (00:00:00)
-Task 20 | 22:56:08 | Creating new packages: haproxy/c111430f80a77acf22cf12d4d159b2bc1599e16c986610d9b70c1685da9de8a1 (00:00:00)
-Task 20 | 22:56:08 | Creating new packages: route_registrar/6b38c301140d9999c3918f998ed1c3d5037b1341d732b282c15adbcf1a1ef4e4 (00:00:00)
-Task 20 | 22:56:08 | Creating new packages: routing-api/541b8a133dcb865d91fa7a1d2ab7b81bd461f9a40a987a2671fe757967aed80f (00:00:00)
-Task 20 | 22:56:08 | Creating new packages: routing_utils/ba119554fd15e7073fbe45f7ca15beeed1e322b02cdf7ec99e1c2948d60fd3f4 (00:00:00)
-Task 20 | 22:56:08 | Creating new packages: rtr/87fa3a87a1eda5f335745c35b90802f8cc9adb4da7ec54e0f48d0ba7bd417cd5 (00:00:00)
-Task 20 | 22:56:08 | Creating new packages: tcp_router/fbcc41b9f8141f5a683134d6c7250368755834587b91935be6a1ff1c35d5d654 (00:00:00)
-Task 20 | 22:56:08 | Creating new jobs: acceptance_tests/ba4928e9cd3023d0586165624ca1680fba1a79fb748a0692d1248beec6d76e63 (00:00:01)
-Task 20 | 22:56:09 | Creating new jobs: bbr-routingdb/794530916f5308c8baf8cfb5630ec37ac850264ca3d544e31d21fbca4397e3fa (00:00:00)
-Task 20 | 22:56:09 | Creating new jobs: gorouter/a3f92893ac45952cdd45f4eabeb9c745af74fe6ef335b549e9de13579d657cf5 (00:00:00)
-Task 20 | 22:56:09 | Creating new jobs: route_registrar/fba3cf4b690213ba59ab48c9515f253854118b55ca4c88193bdba464b41560a1 (00:00:00)
-Task 20 | 22:56:09 | Creating new jobs: routing-api/b1c9a27abb72181fec76cb4b9b405ae8011013256290575dacb17f3d1a484253 (00:00:00)
-Task 20 | 22:56:09 | Creating new jobs: smoke_tests/75534953fc6686ddb5a7920d487508b0cc777111174dc6a28488ac757a2a5900 (00:00:00)
-Task 20 | 22:56:09 | Creating new jobs: tcp_router/7185e916744c5741980eb136bc2969a24c43008a63462e3b16110b92d6d3333c (00:00:00)
-Task 20 | 22:56:09 | Release has been created: routing/0.178.0 (00:00:00)
-
-Task 20 Started  Mon Jun  4 22:54:50 UTC 2018
-Task 20 Finished Mon Jun  4 22:56:09 UTC 2018
-Task 20 Duration 00:01:19
+Task 20 Started  Sat Jun 16 10:54:21 UTC 2018
+Task 20 Finished Sat Jun 16 10:54:25 UTC 2018
+Task 20 Duration 00:00:04
 Task 20 done
 
-Task 24 | 22:56:19 | Downloading remote release: Downloading remote release (00:01:13)
-Task 24 | 22:56:19 | Verifying remote release: Verifying remote release (00:00:00)
-Task 24 | 22:56:19 | Extracting release: Extracting release (00:00:03)
-Task 24 | 22:56:22 | Verifying manifest: Verifying manifest (00:00:00)
-Task 24 | 22:56:22 | Resolving package dependencies: Resolving package dependencies (00:00:00)
-Task 24 | 22:56:22 | Creating new packages: golang-1.10-linux/1baefde79e99ed3d1df72084315333032a294e59 (00:00:05)
-Task 24 | 22:56:27 | Creating new packages: uaa/8327a6c2f86c3a2824cd5fbc7210c41550ab632a (00:00:02)
-Task 24 | 22:56:29 | Creating new packages: uaa_postgres/42df2bc21212094a1b61e3db697ab1c61260cb59 (00:00:00)
-Task 24 | 22:56:29 | Creating new packages: uaa_rotator/ea93fb4e077cc3886a5dbfb402e6480f94321af1 (00:00:00)
-Task 24 | 22:56:29 | Creating new packages: uaa_utils/90097ea98715a560867052a2ff0916ec3460aabb (00:00:00)
-Task 24 | 22:56:29 | Creating new jobs: bbr-uaadb/3a3b455d3de6d7f3e5196f5fe8efe63f1b18b160 (00:00:00)
-Task 24 | 22:56:29 | Creating new jobs: uaa/b95ba29ad886bfcf5c8e865d0bda7a81a44a6c88 (00:00:00)
-Task 24 | 22:56:29 | Creating new jobs: uaa_key_rotator/9f01e290f1086570487a3664a14ca86040d55141 (00:00:00)
-Task 24 | 22:56:29 | Creating new jobs: uaa_postgres/79fe0a96f112f08932b265cabc43f473c77e607c (00:00:00)
-Task 24 | 22:56:29 | Release has been created: uaa/59 (00:00:00)
+Task 24
+Task 16 | 10:54:26 | Creating new packages: golang1.9.6-windows/5d245acf3512e8ac59dedc7fc817692dda814e1898e537c639728d1936616735 (00:00:02)
+Task 16 | 10:54:26 | Creating new packages: loggregator_trafficcontroller/3dcbaa6050fe27919cebe7368b8b4826bc255e21573eacadb023b85763f67304 (00:00:00)
+Task 16 | 10:54:26 | Creating new packages: metron_agent/c77a118e47f0937c8a0281f10d63918dfcde940beb475a9a83ea049f0026e469 (00:00:00)
+Task 16 | 10:54:26 | Creating new packages: metron_agent_windows/c5693a5b2aa6b4c6ed98d3d9dc337488be88c00e3ed8ee6d9ae728fed105f319 (00:00:00)
+Task 16 | 10:54:26 | Creating new packages: reverse_log_proxy/23192ffec4dc63f763e0fb9e9ea7c21d3ca4118e8171ebbc602a28c3f8d71ec3 (00:00:01)
+Task 16 | 10:54:27 | Creating new jobs: doppler/e903b3b3c0a037c82653d6006bb41ffe664a9670fa56aab037e78921d3004f99 (00:00:00)
+Task 16 | 10:54:27 | Creating new jobs: loggregator_trafficcontroller/52dd6aab9ca50c0a4322acbfeeca2f28c9c052d1a28088b826ea7040d0b091d3 (00:00:00)
+Task 16 | 10:54:27 | Creating new jobs: metron_agent/1b206c6e03905fc7aad66837c86ec5a08081811a360b10615fea31f790ca1977 (00:00:00)
+Task 16 | 10:54:27 | Creating new jobs: metron_agent_windows/a3a6636d495584fee0db60a208880f457da83f07cb7504675a80c5c51eaee69c (00:00:00)
+Task 16 | 10:54:27 | Creating new jobs: reverse_log_proxy/60833bebe4cf6043949619f9747f482be836bb86efdc76f8ce0ea57e3f715c52 (00:00:00)
+Task 16 | 10:54:27 | Release has been created: loggregator/102.2 (00:00:00)
+Task 23 | 10:54:27 | Downloading remote release: Downloading remote release
 
-Task 24 Started  Mon Jun  4 22:55:06 UTC 2018
-Task 24 Finished Mon Jun  4 22:56:29 UTC 2018
-Task 24 Duration 00:01:23
+Task 16 Started  Sat Jun 16 10:52:33 UTC 2018
+Task 16 Finished Sat Jun 16 10:54:27 UTC 2018
+Task 16 Duration 00:01:54
+Task 16 done
+
+Task 25
+Task 22 | 10:54:29 | Downloading remote release: Downloading remote release (00:00:04)
+Task 22 | 10:54:29 | Verifying remote release: Verifying remote release (00:00:00)
+Task 22 | 10:54:29 | Extracting release: Extracting release (00:00:00)
+Task 22 | 10:54:29 | Verifying manifest: Verifying manifest (00:00:00)
+Task 22 | 10:54:29 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 22 | 10:54:29 | Creating new packages: ruby-buildpack/0c84cc7b98e795f6d4905df98ab8ba091182db2c (00:00:00)
+Task 22 | 10:54:29 | Creating new jobs: ruby-buildpack/e183b1aeac672f319fe32b35b2e3564581d43684 (00:00:00)
+Task 22 | 10:54:29 | Release has been created: ruby-buildpack/1.7.19 (00:00:00)
+
+Task 22 Started  Sat Jun 16 10:54:25 UTC 2018
+Task 22 Finished Sat Jun 16 10:54:29 UTC 2018
+Task 22 Duration 00:00:04
+Task 22 done
+
+Task 24 | 10:54:29 | Downloading remote release: Downloading remote release
+Task 23 | 10:54:33 | Downloading remote release: Downloading remote release (00:00:06)
+Task 23 | 10:54:33 | Verifying remote release: Verifying remote release (00:00:00)
+Task 23 | 10:54:33 | Extracting release: Extracting release (00:00:00)
+Task 23 | 10:54:33 | Verifying manifest: Verifying manifest (00:00:00)
+Task 23 | 10:54:33 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 23 | 10:54:33 | Creating new packages: staticfile-buildpack/2941e334d62da5bde134033451f3f2f9c8b88163 (00:00:01)
+Task 23 | 10:54:34 | Creating new jobs: staticfile-buildpack/f6198074ff2e538ccaf124a685465d92ab38fc6c (00:00:00)
+Task 23 | 10:54:34 | Release has been created: staticfile-buildpack/1.4.28 (00:00:00)
+
+Task 23 Started  Sat Jun 16 10:54:27 UTC 2018
+Task 23 Finished Sat Jun 16 10:54:34 UTC 2018
+Task 23 Duration 00:00:07
+Task 23 done
+
+Task 25 | 10:54:34 | Downloading remote release: Downloading remote release
+Task 21 | 10:55:19 | Downloading remote release: Downloading remote release (00:00:57)
+Task 21 | 10:55:19 | Verifying remote release: Verifying remote release (00:00:00)
+Task 21 | 10:55:19 | Extracting release: Extracting release (00:00:02)
+Task 21 | 10:55:21 | Verifying manifest: Verifying manifest (00:00:00)
+Task 21 | 10:55:22 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 21 | 10:55:22 | Creating new packages: acceptance_tests/f808296550d26de884f199ba68300ad48ad59322d0bcf61adcff435f64a42f1c (00:00:00)
+Task 21 | 10:55:22 | Creating new packages: cf-cli/c1b5de31d643bc91ef94d717c3b1898413cd529665d3d0a5b76e953521beed5e (00:00:00)
+Task 21 | 10:55:22 | Creating new packages: golang-1.10-linux/1baefde79e99ed3d1df72084315333032a294e59
+Task 24 | 10:55:25 | Downloading remote release: Downloading remote release (00:00:56)
+Task 24 | 10:55:25 | Verifying remote release: Verifying remote release (00:00:00)
+Task 24 | 10:55:25 | Extracting release: Extracting release (00:00:04)
+Task 24 | 10:55:29 | Verifying manifest: Verifying manifest (00:00:00)
+Task 24 | 10:55:29 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 24 | 10:55:29 | Creating new packages: golang1.9.4/56d6cf267fef3a0a12c73da875e374ea19d6f23975808d813230cb904466404f
+Task 21 | 10:55:36 | Creating new packages: golang-1.10-linux/1baefde79e99ed3d1df72084315333032a294e59 (00:00:14)
+Task 21 | 10:55:36 | Creating new packages: golang-1.9-linux/39df05b363c89f1abccf002e7b3a7e996bfdacfd
+Task 24 | 10:55:37 | Creating new packages: golang1.9.4/56d6cf267fef3a0a12c73da875e374ea19d6f23975808d813230cb904466404f (00:00:08)
+Task 24 | 10:55:37 | Creating new packages: statsd_injector/0a87e3580066d3ad0ddad93b853ad2ac0c6af638aaf6fbc902176b2398eeb5b0 (00:00:00)
+Task 24 | 10:55:37 | Creating new jobs: statsd_injector/59cdb3bb81ba2db9745b206929e7c32a32efd3f5b17b510a49b4bfffa053c3eb (00:00:00)
+Task 24 | 10:55:37 | Release has been created: statsd-injector/1.3.0 (00:00:00)
+
+Task 24 Started  Sat Jun 16 10:54:29 UTC 2018
+Task 24 Finished Sat Jun 16 10:55:37 UTC 2018
+Task 24 Duration 00:01:08
 Task 24 done
+
+Task 21 | 10:55:42 | Creating new packages: golang-1.9-linux/39df05b363c89f1abccf002e7b3a7e996bfdacfd (00:00:06)
+Task 21 | 10:55:42 | Creating new packages: gorouter/ec7ada167a6ee89a918a3c5cb973bc8afb53121bd80a8d8e096ac2e22e7c7329 (00:00:00)
+Task 21 | 10:55:43 | Creating new packages: haproxy/c111430f80a77acf22cf12d4d159b2bc1599e16c986610d9b70c1685da9de8a1 (00:00:00)
+Task 21 | 10:55:43 | Creating new packages: route_registrar/6b38c301140d9999c3918f998ed1c3d5037b1341d732b282c15adbcf1a1ef4e4 (00:00:00)
+Task 21 | 10:55:43 | Creating new packages: routing-api/541b8a133dcb865d91fa7a1d2ab7b81bd461f9a40a987a2671fe757967aed80f (00:00:00)
+Task 21 | 10:55:43 | Creating new packages: routing_utils/ba119554fd15e7073fbe45f7ca15beeed1e322b02cdf7ec99e1c2948d60fd3f4 (00:00:00)
+Task 21 | 10:55:43 | Creating new packages: rtr/87fa3a87a1eda5f335745c35b90802f8cc9adb4da7ec54e0f48d0ba7bd417cd5 (00:00:00)
+Task 21 | 10:55:43 | Creating new packages: tcp_router/fbcc41b9f8141f5a683134d6c7250368755834587b91935be6a1ff1c35d5d654 (00:00:00)
+Task 21 | 10:55:43 | Creating new jobs: acceptance_tests/ba4928e9cd3023d0586165624ca1680fba1a79fb748a0692d1248beec6d76e63 (00:00:00)
+Task 21 | 10:55:43 | Creating new jobs: bbr-routingdb/794530916f5308c8baf8cfb5630ec37ac850264ca3d544e31d21fbca4397e3fa (00:00:00)
+Task 21 | 10:55:43 | Creating new jobs: gorouter/a3f92893ac45952cdd45f4eabeb9c745af74fe6ef335b549e9de13579d657cf5 (00:00:00)
+Task 21 | 10:55:44 | Creating new jobs: route_registrar/fba3cf4b690213ba59ab48c9515f253854118b55ca4c88193bdba464b41560a1 (00:00:00)
+Task 21 | 10:55:44 | Creating new jobs: routing-api/b1c9a27abb72181fec76cb4b9b405ae8011013256290575dacb17f3d1a484253 (00:00:00)
+Task 21 | 10:55:44 | Creating new jobs: smoke_tests/75534953fc6686ddb5a7920d487508b0cc777111174dc6a28488ac757a2a5900 (00:00:00)
+Task 21 | 10:55:44 | Creating new jobs: tcp_router/7185e916744c5741980eb136bc2969a24c43008a63462e3b16110b92d6d3333c (00:00:00)
+Task 21 | 10:55:44 | Release has been created: routing/0.178.0 (00:00:00)
+
+Task 21 Started  Sat Jun 16 10:54:22 UTC 2018
+Task 21 Finished Sat Jun 16 10:55:44 UTC 2018
+Task 21 Duration 00:01:22
+Task 21 done
+
+Task 25 | 10:55:57 | Downloading remote release: Downloading remote release (00:01:23)
+Task 25 | 10:55:57 | Verifying remote release: Verifying remote release (00:00:01)
+Task 25 | 10:55:58 | Extracting release: Extracting release (00:00:02)
+Task 25 | 10:56:00 | Verifying manifest: Verifying manifest (00:00:00)
+Task 25 | 10:56:00 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 25 | 10:56:00 | Creating new packages: golang-1.10-linux/1baefde79e99ed3d1df72084315333032a294e59 (00:00:05)
+Task 25 | 10:56:05 | Creating new packages: uaa/8327a6c2f86c3a2824cd5fbc7210c41550ab632a (00:00:04)
+Task 25 | 10:56:09 | Creating new packages: uaa_postgres/42df2bc21212094a1b61e3db697ab1c61260cb59 (00:00:01)
+Task 25 | 10:56:10 | Creating new packages: uaa_rotator/ea93fb4e077cc3886a5dbfb402e6480f94321af1 (00:00:00)
+Task 25 | 10:56:10 | Creating new packages: uaa_utils/90097ea98715a560867052a2ff0916ec3460aabb (00:00:00)
+Task 25 | 10:56:10 | Creating new jobs: bbr-uaadb/3a3b455d3de6d7f3e5196f5fe8efe63f1b18b160 (00:00:00)
+Task 25 | 10:56:10 | Creating new jobs: uaa/b95ba29ad886bfcf5c8e865d0bda7a81a44a6c88 (00:00:00)
+Task 25 | 10:56:10 | Creating new jobs: uaa_key_rotator/9f01e290f1086570487a3664a14ca86040d55141 (00:00:00)
+Task 25 | 10:56:10 | Creating new jobs: uaa_postgres/79fe0a96f112f08932b265cabc43f473c77e607c (00:00:00)
+Task 25 | 10:56:10 | Release has been created: uaa/59 (00:00:00)
+
+Task 25 Started  Sat Jun 16 10:54:34 UTC 2018
+Task 25 Finished Sat Jun 16 10:56:10 UTC 2018
+Task 25 Duration 00:01:36
+Task 25 done
 + azs:
 + - name: z1
 + - name: z2
@@ -673,17 +686,21 @@ Task 24 done
 + stemcells:
 + - alias: default
 +   os: ubuntu-trusty
-+   version: '3586.16'
++   version: '3586.23'
   
 + releases:
 + - name: binary-buildpack
-+   sha1: e903612106b20b6cf969be83dfb2bdd0bb4d9db2
-+   url: https://bosh.io/d/github.com/cloudfoundry/binary-buildpack-release?v=1.0.18
-+   version: 1.0.18
++   sha1: fa71efbd352c11f31ab12b91c7542b8e930ec4b1
++   url: https://bosh.io/d/github.com/cloudfoundry/binary-buildpack-release?v=1.0.19
++   version: 1.0.19
++ - name: bpm
++   sha1: 4f0f239abdc801d71de9063625aa56e3c42634b5
++   url: https://bosh.io/d/github.com/cloudfoundry-incubator/bpm-release?v=0.6.0
++   version: 0.6.0
 + - name: capi
-+   sha1: 7186a29f2dd437479731ed267ccd4e60d2b27606
-+   url: https://bosh.io/d/github.com/cloudfoundry/capi-release?v=1.59.0
-+   version: 1.59.0
++   sha1: cdd58103ab9a862f5afa358ac276a7ed7a50ea80
++   url: https://bosh.io/d/github.com/cloudfoundry/capi-release?v=1.60.0
++   version: 1.60.0
 + - name: cf-mysql
 +   sha1: 383f70fd4d776bf91d9043d8fd9ad79516cc8478
 +   url: https://bosh.io/d/github.com/cloudfoundry/cf-mysql-release?v=36.14.0
@@ -701,9 +718,9 @@ Task 24 done
 +   url: https://bosh.io/d/github.com/cloudfoundry/cf-syslog-drain-release?v=6.5
 +   version: '6.5'
 + - name: cflinuxfs2
-+   sha1: 2548d659203f59a937bdf5fe4b587dc07a86046e
-+   url: https://bosh.io/d/github.com/cloudfoundry/cflinuxfs2-release?v=1.211.0
-+   version: 1.211.0
++   sha1: 7aa46dfc98fc9c28254f267e44cdc2abce3ffa12
++   url: https://bosh.io/d/github.com/cloudfoundry/cflinuxfs2-release?v=1.212.0
++   version: 1.212.0
 + - name: consul
 +   sha1: 3596fa1a1692d9e48d2e28789b60e0c72e984d31
 +   url: https://bosh.io/d/github.com/cloudfoundry-incubator/consul-release?v=193
@@ -713,53 +730,53 @@ Task 24 done
 +   url: https://bosh.io/d/github.com/cloudfoundry/diego-release?v=2.8.0
 +   version: 2.8.0
 + - name: dotnet-core-buildpack
-+   sha1: acc2cda9b79d875842f82e888ceb88fea377a88b
-+   url: https://bosh.io/d/github.com/cloudfoundry/dotnet-core-buildpack-release?v=2.0.6
-+   version: 2.0.6
++   sha1: a4d00973773e6cf30daa0a9004e4e52555f84317
++   url: https://bosh.io/d/github.com/cloudfoundry/dotnet-core-buildpack-release?v=2.0.7
++   version: 2.0.7
 + - name: garden-runc
-+   sha1: 8868157d567c0e51eb19d3ccadeed951c7616975
-+   url: https://bosh.io/d/github.com/cloudfoundry/garden-runc-release?v=1.13.3
-+   version: 1.13.3
++   sha1: be5e6d6a263be1437d99dc5e818deeb8ab2a03a4
++   url: https://bosh.io/d/github.com/cloudfoundry/garden-runc-release?v=1.14.0
++   version: 1.14.0
 + - name: go-buildpack
-+   sha1: 7ed54d5d1449c946eead324089e79faadf87a87a
-+   url: https://bosh.io/d/github.com/cloudfoundry/go-buildpack-release?v=1.8.21
-+   version: 1.8.21
++   sha1: 937b84449f7203266f9cb5f44941cc96a2b9d05a
++   url: https://bosh.io/d/github.com/cloudfoundry/go-buildpack-release?v=1.8.23
++   version: 1.8.23
 + - name: java-buildpack
 +   sha1: 4932d769feb5987fdd6fcc60c9c132746e14dade
 +   url: https://bosh.io/d/github.com/cloudfoundry/java-buildpack-release?v=4.12
 +   version: '4.12'
 + - name: loggregator
-+   sha1: 61949aff688e368a11d03daa18855800517666d3
-+   url: https://bosh.io/d/github.com/cloudfoundry/loggregator-release?v=102.1
-+   version: '102.1'
++   sha1: 1ff4ad235be2720ed119cbb775f6ffdb712e53ea
++   url: https://bosh.io/d/github.com/cloudfoundry/loggregator-release?v=102.2
++   version: '102.2'
 + - name: nats
 +   sha1: 65d8efc68d86a03d0f51562e16763075c37e419d
 +   url: https://bosh.io/d/github.com/cloudfoundry/nats-release?v=24
 +   version: '24'
 + - name: nodejs-buildpack
-+   sha1: a180c41f57659298a87cd6457b38697c4be14e0a
-+   url: https://bosh.io/d/github.com/cloudfoundry/nodejs-buildpack-release?v=1.6.23
-+   version: 1.6.23
++   sha1: 70b7cf1267ef2df2ce5d6bff54ac312e2f441813
++   url: https://bosh.io/d/github.com/cloudfoundry/nodejs-buildpack-release?v=1.6.25
++   version: 1.6.25
 + - name: php-buildpack
-+   sha1: dcaae5abdb771de2c5d99c064fc52b22a662130c
-+   url: https://bosh.io/d/github.com/cloudfoundry/php-buildpack-release?v=4.3.54
-+   version: 4.3.54
++   sha1: 29db7c0ad6fb939d43dff16af19263a0b534d3a2
++   url: https://bosh.io/d/github.com/cloudfoundry/php-buildpack-release?v=4.3.56
++   version: 4.3.56
 + - name: python-buildpack
-+   sha1: 5ee37271b3fa18fd6e5c1f0687db60c106e49995
-+   url: https://bosh.io/d/github.com/cloudfoundry/python-buildpack-release?v=1.6.15
-+   version: 1.6.15
++   sha1: 8dec8296ad14ddbee0a5335e1397644f115037a5
++   url: https://bosh.io/d/github.com/cloudfoundry/python-buildpack-release?v=1.6.17
++   version: 1.6.17
 + - name: routing
 +   sha1: b07e1e0e2d7bd56b754d065867649f276896f783
 +   url: https://bosh.io/d/github.com/cloudfoundry-incubator/cf-routing-release?v=0.178.0
 +   version: 0.178.0
 + - name: ruby-buildpack
-+   sha1: 00a7af65f477429cc802da4b116e9f94ade276f1
-+   url: https://bosh.io/d/github.com/cloudfoundry/ruby-buildpack-release?v=1.7.18
-+   version: 1.7.18
++   sha1: 07d3353f5ab9af26be10790f0a440dee2ae7a643
++   url: https://bosh.io/d/github.com/cloudfoundry/ruby-buildpack-release?v=1.7.19
++   version: 1.7.19
 + - name: staticfile-buildpack
-+   sha1: b4abd75f2b34e4eac2ee9814a8405f580c193a07
-+   url: https://bosh.io/d/github.com/cloudfoundry/staticfile-buildpack-release?v=1.4.27
-+   version: 1.4.27
++   sha1: ba9d9e68cf41029e2aec6a6acd3e5d578f6dd298
++   url: https://bosh.io/d/github.com/cloudfoundry/staticfile-buildpack-release?v=1.4.28
++   version: 1.4.28
 + - name: statsd-injector
 +   sha1: 5b9357484032e5217cead8f20362f5802c751de0
 +   url: https://bosh.io/d/github.com/cloudfoundry/statsd-injector-release?v=1.3.0
@@ -795,6 +812,13 @@ Task 24 done
 +             key: "<redacted>"
 +     release: loggregator
 +   name: metron_agent
++ - include:
++     stemcell:
++     - os: ubuntu-trusty
++   jobs:
++   - name: bpm
++     release: bpm
++   name: bpm
   
 + instance_groups:
 + - azs:
@@ -2236,7 +2260,7 @@ Task 24 done
 +     serial: true
 +   vm_type: minimal
   
-+ manifest_version: v1.38.0
++ manifest_version: v1.40.0
   
 + name: cf
   
@@ -2245,288 +2269,269 @@ Task 24 done
 Continue? [yN]: y
 
 
-Task 25
+Task 26
 
-Task 25 | 22:56:46 | Preparing deployment: Preparing deployment (00:00:03)
-Task 25 | 22:56:53 | Preparing package compilation: Finding packages to compile (00:00:00)
-Task 25 | 22:56:53 | Compiling packages: libtool/3e211ee9e3aab09a9e8a9ff55ab9ce9ba81590d945640e2d29c078597db33a94
-Task 25 | 22:56:53 | Compiling packages: autoconf/4f8914a0ada02006da32066d2e374e2a065d3acafbceb60ffd45ea146df7af1f
-Task 25 | 22:56:53 | Compiling packages: tar/f922f97b27619f8331332e4186c1f9c63fa5b4ddd213c4a02c7ed7cf68fced21
-Task 25 | 22:56:53 | Compiling packages: busybox/02b86e9e891e78294e366cfc3361514b752308952f56b954f7a6ae31961f859c
-Task 25 | 22:56:53 | Compiling packages: apparmor/0133a2288b0f71d05d89bd117c957297ad19cd19c0253236ba0ce4dedeb27186
-Task 25 | 22:56:53 | Compiling packages: libseccomp/11f3a8e12b881d4d6f660d84df70d3fe99b12e1621f9e93ff66e120aec12ec96
-Task 25 | 22:58:05 | Compiling packages: busybox/02b86e9e891e78294e366cfc3361514b752308952f56b954f7a6ae31961f859c (00:01:12)
-Task 25 | 22:58:05 | Compiling packages: pkg-config/278dbe10dcc428102e39936da0c7ddd2254cb0029ec0c9b06f545b228484187a
-Task 25 | 22:58:16 | Compiling packages: autoconf/4f8914a0ada02006da32066d2e374e2a065d3acafbceb60ffd45ea146df7af1f (00:01:23)
-Task 25 | 22:58:16 | Compiling packages: golang/7bfed9f967fc1f622097d3f75ab1170f1d12ee8eab3e5664f22e2577a8331cf9
-Task 25 | 22:58:58 | Compiling packages: libtool/3e211ee9e3aab09a9e8a9ff55ab9ce9ba81590d945640e2d29c078597db33a94 (00:02:05)
-Task 25 | 22:58:58 | Compiling packages: cflinuxfs2/ba83f71192f8882456f95fdd425e5c3871259446
-Task 25 | 22:59:05 | Compiling packages: libseccomp/11f3a8e12b881d4d6f660d84df70d3fe99b12e1621f9e93ff66e120aec12ec96 (00:02:12)
-Task 25 | 22:59:05 | Compiling packages: haproxy/c111430f80a77acf22cf12d4d159b2bc1599e16c986610d9b70c1685da9de8a1
-Task 25 | 23:00:33 | Compiling packages: golang/7bfed9f967fc1f622097d3f75ab1170f1d12ee8eab3e5664f22e2577a8331cf9 (00:02:17)
-Task 25 | 23:00:33 | Compiling packages: staticfile-buildpack/1af6f1c8b52f0b4aadc390707bf0143237c57e95 (00:00:02)
-Task 25 | 23:00:35 | Compiling packages: ruby-buildpack/23642a59353010e1c89d8ab57a8c4022e3bf7c74 (00:00:02)
-Task 25 | 23:00:37 | Compiling packages: python-buildpack/d6abd2812d1e01a8f4bcd18974aa7dcc6b772c6d (00:00:02)
-Task 25 | 23:00:39 | Compiling packages: php-buildpack/3655185b7c5b37b31865042463d7d66109c6224f (00:00:02)
-Task 25 | 23:00:41 | Compiling packages: nodejs-buildpack/6b44b528026ddb0e4872f7acb5fdaf124fc87f01 (00:00:02)
-Task 25 | 23:00:43 | Compiling packages: java-buildpack/f10829b5fe1a61835e0f75c5a5407407fd7bf9ab (00:00:01)
-Task 25 | 23:00:44 | Compiling packages: go-buildpack/26a26e37cbc33f2bb8fde3ea31382b62b3c3dd40 (00:00:02)
-Task 25 | 23:00:46 | Compiling packages: dotnet-core-buildpack/eddc4b31062721c546b401f3febd045a767c9dad (00:00:02)
-Task 25 | 23:00:48 | Compiling packages: binary-buildpack/20cff07f853ad836cebe09b317b49e6fd3bedb38 (00:00:03)
-Task 25 | 23:00:51 | Compiling packages: nginx/897fa87c3f388360a7365018048bb25571ab0d27f436e938f0664d802fbf00ef
-Task 25 | 23:01:06 | Compiling packages: cflinuxfs2/ba83f71192f8882456f95fdd425e5c3871259446 (00:02:08)
-Task 25 | 23:01:06 | Compiling packages: ruby-2.4/aa713a098334c00ad9a710f61a17b38d08c3565c1f9e5fe9b4c6907e8c34dd6e
-Task 25 | 23:01:10 | Compiling packages: haproxy/c111430f80a77acf22cf12d4d159b2bc1599e16c986610d9b70c1685da9de8a1 (00:02:05)
-Task 25 | 23:01:10 | Compiling packages: mariadb_connector_c/214543bbb1d7499acdbdb44a7323430a635a77fa004f4fd4dbaf4e544291b072
-Task 25 | 23:01:29 | Compiling packages: apparmor/0133a2288b0f71d05d89bd117c957297ad19cd19c0253236ba0ce4dedeb27186 (00:04:36)
-Task 25 | 23:01:29 | Compiling packages: libpq/211d57d6b1cb796a123433fb736bec6b09fd7a322667c9b9010b970ff78d9bce
-Task 25 | 23:01:46 | Compiling packages: pkg-config/278dbe10dcc428102e39936da0c7ddd2254cb0029ec0c9b06f545b228484187a (00:03:41)
-Task 25 | 23:01:46 | Compiling packages: capi_utils/9a4f9cf161cb5ecc853a264fcbd15077e0ea2af3ec90e7a9a76f58000ea91e6e (00:00:01)
-Task 25 | 23:01:47 | Compiling packages: golang1.9/492fce63ab236ec3d01949398623824641c8ffbd02a04d952e90b33b4359a62b
-Task 25 | 23:03:04 | Compiling packages: tar/f922f97b27619f8331332e4186c1f9c63fa5b4ddd213c4a02c7ed7cf68fced21 (00:06:11)
-Task 25 | 23:03:04 | Compiling packages: nginx_webdav/219bbff55c17e25e5ccf090491cb9ffee77f4eefc12e2d21e7ed1d520f6b01be
-Task 25 | 23:03:20 | Compiling packages: mariadb_connector_c/214543bbb1d7499acdbdb44a7323430a635a77fa004f4fd4dbaf4e544291b072 (00:02:10)
-Task 25 | 23:03:20 | Compiling packages: golang1.9.4/56d6cf267fef3a0a12c73da875e374ea19d6f23975808d813230cb904466404f
-Task 25 | 23:03:31 | Compiling packages: libpq/211d57d6b1cb796a123433fb736bec6b09fd7a322667c9b9010b970ff78d9bce (00:02:02)
-Task 25 | 23:03:31 | Compiling packages: golang-1.9-linux/39df05b363c89f1abccf002e7b3a7e996bfdacfd
-Task 25 | 23:03:32 | Compiling packages: golang1.9/492fce63ab236ec3d01949398623824641c8ffbd02a04d952e90b33b4359a62b (00:01:45)
-Task 25 | 23:03:32 | Compiling packages: routing_utils/ba119554fd15e7073fbe45f7ca15beeed1e322b02cdf7ec99e1c2948d60fd3f4 (00:00:01)
-Task 25 | 23:03:33 | Compiling packages: uaa/8327a6c2f86c3a2824cd5fbc7210c41550ab632a
-Task 25 | 23:04:11 | Compiling packages: nginx/897fa87c3f388360a7365018048bb25571ab0d27f436e938f0664d802fbf00ef (00:03:20)
-Task 25 | 23:04:11 | Compiling packages: uaa_utils/90097ea98715a560867052a2ff0916ec3460aabb (00:00:01)
-Task 25 | 23:04:12 | Compiling packages: ctl-utils/6f7ad2b0405b1c66e1a27fcd6a065af74135c4a2 (00:00:01)
-Task 25 | 23:04:13 | Compiling packages: golang-1.10-linux/48c842421b6f05acf88dc6ec17f7574dade28a86
-Task 25 | 23:04:48 | Compiling packages: golang1.9.4/56d6cf267fef3a0a12c73da875e374ea19d6f23975808d813230cb904466404f (00:01:28)
-Task 25 | 23:04:48 | Compiling packages: pid_utils/498ce6b3f5227e8c65f6e7bb8686d9829f3940ff92de78819bdefac0921012ef (00:00:01)
-Task 25 | 23:04:49 | Compiling packages: golang/492fce63ab236ec3d01949398623824641c8ffbd02a04d952e90b33b4359a62b
-Task 25 | 23:04:53 | Compiling packages: uaa/8327a6c2f86c3a2824cd5fbc7210c41550ab632a (00:01:20)
-Task 25 | 23:04:53 | Compiling packages: cf-mysql-common/441b7da1087463a29356e10d554d0827bcf1d46f (00:00:01)
-Task 25 | 23:04:54 | Compiling packages: golang/1e3f14023f54867deaf02dc187fc59f0afdae03b
-Task 25 | 23:05:12 | Compiling packages: golang-1.9-linux/39df05b363c89f1abccf002e7b3a7e996bfdacfd (00:01:41)
-Task 25 | 23:05:12 | Compiling packages: check/d6811f25e9d56428a9b942631c27c9b24f5064dc
-Task 25 | 23:05:57 | Compiling packages: golang-1.10-linux/48c842421b6f05acf88dc6ec17f7574dade28a86 (00:01:44)
-Task 25 | 23:05:57 | Compiling packages: boost/da228a9d552a039c63123f2a77e0901676a71e52
-Task 25 | 23:06:13 | Compiling packages: check/d6811f25e9d56428a9b942631c27c9b24f5064dc (00:01:01)
-Task 25 | 23:06:13 | Compiling packages: python/16de14b5e51a2eb13a9201ded0b7517c8e98f153
-Task 25 | 23:06:42 | Compiling packages: golang/1e3f14023f54867deaf02dc187fc59f0afdae03b (00:01:48)
-Task 25 | 23:06:42 | Compiling packages: golang1.9.4/56d6cf267fef3a0a12c73da875e374ea19d6f23975808d813230cb904466404f
-Task 25 | 23:06:44 | Compiling packages: golang/492fce63ab236ec3d01949398623824641c8ffbd02a04d952e90b33b4359a62b (00:01:55)
-Task 25 | 23:06:44 | Compiling packages: golang-1.10-linux/1baefde79e99ed3d1df72084315333032a294e59
-Task 25 | 23:06:59 | Compiling packages: nginx_webdav/219bbff55c17e25e5ccf090491cb9ffee77f4eefc12e2d21e7ed1d520f6b01be (00:03:55)
-Task 25 | 23:06:59 | Compiling packages: nats-common/b8bd70d9e4b9a186667e2658af74568e7ea3d564 (00:00:01)
-Task 25 | 23:07:01 | Compiling packages: golang1.9.4/56d6cf267fef3a0a12c73da875e374ea19d6f23975808d813230cb904466404f (00:05:18)
-Task 25 | 23:08:38 | Compiling packages: golang-1.9-linux/39df05b363c89f1abccf002e7b3a7e996bfdacfd
-Task 25 | 23:08:45 | Compiling packages: golang1.9.4/56d6cf267fef3a0a12c73da875e374ea19d6f23975808d813230cb904466404f (00:05:25)
-Task 25 | 23:08:45 | Compiling packages: consul/6049d3016cd34ac64ccbf7837b06b6db81942102
-Task 25 | 23:08:55 | Compiling packages: golang-1.10-linux/1baefde79e99ed3d1df72084315333032a294e59 (00:02:11)
-Task 25 | 23:08:55 | Compiling packages: consul/6049d3016cd34ac64ccbf7837b06b6db81942102 (00:00:10)
-Task 25 | 23:08:55 | Compiling packages: cli/d39cac5375039e4750c32e11675c1143cea19d2d
-Task 25 | 23:08:55 | Compiling packages: golang/1e3f14023f54867deaf02dc187fc59f0afdae03b
-Task 25 | 23:09:02 | Compiling packages: cli/d39cac5375039e4750c32e11675c1143cea19d2d (00:00:07)
-Task 25 | 23:09:02 | Compiling packages: automake/f11b0c20f9b9a5de955bbe1cb877e836a8841ddf88407b25ebbe9d31e3992858 (00:00:12)
-Task 25 | 23:09:14 | Compiling packages: grootfs/429115a41dc070926af8c90ae72d2ac190203bca26868f14e344ade27dbbee26
-Task 25 | 23:09:56 | Compiling packages: golang-1.9-linux/39df05b363c89f1abccf002e7b3a7e996bfdacfd (00:06:25)
-Task 25 | 23:09:56 | Compiling packages: greenskeeper/2b56e6534ed6bc8b3d622a308984b9c9b7d81f0097cdc972d0c42ea1ee93f51f (00:00:31)
-Task 25 | 23:10:27 | Compiling packages: garden-idmapper/0af0d14f49452fc822cfc6dad78a6df18d7ff2adefb030e8c62e427f69648f60
-Task 25 | 23:10:29 | Compiling packages: golang/1e3f14023f54867deaf02dc187fc59f0afdae03b (00:05:35)
-Task 25 | 23:10:29 | Compiling packages: guardian/74c432d0dc9c74cf7b279343a67f9ebf4da0a0d5d1109ff44d353a55f1bf0884
-Task 25 | 23:10:54 | Compiling packages: boost/da228a9d552a039c63123f2a77e0901676a71e52 (00:04:57)
-Task 25 | 23:10:55 | Compiling packages: runc/16e92ae589da1dc24b072fa7e56ab50659139f330d45368cc361e451cac33c63
-Task 25 | 23:11:01 | Compiling packages: grootfs/429115a41dc070926af8c90ae72d2ac190203bca26868f14e344ade27dbbee26 (00:01:47)
-Task 25 | 23:11:01 | Compiling packages: iptables/7a3108e45160133ba44434781ff364f395c197ba2c92db6b31cced950cf7a37a
-Task 25 | 23:11:01 | Compiling packages: garden-idmapper/0af0d14f49452fc822cfc6dad78a6df18d7ff2adefb030e8c62e427f69648f60 (00:00:34)
-Task 25 | 23:11:01 | Compiling packages: tps/0d276d7a8c7343fc3d12d7e7627aaf77a32b026bd43a3123c00b154227fa6b52 (00:01:36)
-Task 25 | 23:12:37 | Compiling packages: cc_uploader/36c76753d263584da7f478f9148c6d7e7298f978e2c55737b6e3217a4612eb9e
-Task 25 | 23:13:28 | Compiling packages: python/16de14b5e51a2eb13a9201ded0b7517c8e98f153 (00:07:15)
-Task 25 | 23:13:28 | Compiling packages: blobstore_url_signer/0f74f8eddd8580d9cf97c0fda45efecbf70b7a4b5f4094e27766f4b273bf0c84
-Task 25 | 23:13:30 | Compiling packages: guardian/74c432d0dc9c74cf7b279343a67f9ebf4da0a0d5d1109ff44d353a55f1bf0884 (00:03:01)
-Task 25 | 23:13:30 | Compiling packages: statsd_injector/0a87e3580066d3ad0ddad93b853ad2ac0c6af638aaf6fbc902176b2398eeb5b0
-Task 25 | 23:13:45 | Compiling packages: runc/16e92ae589da1dc24b072fa7e56ab50659139f330d45368cc361e451cac33c63 (00:02:50)
-Task 25 | 23:13:45 | Compiling packages: tcp_router/fbcc41b9f8141f5a683134d6c7250368755834587b91935be6a1ff1c35d5d654
-Task 25 | 23:13:50 | Compiling packages: iptables/7a3108e45160133ba44434781ff364f395c197ba2c92db6b31cced950cf7a37a (00:02:49)
-Task 25 | 23:13:50 | Compiling packages: gorouter/ec7ada167a6ee89a918a3c5cb973bc8afb53121bd80a8d8e096ac2e22e7c7329
-Task 25 | 23:13:59 | Compiling packages: cc_uploader/36c76753d263584da7f478f9148c6d7e7298f978e2c55737b6e3217a4612eb9e (00:01:22)
-Task 25 | 23:13:59 | Compiling packages: routing-api/541b8a133dcb865d91fa7a1d2ab7b81bd461f9a40a987a2671fe757967aed80f
-Task 25 | 23:14:05 | Compiling packages: blobstore_url_signer/0f74f8eddd8580d9cf97c0fda45efecbf70b7a4b5f4094e27766f4b273bf0c84 (00:00:37)
-Task 25 | 23:14:05 | Compiling packages: route_registrar/6b38c301140d9999c3918f998ed1c3d5037b1341d732b282c15adbcf1a1ef4e4
-Task 25 | 23:14:26 | Compiling packages: statsd_injector/0a87e3580066d3ad0ddad93b853ad2ac0c6af638aaf6fbc902176b2398eeb5b0 (00:00:56)
-Task 25 | 23:14:27 | Compiling packages: cni/b6476c4a667a465d745a0ef98108718216d39ca2
-Task 25 | 23:14:33 | Compiling packages: tcp_router/fbcc41b9f8141f5a683134d6c7250368755834587b91935be6a1ff1c35d5d654 (00:00:48)
-Task 25 | 23:14:33 | Compiling packages: silk-daemon/04aa09d20c4e50e0af16bfa95e44860b49190bbc
-Task 25 | 23:14:47 | Compiling packages: route_registrar/6b38c301140d9999c3918f998ed1c3d5037b1341d732b282c15adbcf1a1ef4e4 (00:00:42)
-Task 25 | 23:14:47 | Compiling packages: vxlan-policy-agent/f5c94b3b7ff8a30dc7722b23fc6cbf8dad04640c
+Task 26 | 10:57:33 | Preparing deployment: Preparing deployment (00:00:06)
+Task 26 | 10:57:47 | Preparing package compilation: Finding packages to compile (00:00:00)
+Task 26 | 10:57:47 | Compiling packages: libtool/3e211ee9e3aab09a9e8a9ff55ab9ce9ba81590d945640e2d29c078597db33a94
+Task 26 | 10:57:47 | Compiling packages: autoconf/4f8914a0ada02006da32066d2e374e2a065d3acafbceb60ffd45ea146df7af1f
+Task 26 | 10:57:47 | Compiling packages: tar/f922f97b27619f8331332e4186c1f9c63fa5b4ddd213c4a02c7ed7cf68fced21
+Task 26 | 10:57:47 | Compiling packages: busybox/02b86e9e891e78294e366cfc3361514b752308952f56b954f7a6ae31961f859c
+Task 26 | 10:57:47 | Compiling packages: libseccomp/11f3a8e12b881d4d6f660d84df70d3fe99b12e1621f9e93ff66e120aec12ec96
+Task 26 | 10:57:47 | Compiling packages: apparmor/0133a2288b0f71d05d89bd117c957297ad19cd19c0253236ba0ce4dedeb27186
+Task 26 | 10:58:46 | Compiling packages: busybox/02b86e9e891e78294e366cfc3361514b752308952f56b954f7a6ae31961f859c (00:00:59)
+Task 26 | 10:58:46 | Compiling packages: pkg-config/278dbe10dcc428102e39936da0c7ddd2254cb0029ec0c9b06f545b228484187a
+Task 26 | 10:58:55 | Compiling packages: autoconf/4f8914a0ada02006da32066d2e374e2a065d3acafbceb60ffd45ea146df7af1f (00:01:08)
+Task 26 | 10:58:55 | Compiling packages: golang/7bfed9f967fc1f622097d3f75ab1170f1d12ee8eab3e5664f22e2577a8331cf9
+Task 26 | 10:59:29 | Compiling packages: libtool/3e211ee9e3aab09a9e8a9ff55ab9ce9ba81590d945640e2d29c078597db33a94 (00:01:42)
+Task 26 | 10:59:29 | Compiling packages: cflinuxfs2/302f43b4fe9a4d20ef39bdcdbb916efab32976b3
+Task 26 | 10:59:38 | Compiling packages: libseccomp/11f3a8e12b881d4d6f660d84df70d3fe99b12e1621f9e93ff66e120aec12ec96 (00:01:51)
+Task 26 | 10:59:38 | Compiling packages: haproxy/c111430f80a77acf22cf12d4d159b2bc1599e16c986610d9b70c1685da9de8a1
+Task 26 | 11:00:55 | Compiling packages: golang/7bfed9f967fc1f622097d3f75ab1170f1d12ee8eab3e5664f22e2577a8331cf9 (00:02:00)
+Task 26 | 11:00:55 | Compiling packages: staticfile-buildpack/2941e334d62da5bde134033451f3f2f9c8b88163 (00:00:02)
+Task 26 | 11:00:57 | Compiling packages: ruby-buildpack/0c84cc7b98e795f6d4905df98ab8ba091182db2c (00:00:04)
+Task 26 | 11:01:01 | Compiling packages: python-buildpack/83edaa16c9f53e86b1813def3802fdd8e5e02e2f (00:00:03)
+Task 26 | 11:01:04 | Compiling packages: php-buildpack/018d3ff34a5774e4133abdee6e32a80d71b8cad0 (00:00:01)
+Task 26 | 11:01:05 | Compiling packages: nodejs-buildpack/ce4e53e42a3d18bc104b43326d8bd5cdd41971e4 (00:00:02)
+Task 26 | 11:01:07 | Compiling packages: java-buildpack/f10829b5fe1a61835e0f75c5a5407407fd7bf9ab (00:00:02)
+Task 26 | 11:01:09 | Compiling packages: go-buildpack/00e02cbcf53961f6dc2e25a0ee98fac1441f0a93 (00:00:02)
+Task 26 | 11:01:11 | Compiling packages: dotnet-core-buildpack/3ce6e22e498ec0e6793f6c24f5b2b062456208db (00:00:03)
+Task 26 | 11:01:14 | Compiling packages: binary-buildpack/102cf73d907019ec80dd4abd10dcd21e01042cf9
+Task 26 | 11:01:16 | Compiling packages: cflinuxfs2/302f43b4fe9a4d20ef39bdcdbb916efab32976b3 (00:01:47)
+Task 26 | 11:01:16 | Compiling packages: nginx/897fa87c3f388360a7365018048bb25571ab0d27f436e938f0664d802fbf00ef
+Task 26 | 11:01:16 | Compiling packages: haproxy/c111430f80a77acf22cf12d4d159b2bc1599e16c986610d9b70c1685da9de8a1 (00:01:38)
+Task 26 | 11:01:16 | Compiling packages: ruby-2.4/bc073fd71a2ac59aa428b9fe36b558c5d10edaa648189eb47fd76586441d4bd0
+Task 26 | 11:01:17 | Compiling packages: binary-buildpack/102cf73d907019ec80dd4abd10dcd21e01042cf9 (00:00:03)
+Task 26 | 11:01:17 | Compiling packages: mariadb_connector_c/214543bbb1d7499acdbdb44a7323430a635a77fa004f4fd4dbaf4e544291b072
+Task 26 | 11:01:28 | Compiling packages: apparmor/0133a2288b0f71d05d89bd117c957297ad19cd19c0253236ba0ce4dedeb27186 (00:03:41)
+Task 26 | 11:01:28 | Compiling packages: libpq/211d57d6b1cb796a123433fb736bec6b09fd7a322667c9b9010b970ff78d9bce
+Task 26 | 11:01:44 | Compiling packages: pkg-config/278dbe10dcc428102e39936da0c7ddd2254cb0029ec0c9b06f545b228484187a (00:02:58)
+Task 26 | 11:01:44 | Compiling packages: capi_utils/9a4f9cf161cb5ecc853a264fcbd15077e0ea2af3ec90e7a9a76f58000ea91e6e (00:00:02)
+Task 26 | 11:01:46 | Compiling packages: golang1.9/492fce63ab236ec3d01949398623824641c8ffbd02a04d952e90b33b4359a62b
+Task 26 | 11:02:52 | Compiling packages: tar/f922f97b27619f8331332e4186c1f9c63fa5b4ddd213c4a02c7ed7cf68fced21 (00:05:05)
+Task 26 | 11:02:52 | Compiling packages: nginx_webdav/219bbff55c17e25e5ccf090491cb9ffee77f4eefc12e2d21e7ed1d520f6b01be
+Task 26 | 11:03:12 | Compiling packages: mariadb_connector_c/214543bbb1d7499acdbdb44a7323430a635a77fa004f4fd4dbaf4e544291b072 (00:01:55)
+Task 26 | 11:03:12 | Compiling packages: golang1.9.4/56d6cf267fef3a0a12c73da875e374ea19d6f23975808d813230cb904466404f
+Task 26 | 11:03:19 | Compiling packages: libpq/211d57d6b1cb796a123433fb736bec6b09fd7a322667c9b9010b970ff78d9bce (00:01:51)
+Task 26 | 11:03:19 | Compiling packages: golang-1.9-linux/39df05b363c89f1abccf002e7b3a7e996bfdacfd
+Task 26 | 11:03:37 | Compiling packages: golang1.9/492fce63ab236ec3d01949398623824641c8ffbd02a04d952e90b33b4359a62b (00:01:51)
+Task 26 | 11:03:37 | Compiling packages: routing_utils/ba119554fd15e7073fbe45f7ca15beeed1e322b02cdf7ec99e1c2948d60fd3f4 (00:00:01)
+Task 26 | 11:03:38 | Compiling packages: uaa/8327a6c2f86c3a2824cd5fbc7210c41550ab632a
+Task 26 | 11:04:17 | Compiling packages: nginx/897fa87c3f388360a7365018048bb25571ab0d27f436e938f0664d802fbf00ef (00:03:01)
+Task 26 | 11:04:17 | Compiling packages: uaa_utils/90097ea98715a560867052a2ff0916ec3460aabb (00:00:02)
+Task 26 | 11:04:19 | Compiling packages: ctl-utils/6f7ad2b0405b1c66e1a27fcd6a065af74135c4a2 (00:00:01)
+Task 26 | 11:04:20 | Compiling packages: golang-1.10-linux/48c842421b6f05acf88dc6ec17f7574dade28a86
+Task 26 | 11:05:02 | Compiling packages: uaa/8327a6c2f86c3a2824cd5fbc7210c41550ab632a (00:01:24)
+Task 26 | 11:05:02 | Compiling packages: pid_utils/498ce6b3f5227e8c65f6e7bb8686d9829f3940ff92de78819bdefac0921012ef
+Task 26 | 11:05:02 | Compiling packages: golang1.9.4/56d6cf267fef3a0a12c73da875e374ea19d6f23975808d813230cb904466404f (00:01:50)
+Task 26 | 11:05:02 | Compiling packages: golang/492fce63ab236ec3d01949398623824641c8ffbd02a04d952e90b33b4359a62b
+Task 26 | 11:05:03 | Compiling packages: pid_utils/498ce6b3f5227e8c65f6e7bb8686d9829f3940ff92de78819bdefac0921012ef (00:00:01)
+Task 26 | 11:05:03 | Compiling packages: cf-mysql-common/441b7da1087463a29356e10d554d0827bcf1d46f (00:00:02)
+Task 26 | 11:05:05 | Compiling packages: golang/1e3f14023f54867deaf02dc187fc59f0afdae03b
+Task 26 | 11:05:28 | Compiling packages: golang-1.9-linux/39df05b363c89f1abccf002e7b3a7e996bfdacfd (00:02:09)
+Task 26 | 11:05:29 | Compiling packages: check/d6811f25e9d56428a9b942631c27c9b24f5064dc
+Task 26 | 11:06:17 | Compiling packages: golang-1.10-linux/48c842421b6f05acf88dc6ec17f7574dade28a86 (00:01:57)
+Task 26 | 11:06:17 | Compiling packages: boost/da228a9d552a039c63123f2a77e0901676a71e52
+Task 26 | 11:06:31 | Compiling packages: check/d6811f25e9d56428a9b942631c27c9b24f5064dc (00:01:02)
+Task 26 | 11:06:31 | Compiling packages: python/16de14b5e51a2eb13a9201ded0b7517c8e98f153
+Task 26 | 11:06:45 | Compiling packages: nginx_webdav/219bbff55c17e25e5ccf090491cb9ffee77f4eefc12e2d21e7ed1d520f6b01be (00:03:53)
+Task 26 | 11:06:45 | Compiling packages: golang1.9.4/56d6cf267fef3a0a12c73da875e374ea19d6f23975808d813230cb904466404f
+Task 26 | 11:07:03 | Compiling packages: golang/1e3f14023f54867deaf02dc187fc59f0afdae03b (00:01:58)
+Task 26 | 11:07:03 | Compiling packages: golang-1.10-linux/1baefde79e99ed3d1df72084315333032a294e59
+Task 26 | 11:07:05 | Compiling packages: golang/492fce63ab236ec3d01949398623824641c8ffbd02a04d952e90b33b4359a62b (00:02:03)
+Task 26 | 11:07:05 | Compiling packages: nats-common/b8bd70d9e4b9a186667e2658af74568e7ea3d564 (00:00:02)
+Task 26 | 11:07:07 | Compiling packages: golang1.9.6/492fce63ab236ec3d01949398623824641c8ffbd02a04d952e90b33b4359a62b
+Task 26 | 11:08:29 | Compiling packages: golang1.9.4/56d6cf267fef3a0a12c73da875e374ea19d6f23975808d813230cb904466404f (00:05:17)
+Task 26 | 11:08:29 | Compiling packages: golang-1.9-linux/39df05b363c89f1abccf002e7b3a7e996bfdacfd
+Task 26 | 11:09:07 | Compiling packages: golang1.9.6/492fce63ab236ec3d01949398623824641c8ffbd02a04d952e90b33b4359a62b (00:02:00)
+Task 26 | 11:09:07 | Compiling packages: consul/6049d3016cd34ac64ccbf7837b06b6db81942102 (00:00:10)
+Task 26 | 11:09:17 | Compiling packages: bpm-runc/c0b41921c5063378870a7c8867c6dc1aa84e7d85
+Task 26 | 11:09:21 | Compiling packages: golang-1.10-linux/1baefde79e99ed3d1df72084315333032a294e59 (00:02:18)
+Task 26 | 11:09:21 | Compiling packages: golang/e3ca1c9440c29ad576d633e9ef6a2f7805a5e8b7
+Task 26 | 11:09:21 | Compiling packages: bpm-runc/c0b41921c5063378870a7c8867c6dc1aa84e7d85 (00:00:04)
+Task 26 | 11:09:21 | Compiling packages: cli/d39cac5375039e4750c32e11675c1143cea19d2d (00:00:06)
+Task 26 | 11:09:27 | Compiling packages: golang/1e3f14023f54867deaf02dc187fc59f0afdae03b
+Task 26 | 11:09:55 | Compiling packages: golang-1.9-linux/39df05b363c89f1abccf002e7b3a7e996bfdacfd (00:06:36)
+Task 26 | 11:09:56 | Compiling packages: automake/f11b0c20f9b9a5de955bbe1cb877e836a8841ddf88407b25ebbe9d31e3992858 (00:00:14)
+Task 26 | 11:10:10 | Compiling packages: netplugin-shim/1928a9fb4829a842ac6ea1238a8c8222147533fece3fbb17a34a00fb2287cb17 (00:00:58)
+Task 26 | 11:11:08 | Compiling packages: grootfs/52e0feea02283ebf4a84061710c9b81fd110396b3fe4da8726565ba8813dbe02
+Task 26 | 11:11:21 | Compiling packages: golang/1e3f14023f54867deaf02dc187fc59f0afdae03b (00:06:16)
+Task 26 | 11:11:21 | Compiling packages: greenskeeper/d3568f9a7c02a5ea0b93f2b2681986d048405309c532205989ed02e01b71477f
+Task 26 | 11:11:36 | Compiling packages: golang/e3ca1c9440c29ad576d633e9ef6a2f7805a5e8b7 (00:02:15)
+Task 26 | 11:11:36 | Compiling packages: garden-idmapper/4a1079066953806366544d9e1558bff456ac3b07f07993c9288619197a5579c0
+Task 26 | 11:11:56 | Compiling packages: greenskeeper/d3568f9a7c02a5ea0b93f2b2681986d048405309c532205989ed02e01b71477f (00:00:35)
+Task 26 | 11:11:56 | Compiling packages: guardian/ab2241559531be43555e1c153f42fb7141b73cea35f472ef6b68bf64d4cf9565
+Task 26 | 11:12:03 | Compiling packages: boost/da228a9d552a039c63123f2a77e0901676a71e52 (00:05:46)
+Task 26 | 11:12:03 | Compiling packages: runc/16e92ae589da1dc24b072fa7e56ab50659139f330d45368cc361e451cac33c63
+Task 26 | 11:12:11 | Compiling packages: garden-idmapper/4a1079066953806366544d9e1558bff456ac3b07f07993c9288619197a5579c0 (00:00:35)
+Task 26 | 11:12:11 | Compiling packages: iptables/7a3108e45160133ba44434781ff364f395c197ba2c92db6b31cced950cf7a37a
+Task 26 | 11:13:24 | Compiling packages: grootfs/52e0feea02283ebf4a84061710c9b81fd110396b3fe4da8726565ba8813dbe02 (00:02:16)
+Task 26 | 11:13:24 | Compiling packages: tps/025b7b83e82b47bdf90fd39990e430b023826f24b05bb611310fe04ec20a1c65
+Task 26 | 11:14:40 | Compiling packages: python/16de14b5e51a2eb13a9201ded0b7517c8e98f153 (00:08:09)
+Task 26 | 11:14:40 | Compiling packages: cc_uploader/36c76753d263584da7f478f9148c6d7e7298f978e2c55737b6e3217a4612eb9e
+Task 26 | 11:14:53 | Compiling packages: runc/16e92ae589da1dc24b072fa7e56ab50659139f330d45368cc361e451cac33c63 (00:02:50)
+Task 26 | 11:14:53 | Compiling packages: blobstore_url_signer/0f74f8eddd8580d9cf97c0fda45efecbf70b7a4b5f4094e27766f4b273bf0c84
+Task 26 | 11:15:08 | Compiling packages: tps/025b7b83e82b47bdf90fd39990e430b023826f24b05bb611310fe04ec20a1c65 (00:01:44)
+Task 26 | 11:15:08 | Compiling packages: statsd_injector/0a87e3580066d3ad0ddad93b853ad2ac0c6af638aaf6fbc902176b2398eeb5b0
+Task 26 | 11:15:11 | Compiling packages: iptables/7a3108e45160133ba44434781ff364f395c197ba2c92db6b31cced950cf7a37a (00:03:00)
+Task 26 | 11:15:11 | Compiling packages: tcp_router/fbcc41b9f8141f5a683134d6c7250368755834587b91935be6a1ff1c35d5d654
+Task 26 | 11:15:24 | Compiling packages: blobstore_url_signer/0f74f8eddd8580d9cf97c0fda45efecbf70b7a4b5f4094e27766f4b273bf0c84 (00:00:31)
+Task 26 | 11:15:24 | Compiling packages: gorouter/ec7ada167a6ee89a918a3c5cb973bc8afb53121bd80a8d8e096ac2e22e7c7329
+Task 26 | 11:15:48 | Compiling packages: guardian/ab2241559531be43555e1c153f42fb7141b73cea35f472ef6b68bf64d4cf9565 (00:03:52)
+Task 26 | 11:15:48 | Compiling packages: routing-api/541b8a133dcb865d91fa7a1d2ab7b81bd461f9a40a987a2671fe757967aed80f
+Task 26 | 11:16:16 | Compiling packages: tcp_router/fbcc41b9f8141f5a683134d6c7250368755834587b91935be6a1ff1c35d5d654 (00:01:05)
+Task 26 | 11:16:16 | Compiling packages: route_registrar/6b38c301140d9999c3918f998ed1c3d5037b1341d732b282c15adbcf1a1ef4e4
+Task 26 | 11:16:18 | Compiling packages: statsd_injector/0a87e3580066d3ad0ddad93b853ad2ac0c6af638aaf6fbc902176b2398eeb5b0 (00:01:10)
+Task 26 | 11:16:18 | Compiling packages: cni/b6476c4a667a465d745a0ef98108718216d39ca2
+Task 26 | 11:16:20 | Compiling packages: cc_uploader/36c76753d263584da7f478f9148c6d7e7298f978e2c55737b6e3217a4612eb9e (00:01:40)
+Task 26 | 11:16:20 | Compiling packages: silk-daemon/04aa09d20c4e50e0af16bfa95e44860b49190bbc
+Task 26 | 11:16:37 | Compiling packages: ruby-2.4/bc073fd71a2ac59aa428b9fe36b558c5d10edaa648189eb47fd76586441d4bd0 (00:15:21)
+Task 26 | 11:16:37 | Compiling packages: vxlan-policy-agent/f5c94b3b7ff8a30dc7722b23fc6cbf8dad04640c
+Task 26 | 11:16:49 | Compiling packages: route_registrar/6b38c301140d9999c3918f998ed1c3d5037b1341d732b282c15adbcf1a1ef4e4 (00:00:33)
+Task 26 | 11:16:49 | Compiling packages: netmon/a7a4d08d8159b131eaaf2482e28730ae2ed62529
+Task 26 | 11:16:58 | Compiling packages: gorouter/ec7ada167a6ee89a918a3c5cb973bc8afb53121bd80a8d8e096ac2e22e7c7329 (00:01:34)
+Task 26 | 11:16:58 | Compiling packages: runc-cni/713c77f20dd09518c8ecb15cbc608f2c1bf9db2f
+Task 26 | 11:17:26 | Compiling packages: routing-api/541b8a133dcb865d91fa7a1d2ab7b81bd461f9a40a987a2671fe757967aed80f (00:01:38)
+Task 26 | 11:17:26 | Compiling packages: policy-server/693030e3cc4bef4370aa2d8a390c8a718ab510c8
+Task 26 | 11:17:49 | Compiling packages: vxlan-policy-agent/f5c94b3b7ff8a30dc7722b23fc6cbf8dad04640c (00:01:12)
+Task 26 | 11:17:49 | Compiling packages: runc-cni/713c77f20dd09518c8ecb15cbc608f2c1bf9db2f (00:00:51)
+Task 26 | 11:17:49 | Compiling packages: silk-controller/94c34df3c5d775ce7cea16cd967352440914bc7c
+Task 26 | 11:17:49 | Compiling packages: switchboard/96c4273ecad574f8e448d1d7fb3927efdd57e007
+Task 26 | 11:17:57 | Compiling packages: netmon/a7a4d08d8159b131eaaf2482e28730ae2ed62529 (00:01:08)
+Task 26 | 11:17:57 | Compiling packages: generate-auto-tune-mysql/f41b75e326fab5af34f2c488b6be873a1a8ee40b
+Task 26 | 11:18:01 | Compiling packages: silk-daemon/04aa09d20c4e50e0af16bfa95e44860b49190bbc (00:01:41)
+Task 26 | 11:18:01 | Compiling packages: cf-mysql-cluster-health-logger/19dc5675219358b70d90ed438b68e745ec0a2a73
+Task 26 | 11:18:11 | Compiling packages: cni/b6476c4a667a465d745a0ef98108718216d39ca2 (00:01:53)
+Task 26 | 11:18:11 | Compiling packages: gra-log-purger/2cbbd66b8161a503378af6486f2a0d0ccc987fec (00:00:24)
+Task 26 | 11:18:35 | Compiling packages: galera-healthcheck/ea0e2e6288d084a9d23632f99711f85e1670bb60
+Task 26 | 11:18:37 | Compiling packages: silk-controller/94c34df3c5d775ce7cea16cd967352440914bc7c (00:00:48)
+Task 26 | 11:18:37 | Compiling packages: mariadb_ctrl/aa2d98f62993e091cc3cc0c5017db775953bd5bb
+Task 26 | 11:18:38 | Compiling packages: policy-server/693030e3cc4bef4370aa2d8a390c8a718ab510c8 (00:01:12)
+Task 26 | 11:18:38 | Compiling packages: route_emitter/3f78d64d475e2c3293f6af2e1610e1a373c4e5c35d06c789d77bded372912211
+Task 26 | 11:18:45 | Compiling packages: generate-auto-tune-mysql/f41b75e326fab5af34f2c488b6be873a1a8ee40b (00:00:48)
+Task 26 | 11:18:45 | Compiling packages: certsplitter/a9435b4f9f824b7ec2ada784c4d4fdb6133c16424213768daa82120fcc940a72
+Task 26 | 11:18:46 | Compiling packages: cf-mysql-cluster-health-logger/19dc5675219358b70d90ed438b68e745ec0a2a73 (00:00:45)
+Task 26 | 11:18:46 | Compiling packages: proxy/ded8b4598b87c01df79482a531ba417902f229beb514d63edc3df6aab7c9b4e1
+Task 26 | 11:19:03 | Compiling packages: switchboard/96c4273ecad574f8e448d1d7fb3927efdd57e007 (00:01:14)
+Task 26 | 11:19:03 | Compiling packages: rep/6d2478a938bf9834bfeec2d90070d6c7f19f46dd71e1eb9d4cd24cf6a0b7137f
+Task 26 | 11:19:17 | Compiling packages: mariadb_ctrl/aa2d98f62993e091cc3cc0c5017db775953bd5bb (00:00:40)
+Task 26 | 11:19:17 | Compiling packages: auctioneer/63a480d0b21dae276857b94c3523d77396515b1ffa073e0474583330832dbbff
+Task 26 | 11:19:30 | Compiling packages: certsplitter/a9435b4f9f824b7ec2ada784c4d4fdb6133c16424213768daa82120fcc940a72 (00:00:45)
+Task 26 | 11:19:30 | Compiling packages: ssh_proxy/daa56f038251953e0a76cc11e6e52415697d0928d2263fe35c1d906455034f60
+Task 26 | 11:19:36 | Compiling packages: proxy/ded8b4598b87c01df79482a531ba417902f229beb514d63edc3df6aab7c9b4e1 (00:00:50)
+Task 26 | 11:19:36 | Compiling packages: diego-sshd/49f577b34b7a6a1b0a95dda14836e46f6279c08f15e4e82aec0e45d8b8f2da7e
+Task 26 | 11:19:40 | Compiling packages: galera-healthcheck/ea0e2e6288d084a9d23632f99711f85e1670bb60 (00:01:05)
+Task 26 | 11:19:40 | Compiling packages: healthcheck/3148f3a84d44201a5f6d925a169c4613f9bcc80313f17c4a4ac45c016bee8c53
+Task 26 | 11:20:18 | Compiling packages: route_emitter/3f78d64d475e2c3293f6af2e1610e1a373c4e5c35d06c789d77bded372912211 (00:01:40)
+Task 26 | 11:20:18 | Compiling packages: file_server/fe13baf887075aebef1c8b9367e4232eafd12e76f0cd0af6a3ebad1d793309ea
+Task 26 | 11:20:54 | Compiling packages: auctioneer/63a480d0b21dae276857b94c3523d77396515b1ffa073e0474583330832dbbff (00:01:37)
+Task 26 | 11:20:54 | Compiling packages: locket/7b524d83655e572ddfccc836c695656e1337bb4838f6e29259c680cbb0230abc
+Task 26 | 11:21:13 | Compiling packages: rep/6d2478a938bf9834bfeec2d90070d6c7f19f46dd71e1eb9d4cd24cf6a0b7137f (00:02:10)
+Task 26 | 11:21:13 | Compiling packages: bbs/c5cd5f7f5dda9a3d02846db29a9162192a937937434faa387fc5a21ce89a7967
+Task 26 | 11:21:31 | Compiling packages: file_server/fe13baf887075aebef1c8b9367e4232eafd12e76f0cd0af6a3ebad1d793309ea (00:01:13)
+Task 26 | 11:21:31 | Compiling packages: cfdot/ab9ecdfee6224984160156db7061fbede28107f678c30be46043617504efc673
+Task 26 | 11:21:34 | Compiling packages: ssh_proxy/daa56f038251953e0a76cc11e6e52415697d0928d2263fe35c1d906455034f60 (00:02:04)
+Task 26 | 11:21:34 | Compiling packages: scheduler/93016742b2e51ef59efd7e2cda4894c28033581309941c4a0bceefccd84f75d0
+Task 26 | 11:22:12 | Compiling packages: locket/7b524d83655e572ddfccc836c695656e1337bb4838f6e29259c680cbb0230abc (00:01:18)
+Task 26 | 11:22:12 | Compiling packages: adapter/201eb1cef7aeae0ec8db77592d1305c95fe8181d2cea3640857354c49fd1dabd
+Task 26 | 11:22:39 | Compiling packages: scheduler/93016742b2e51ef59efd7e2cda4894c28033581309941c4a0bceefccd84f75d0 (00:01:05)
+Task 26 | 11:22:39 | Compiling packages: reverse_log_proxy/23192ffec4dc63f763e0fb9e9ea7c21d3ca4118e8171ebbc602a28c3f8d71ec3
+Task 26 | 11:23:05 | Compiling packages: bbs/c5cd5f7f5dda9a3d02846db29a9162192a937937434faa387fc5a21ce89a7967 (00:01:52)
+Task 26 | 11:23:05 | Compiling packages: loggregator_trafficcontroller/3dcbaa6050fe27919cebe7368b8b4826bc255e21573eacadb023b85763f67304
+Task 26 | 11:23:13 | Compiling packages: cfdot/ab9ecdfee6224984160156db7061fbede28107f678c30be46043617504efc673 (00:01:42)
+Task 26 | 11:23:13 | Compiling packages: doppler/8682084c4c078e1d9b2dcaa935a009e23fd5481b6ff078896d42790d0b3429dc
+Task 26 | 11:23:16 | Compiling packages: adapter/201eb1cef7aeae0ec8db77592d1305c95fe8181d2cea3640857354c49fd1dabd (00:01:04)
+Task 26 | 11:23:16 | Compiling packages: metron_agent/c77a118e47f0937c8a0281f10d63918dfcde940beb475a9a83ea049f0026e469
+Task 26 | 11:23:29 | Compiling packages: healthcheck/3148f3a84d44201a5f6d925a169c4613f9bcc80313f17c4a4ac45c016bee8c53 (00:03:49)
+Task 26 | 11:23:29 | Compiling packages: gnatsd/4614b4e2f059001cd26d79e7ef7ece6677db3e38
+Task 26 | 11:23:55 | Compiling packages: reverse_log_proxy/23192ffec4dc63f763e0fb9e9ea7c21d3ca4118e8171ebbc602a28c3f8d71ec3 (00:01:16)
+Task 26 | 11:23:55 | Compiling packages: smoke_tests/d7431ee32cb8ecedb7d925aff891bbb61b19d476 (00:00:05)
+Task 26 | 11:24:00 | Compiling packages: confab/85382b43999179f4ede147c9b13cf881c2b9adb7
+Task 26 | 11:24:13 | Compiling packages: gnatsd/4614b4e2f059001cd26d79e7ef7ece6677db3e38 (00:00:44)
+Task 26 | 11:24:13 | Compiling packages: zlib/98e4e7f5eebfe3831cf312d32a44f71281fcbc2577770fffd7b9601991ab31de
+Task 26 | 11:24:35 | Compiling packages: loggregator_trafficcontroller/3dcbaa6050fe27919cebe7368b8b4826bc255e21573eacadb023b85763f67304 (00:01:30)
+Task 26 | 11:24:35 | Compiling packages: util-linux/6310f68e8294c980de62481bced2fc915f449e3a2cc2d13a7a2a49c4a612d825
+Task 26 | 11:24:40 | Compiling packages: zlib/98e4e7f5eebfe3831cf312d32a44f71281fcbc2577770fffd7b9601991ab31de (00:00:27)
+Task 26 | 11:24:40 | Compiling packages: lzo/7ec718ef29da337d56f08e90534f561c138c2c88b576dc5da5185d85fdd42b20
+Task 26 | 11:24:40 | Compiling packages: doppler/8682084c4c078e1d9b2dcaa935a009e23fd5481b6ff078896d42790d0b3429dc (00:01:27)
+Task 26 | 11:24:40 | Compiling packages: bpm/3fe49cfa0140be3ebd8da4bdcadfa6b84d847e87
+Task 26 | 11:24:50 | Compiling packages: confab/85382b43999179f4ede147c9b13cf881c2b9adb7 (00:00:50)
+Task 26 | 11:24:50 | Compiling packages: thresholder/87654c832856f00922fad2604aeb4526c206dc91b5b4bf2d5300f0b9c6a72dff
+Task 26 | 11:24:55 | Compiling packages: metron_agent/c77a118e47f0937c8a0281f10d63918dfcde940beb475a9a83ea049f0026e469 (00:01:39)
+Task 26 | 11:24:55 | Compiling packages: scons/dbd49f7f2517cdb1853cd5e08eb59219731eb4c6 (00:00:16)
+Task 26 | 11:25:11 | Compiling packages: nginx_newrelic_plugin/70737ccb2088b16e99e9f59a60ce36e8d5037c3a40b1d960bef02f51391f1fa4 (00:00:22)
+Task 26 | 11:25:33 | Compiling packages: cloud_controller_ng/0082a1036bba0861de2f1879edb35e007cb90d3ef38baa3668a7c0293eddfcc7
+Task 26 | 11:25:38 | Compiling packages: thresholder/87654c832856f00922fad2604aeb4526c206dc91b5b4bf2d5300f0b9c6a72dff (00:00:48)
+Task 26 | 11:25:38 | Compiling packages: galera/f480a48c26d56d050bc0b579ed60750ccf52dadb
+Task 26 | 11:25:40 | Compiling packages: bpm/3fe49cfa0140be3ebd8da4bdcadfa6b84d847e87 (00:01:00)
+Task 26 | 11:26:04 | Compiling packages: lzo/7ec718ef29da337d56f08e90534f561c138c2c88b576dc5da5185d85fdd42b20 (00:01:24)
+Task 26 | 11:26:45 | Compiling packages: diego-sshd/49f577b34b7a6a1b0a95dda14836e46f6279c08f15e4e82aec0e45d8b8f2da7e (00:07:09)
+Task 26 | 11:26:45 | Compiling packages: docker_app_lifecycle/dc9f4400ec38e34e65dbc943cf5795150a5df7b64043937e7bf6c0fdbe34d39c
+Task 26 | 11:26:45 | Compiling packages: windows_app_lifecycle/8f3eb8b55f576f644bb406756f90f00a2388f75faabed48be626b2c496f5bd26
+Task 26 | 11:26:45 | Compiling packages: buildpack_app_lifecycle/384c8e2a0abfe31f0f63a62f3a861328f9b924ffe42bf2960ecf24722bc08751
+Task 26 | 11:30:27 | Compiling packages: docker_app_lifecycle/dc9f4400ec38e34e65dbc943cf5795150a5df7b64043937e7bf6c0fdbe34d39c (00:03:42)
+Task 26 | 11:30:31 | Compiling packages: util-linux/6310f68e8294c980de62481bced2fc915f449e3a2cc2d13a7a2a49c4a612d825 (00:05:56)
+Task 26 | 11:30:31 | Compiling packages: xfs-progs/6ce014f88e05f358621a25ce48ee036d78bdb1a935a8eb556974d3de26c8614d
+Task 26 | 11:30:47 | Compiling packages: windows_app_lifecycle/8f3eb8b55f576f644bb406756f90f00a2388f75faabed48be626b2c496f5bd26 (00:04:02)
+Task 26 | 11:31:33 | Compiling packages: cloud_controller_ng/0082a1036bba0861de2f1879edb35e007cb90d3ef38baa3668a7c0293eddfcc7 (00:06:00)
+Task 26 | 11:32:45 | Compiling packages: buildpack_app_lifecycle/384c8e2a0abfe31f0f63a62f3a861328f9b924ffe42bf2960ecf24722bc08751 (00:06:00)
+Task 26 | 11:33:03 | Compiling packages: xfs-progs/6ce014f88e05f358621a25ce48ee036d78bdb1a935a8eb556974d3de26c8614d (00:02:32)
+Task 26 | 11:35:16 | Compiling packages: galera/f480a48c26d56d050bc0b579ed60750ccf52dadb (00:09:38)
+Task 26 | 11:35:16 | Compiling packages: mariadb/f793624c41281580123f2d0f356b52a4c80dd060 (00:19:44)
+Task 26 | 11:55:00 | Compiling packages: xtrabackup/e3be0425981cfbd68ce5971505962bf526ae02a4 (00:19:45)
+Task 26 | 12:14:48 | Creating missing vms: nats/a1044c36-e83b-4f71-bafd-ed3239e30aa1 (0)
+Task 26 | 12:14:48 | Creating missing vms: adapter/ea8603d0-19cc-48e5-beb7-666459589e3a (0)
+Task 26 | 12:14:48 | Creating missing vms: consul/73e7937a-0d31-465c-ac6f-dde310e10edd (0)
+Task 26 | 12:14:48 | Creating missing vms: diego-api/ef28a7fd-f231-48b4-97ea-de8fea64a8db (0)
+Task 26 | 12:14:48 | Creating missing vms: singleton-blobstore/b44b45a6-a323-464a-bb49-2de8f6375635 (0)
+Task 26 | 12:14:48 | Creating missing vms: database/85d4ce8c-9bc5-4c3b-90fe-c6a937d3d4ae (0)
+Task 26 | 12:14:48 | Creating missing vms: uaa/8d5ed870-7549-4c34-8be8-da24ebd799da (0)
+Task 26 | 12:14:48 | Creating missing vms: api/f41c3005-d6f0-4c30-b7e3-591c055f1c53 (0)
+Task 26 | 12:14:48 | Creating missing vms: router/bc5747c5-75f4-4c6a-b892-39fd38680967 (0)
+Task 26 | 12:14:48 | Creating missing vms: scheduler/140d9dfe-33bb-43c6-84fd-4f60a2915dab (0)
+Task 26 | 12:14:48 | Creating missing vms: log-api/338d9ca6-87b4-48db-80a5-43200342a142 (0)
+Task 26 | 12:14:48 | Creating missing vms: diego-cell/f6d1ed71-3675-4b67-9456-bde3c4c05cbe (0)
+Task 26 | 12:14:48 | Creating missing vms: tcp-router/9f899ac4-a568-4c45-b501-1e2a3fc50f0b (0)
+Task 26 | 12:14:48 | Creating missing vms: cc-worker/6498e307-6ef5-4d94-ab6d-b6a99f7e8a88 (0)
+Task 26 | 12:14:48 | Creating missing vms: doppler/22ac29c0-407e-448b-a316-9a7e860291bf (0)
+Task 26 | 12:16:03 | Creating missing vms: log-api/338d9ca6-87b4-48db-80a5-43200342a142 (0) (00:01:15)
+Task 26 | 12:16:03 | Creating missing vms: router/bc5747c5-75f4-4c6a-b892-39fd38680967 (0) (00:01:15)
+Task 26 | 12:16:03 | Creating missing vms: nats/a1044c36-e83b-4f71-bafd-ed3239e30aa1 (0) (00:01:15)
+Task 26 | 12:16:03 | Creating missing vms: database/85d4ce8c-9bc5-4c3b-90fe-c6a937d3d4ae (0) (00:01:15)
+Task 26 | 12:16:03 | Creating missing vms: tcp-router/9f899ac4-a568-4c45-b501-1e2a3fc50f0b (0) (00:01:15)
+Task 26 | 12:16:04 | Creating missing vms: singleton-blobstore/b44b45a6-a323-464a-bb49-2de8f6375635 (0) (00:01:16)
+Task 26 | 12:16:04 | Creating missing vms: scheduler/140d9dfe-33bb-43c6-84fd-4f60a2915dab (0) (00:01:16)
+Task 26 | 12:16:04 | Creating missing vms: diego-api/ef28a7fd-f231-48b4-97ea-de8fea64a8db (0) (00:01:16)
+Task 26 | 12:16:05 | Creating missing vms: uaa/8d5ed870-7549-4c34-8be8-da24ebd799da (0) (00:01:17)
+Task 26 | 12:16:05 | Creating missing vms: adapter/ea8603d0-19cc-48e5-beb7-666459589e3a (0) (00:01:17)
+Task 26 | 12:16:05 | Creating missing vms: diego-cell/f6d1ed71-3675-4b67-9456-bde3c4c05cbe (0) (00:01:17)
+Task 26 | 12:16:05 | Creating missing vms: consul/73e7937a-0d31-465c-ac6f-dde310e10edd (0) (00:01:17)
+Task 26 | 12:16:06 | Creating missing vms: doppler/22ac29c0-407e-448b-a316-9a7e860291bf (0) (00:01:18)
+Task 26 | 12:16:05 | Creating missing vms: cc-worker/6498e307-6ef5-4d94-ab6d-b6a99f7e8a88 (0) (00:01:17)
+Task 26 | 12:16:06 | Creating missing vms: api/f41c3005-d6f0-4c30-b7e3-591c055f1c53 (0) (00:01:18)
+Task 26 | 12:16:07 | Updating instance consul: consul/73e7937a-0d31-465c-ac6f-dde310e10edd (0) (canary) (00:00:51)
+Task 26 | 12:16:58 | Updating instance nats: nats/a1044c36-e83b-4f71-bafd-ed3239e30aa1 (0) (canary)
+Task 26 | 12:16:58 | Updating instance adapter: adapter/ea8603d0-19cc-48e5-beb7-666459589e3a (0) (canary) (00:00:50)
+Task 26 | 12:17:50 | Updating instance nats: nats/a1044c36-e83b-4f71-bafd-ed3239e30aa1 (0) (canary) (00:00:52)
+Task 26 | 12:17:50 | Updating instance database: database/85d4ce8c-9bc5-4c3b-90fe-c6a937d3d4ae (0) (canary) (00:01:59)
+Task 26 | 12:19:50 | Updating instance diego-api: diego-api/ef28a7fd-f231-48b4-97ea-de8fea64a8db (0) (canary) (00:00:54)
+Task 26 | 12:20:44 | Updating instance uaa: uaa/8d5ed870-7549-4c34-8be8-da24ebd799da (0) (canary) (00:02:23)
+Task 26 | 12:23:07 | Updating instance singleton-blobstore: singleton-blobstore/b44b45a6-a323-464a-bb49-2de8f6375635 (0) (canary) (00:00:54)
+Task 26 | 12:24:01 | Updating instance cc-worker: cc-worker/6498e307-6ef5-4d94-ab6d-b6a99f7e8a88 (0) (canary)
+Task 26 | 12:24:01 | Updating instance api: api/f41c3005-d6f0-4c30-b7e3-591c055f1c53 (0) (canary)
+Task 26 | 12:25:21 | Updating instance cc-worker: cc-worker/6498e307-6ef5-4d94-ab6d-b6a99f7e8a88 (0) (canary) (00:01:20)
+Task 26 | 12:26:25 | Updating instance api: api/f41c3005-d6f0-4c30-b7e3-591c055f1c53 (0) (canary) (00:02:24)
+Task 26 | 12:26:25 | Updating instance router: router/bc5747c5-75f4-4c6a-b892-39fd38680967 (0) (canary) (00:01:14)
+Task 26 | 12:27:39 | Updating instance tcp-router: tcp-router/9f899ac4-a568-4c45-b501-1e2a3fc50f0b (0) (canary) (00:00:51)
+Task 26 | 12:28:30 | Updating instance scheduler: scheduler/140d9dfe-33bb-43c6-84fd-4f60a2915dab (0) (canary) (00:01:10)
+Task 26 | 12:29:41 | Updating instance diego-cell: diego-cell/f6d1ed71-3675-4b67-9456-bde3c4c05cbe (0) (canary)
+Task 26 | 12:29:41 | Updating instance doppler: doppler/22ac29c0-407e-448b-a316-9a7e860291bf (0) (canary) (00:01:02)
+Task 26 | 12:31:56 | Updating instance diego-cell: diego-cell/f6d1ed71-3675-4b67-9456-bde3c4c05cbe (0) (canary) (00:02:15)
+Task 26 | 12:31:57 | Updating instance log-api: log-api/338d9ca6-87b4-48db-80a5-43200342a142 (0) (canary) (00:00:54)
 
-Task 25 Started  Mon Jun  4 22:56:46 UTC 2018
-Task 25 Finished Mon Jun  4 23:14:47 UTC 2018
-Task 25 Duration 00:18:01
-Task 25 timeout
-
-Updating deployment:
-  Expected task '25' to succeed but state is 'timeout'
-
-Exit code 1
-
-...
-Command exited (not expected).
-So, I have to repeat it.
-After some time, this is the continuation of the output ...
-...
-
-Task 30
-
-Task 30 | 23:22:29 | Preparing deployment: Preparing deployment (00:00:02)
-Task 30 | 23:22:34 | Preparing package compilation: Finding packages to compile (00:00:00)
-Task 30 | 23:22:34 | Compiling packages: loggregator_trafficcontroller/424c16530e0095abbfb4c30ad334a59d92f43f30c74f2dbe0aba4c4d55b02757
-Task 30 | 23:22:34 | Compiling packages: cni/b6476c4a667a465d745a0ef98108718216d39ca2
-Task 30 | 23:22:34 | Compiling packages: reverse_log_proxy/32f62636fc08c27f38dfce6b596faad4748500f0baff470ef58b93df98831937
-Task 30 | 23:22:34 | Compiling packages: silk-daemon/04aa09d20c4e50e0af16bfa95e44860b49190bbc
-Task 30 | 23:22:34 | Compiling packages: netmon/a7a4d08d8159b131eaaf2482e28730ae2ed62529
-Task 30 | 23:22:34 | Compiling packages: vxlan-policy-agent/f5c94b3b7ff8a30dc7722b23fc6cbf8dad04640c
-Task 30 | 23:24:00 | Compiling packages: netmon/a7a4d08d8159b131eaaf2482e28730ae2ed62529 (00:01:26)
-Task 30 | 23:24:00 | Compiling packages: runc-cni/713c77f20dd09518c8ecb15cbc608f2c1bf9db2f (00:00:35)
-Task 30 | 23:24:35 | Compiling packages: route_emitter/3f78d64d475e2c3293f6af2e1610e1a373c4e5c35d06c789d77bded372912211
-Task 30 | 23:24:39 | Compiling packages: vxlan-policy-agent/f5c94b3b7ff8a30dc7722b23fc6cbf8dad04640c (00:02:05)
-Task 30 | 23:24:39 | Compiling packages: certsplitter/a9435b4f9f824b7ec2ada784c4d4fdb6133c16424213768daa82120fcc940a72
-Task 30 | 23:24:51 | Compiling packages: reverse_log_proxy/32f62636fc08c27f38dfce6b596faad4748500f0baff470ef58b93df98831937 (00:02:17)
-Task 30 | 23:24:51 | Compiling packages: proxy/ded8b4598b87c01df79482a531ba417902f229beb514d63edc3df6aab7c9b4e1
-Task 30 | 23:24:51 | Compiling packages: loggregator_trafficcontroller/424c16530e0095abbfb4c30ad334a59d92f43f30c74f2dbe0aba4c4d55b02757 (00:02:17)
-Task 30 | 23:24:51 | Compiling packages: rep/6d2478a938bf9834bfeec2d90070d6c7f19f46dd71e1eb9d4cd24cf6a0b7137f
-Task 30 | 23:25:00 | Compiling packages: silk-daemon/04aa09d20c4e50e0af16bfa95e44860b49190bbc (00:02:26)
-Task 30 | 23:25:00 | Compiling packages: thresholder/51cbfd1dbe3b43690166ca5398d11e2ade11ec1a1d857b560e55d319db175a20
-Task 30 | 23:25:00 | Compiling packages: cni/b6476c4a667a465d745a0ef98108718216d39ca2 (00:02:26)
-Task 30 | 23:25:00 | Compiling packages: zlib/98e4e7f5eebfe3831cf312d32a44f71281fcbc2577770fffd7b9601991ab31de
-Task 30 | 23:25:05 | Compiling packages: certsplitter/a9435b4f9f824b7ec2ada784c4d4fdb6133c16424213768daa82120fcc940a72 (00:00:26)
-Task 30 | 23:25:05 | Compiling packages: util-linux/6310f68e8294c980de62481bced2fc915f449e3a2cc2d13a7a2a49c4a612d825
-Task 30 | 23:25:17 | Compiling packages: proxy/ded8b4598b87c01df79482a531ba417902f229beb514d63edc3df6aab7c9b4e1 (00:00:26)
-Task 30 | 23:25:17 | Compiling packages: lzo/7ec718ef29da337d56f08e90534f561c138c2c88b576dc5da5185d85fdd42b20
-Task 30 | 23:25:39 | Compiling packages: zlib/98e4e7f5eebfe3831cf312d32a44f71281fcbc2577770fffd7b9601991ab31de (00:00:39)
-Task 30 | 23:25:39 | Compiling packages: doppler/0c5852261b0823db1c661d401844ecc35c72d1299ef700179f320e1d472dfd48
-Task 30 | 23:25:46 | Compiling packages: thresholder/51cbfd1dbe3b43690166ca5398d11e2ade11ec1a1d857b560e55d319db175a20 (00:00:46)
-Task 30 | 23:25:46 | Compiling packages: scheduler/93016742b2e51ef59efd7e2cda4894c28033581309941c4a0bceefccd84f75d0
-Task 30 | 23:26:07 | Compiling packages: route_emitter/3f78d64d475e2c3293f6af2e1610e1a373c4e5c35d06c789d77bded372912211 (00:01:32)
-Task 30 | 23:26:07 | Compiling packages: auctioneer/63a480d0b21dae276857b94c3523d77396515b1ffa073e0474583330832dbbff
-Task 30 | 23:26:38 | Compiling packages: lzo/7ec718ef29da337d56f08e90534f561c138c2c88b576dc5da5185d85fdd42b20 (00:01:21)
-Task 30 | 23:26:38 | Compiling packages: ssh_proxy/daa56f038251953e0a76cc11e6e52415697d0928d2263fe35c1d906455034f60
-Task 30 | 23:26:46 | Compiling packages: scheduler/93016742b2e51ef59efd7e2cda4894c28033581309941c4a0bceefccd84f75d0 (00:01:00)
-Task 30 | 23:26:46 | Compiling packages: gorouter/ec7ada167a6ee89a918a3c5cb973bc8afb53121bd80a8d8e096ac2e22e7c7329
-Task 30 | 23:26:55 | Compiling packages: doppler/0c5852261b0823db1c661d401844ecc35c72d1299ef700179f320e1d472dfd48 (00:01:16)
-Task 30 | 23:26:55 | Compiling packages: rep/6d2478a938bf9834bfeec2d90070d6c7f19f46dd71e1eb9d4cd24cf6a0b7137f (00:02:04)
-Task 30 | 23:26:55 | Compiling packages: policy-server/693030e3cc4bef4370aa2d8a390c8a718ab510c8
-Task 30 | 23:26:55 | Compiling packages: routing-api/541b8a133dcb865d91fa7a1d2ab7b81bd461f9a40a987a2671fe757967aed80f
-Task 30 | 23:27:25 | Compiling packages: auctioneer/63a480d0b21dae276857b94c3523d77396515b1ffa073e0474583330832dbbff (00:01:18)
-Task 30 | 23:27:25 | Compiling packages: diego-sshd/49f577b34b7a6a1b0a95dda14836e46f6279c08f15e4e82aec0e45d8b8f2da7e
-Task 30 | 23:28:07 | Compiling packages: ssh_proxy/daa56f038251953e0a76cc11e6e52415697d0928d2263fe35c1d906455034f60 (00:01:29)
-Task 30 | 23:28:07 | Compiling packages: healthcheck/3148f3a84d44201a5f6d925a169c4613f9bcc80313f17c4a4ac45c016bee8c53
-Task 30 | 23:28:19 | Compiling packages: gorouter/ec7ada167a6ee89a918a3c5cb973bc8afb53121bd80a8d8e096ac2e22e7c7329 (00:01:33)
-Task 30 | 23:28:19 | Compiling packages: file_server/fe13baf887075aebef1c8b9367e4232eafd12e76f0cd0af6a3ebad1d793309ea
-Task 30 | 23:28:26 | Compiling packages: policy-server/693030e3cc4bef4370aa2d8a390c8a718ab510c8 (00:01:31)
-Task 30 | 23:28:26 | Compiling packages: ruby-2.4/aa713a098334c00ad9a710f61a17b38d08c3565c1f9e5fe9b4c6907e8c34dd6e
-Task 30 | 23:28:47 | Compiling packages: routing-api/541b8a133dcb865d91fa7a1d2ab7b81bd461f9a40a987a2671fe757967aed80f (00:01:52)
-Task 30 | 23:28:47 | Compiling packages: locket/7b524d83655e572ddfccc836c695656e1337bb4838f6e29259c680cbb0230abc
-Task 30 | 23:29:32 | Compiling packages: file_server/fe13baf887075aebef1c8b9367e4232eafd12e76f0cd0af6a3ebad1d793309ea (00:01:13)
-Task 30 | 23:29:32 | Compiling packages: silk-controller/94c34df3c5d775ce7cea16cd967352440914bc7c
-Task 30 | 23:30:05 | Compiling packages: locket/7b524d83655e572ddfccc836c695656e1337bb4838f6e29259c680cbb0230abc (00:01:18)
-Task 30 | 23:30:05 | Compiling packages: bbs/c5cd5f7f5dda9a3d02846db29a9162192a937937434faa387fc5a21ce89a7967
-Task 30 | 23:30:30 | Compiling packages: silk-controller/94c34df3c5d775ce7cea16cd967352440914bc7c (00:00:58)
-Task 30 | 23:30:30 | Compiling packages: cfdot/ab9ecdfee6224984160156db7061fbede28107f678c30be46043617504efc673
-Task 30 | 23:31:45 | Compiling packages: util-linux/6310f68e8294c980de62481bced2fc915f449e3a2cc2d13a7a2a49c4a612d825 (00:06:40)
-Task 30 | 23:31:45 | Compiling packages: switchboard/96c4273ecad574f8e448d1d7fb3927efdd57e007
-Task 30 | 23:31:54 | Compiling packages: healthcheck/3148f3a84d44201a5f6d925a169c4613f9bcc80313f17c4a4ac45c016bee8c53 (00:03:47)
-Task 30 | 23:31:54 | Compiling packages: generate-auto-tune-mysql/f41b75e326fab5af34f2c488b6be873a1a8ee40b
-Task 30 | 23:32:03 | Compiling packages: bbs/c5cd5f7f5dda9a3d02846db29a9162192a937937434faa387fc5a21ce89a7967 (00:01:58)
-Task 30 | 23:32:03 | Compiling packages: cf-mysql-cluster-health-logger/19dc5675219358b70d90ed438b68e745ec0a2a73
-Task 30 | 23:32:14 | Compiling packages: cfdot/ab9ecdfee6224984160156db7061fbede28107f678c30be46043617504efc673 (00:01:44)
-Task 30 | 23:32:14 | Compiling packages: gra-log-purger/2cbbd66b8161a503378af6486f2a0d0ccc987fec
-Task 30 | 23:32:31 | Compiling packages: generate-auto-tune-mysql/f41b75e326fab5af34f2c488b6be873a1a8ee40b (00:00:37)
-Task 30 | 23:32:31 | Compiling packages: galera-healthcheck/ea0e2e6288d084a9d23632f99711f85e1670bb60
-Task 30 | 23:32:50 | Compiling packages: cf-mysql-cluster-health-logger/19dc5675219358b70d90ed438b68e745ec0a2a73 (00:00:47)
-Task 30 | 23:32:50 | Compiling packages: mariadb_ctrl/aa2d98f62993e091cc3cc0c5017db775953bd5bb
-Task 30 | 23:32:52 | Compiling packages: gra-log-purger/2cbbd66b8161a503378af6486f2a0d0ccc987fec (00:00:38)
-Task 30 | 23:32:52 | Compiling packages: scons/dbd49f7f2517cdb1853cd5e08eb59219731eb4c6
-Task 30 | 23:33:02 | Compiling packages: switchboard/96c4273ecad574f8e448d1d7fb3927efdd57e007 (00:01:17)
-Task 30 | 23:33:02 | Compiling packages: adapter/201eb1cef7aeae0ec8db77592d1305c95fe8181d2cea3640857354c49fd1dabd
-Task 30 | 23:33:19 | Compiling packages: scons/dbd49f7f2517cdb1853cd5e08eb59219731eb4c6 (00:00:27)
-Task 30 | 23:33:19 | Compiling packages: gnatsd/4614b4e2f059001cd26d79e7ef7ece6677db3e38
-Task 30 | 23:33:27 | Compiling packages: galera-healthcheck/ea0e2e6288d084a9d23632f99711f85e1670bb60 (00:00:56)
-Task 30 | 23:33:27 | Compiling packages: metron_agent/3f25b33163be7a8150a2cb825ef34803ad85fb0a5f3f507047ab9c91bdd424cf
-Task 30 | 23:33:46 | Compiling packages: mariadb_ctrl/aa2d98f62993e091cc3cc0c5017db775953bd5bb (00:00:56)
-Task 30 | 23:33:46 | Compiling packages: confab/85382b43999179f4ede147c9b13cf881c2b9adb7
-Task 30 | 23:34:05 | Compiling packages: gnatsd/4614b4e2f059001cd26d79e7ef7ece6677db3e38 (00:00:46)
-Task 30 | 23:34:05 | Compiling packages: smoke_tests/d7431ee32cb8ecedb7d925aff891bbb61b19d476 (00:00:04)
-Task 30 | 23:34:09 | Compiling packages: xfs-progs/6ce014f88e05f358621a25ce48ee036d78bdb1a935a8eb556974d3de26c8614d
-Task 30 | 23:34:22 | Compiling packages: adapter/201eb1cef7aeae0ec8db77592d1305c95fe8181d2cea3640857354c49fd1dabd (00:01:20)
-Task 30 | 23:34:22 | Compiling packages: galera/f480a48c26d56d050bc0b579ed60750ccf52dadb
-Task 30 | 23:34:40 | Compiling packages: confab/85382b43999179f4ede147c9b13cf881c2b9adb7 (00:00:54)
-Task 30 | 23:34:57 | Compiling packages: metron_agent/3f25b33163be7a8150a2cb825ef34803ad85fb0a5f3f507047ab9c91bdd424cf (00:01:30)
-Task 30 | 23:35:10 | Compiling packages: diego-sshd/49f577b34b7a6a1b0a95dda14836e46f6279c08f15e4e82aec0e45d8b8f2da7e (00:07:45)
-Task 30 | 23:35:10 | Compiling packages: windows_app_lifecycle/8f3eb8b55f576f644bb406756f90f00a2388f75faabed48be626b2c496f5bd26
-Task 30 | 23:35:10 | Compiling packages: docker_app_lifecycle/dc9f4400ec38e34e65dbc943cf5795150a5df7b64043937e7bf6c0fdbe34d39c
-Task 30 | 23:35:10 | Compiling packages: buildpack_app_lifecycle/384c8e2a0abfe31f0f63a62f3a861328f9b924ffe42bf2960ecf24722bc08751
-Task 30 | 23:39:19 | Compiling packages: docker_app_lifecycle/dc9f4400ec38e34e65dbc943cf5795150a5df7b64043937e7bf6c0fdbe34d39c (00:04:09)
-Task 30 | 23:39:35 | Compiling packages: xfs-progs/6ce014f88e05f358621a25ce48ee036d78bdb1a935a8eb556974d3de26c8614d (00:05:26)
-Task 30 | 23:39:42 | Compiling packages: windows_app_lifecycle/8f3eb8b55f576f644bb406756f90f00a2388f75faabed48be626b2c496f5bd26 (00:04:32)
-Task 30 | 23:41:52 | Compiling packages: buildpack_app_lifecycle/384c8e2a0abfe31f0f63a62f3a861328f9b924ffe42bf2960ecf24722bc08751 (00:06:42)
-Task 30 | 23:42:00 | Compiling packages: ruby-2.4/aa713a098334c00ad9a710f61a17b38d08c3565c1f9e5fe9b4c6907e8c34dd6e (00:13:34)
-Task 30 | 23:42:00 | Compiling packages: nginx_newrelic_plugin/70737ccb2088b16e99e9f59a60ce36e8d5037c3a40b1d960bef02f51391f1fa4
-Task 30 | 23:42:00 | Compiling packages: cloud_controller_ng/73c28348428f325764e0df79539f40be6b8fa01ad983e74fa181d25ea136ae79
-Task 30 | 23:42:12 | Compiling packages: nginx_newrelic_plugin/70737ccb2088b16e99e9f59a60ce36e8d5037c3a40b1d960bef02f51391f1fa4 (00:00:12)
-Task 30 | 23:44:21 | Compiling packages: cloud_controller_ng/73c28348428f325764e0df79539f40be6b8fa01ad983e74fa181d25ea136ae79 (00:02:21)
-Task 30 | 23:45:09 | Compiling packages: galera/f480a48c26d56d050bc0b579ed60750ccf52dadb (00:10:47)
-Task 30 | 23:45:09 | Compiling packages: mariadb/f793624c41281580123f2d0f356b52a4c80dd060 (00:16:22)
-Task 30 | 00:01:31 | Compiling packages: xtrabackup/e3be0425981cfbd68ce5971505962bf526ae02a4 (00:17:25)
-Task 30 | 00:18:58 | Creating missing vms: adapter/ddece67b-eee0-4d31-af26-111dc316c2e2 (0)
-Task 30 | 00:18:58 | Creating missing vms: database/c720d892-3bb8-49d9-9593-14b13b38bd22 (0)
-Task 30 | 00:18:58 | Creating missing vms: nats/5d92ee0b-3d61-48ef-aac0-802aa42120f2 (0)
-Task 30 | 00:18:58 | Creating missing vms: consul/f984f732-4938-4430-a20d-d93ee3f325f7 (0)
-Task 30 | 00:18:58 | Creating missing vms: uaa/9ea40245-bbf6-4d4a-8ad5-1389cf2c8dd7 (0)
-Task 30 | 00:18:58 | Creating missing vms: diego-api/214c66ec-10c9-4cf2-a95d-3eb0fa86a231 (0)
-Task 30 | 00:18:58 | Creating missing vms: diego-cell/086c80ad-598b-4bf9-81f9-dc1a29ec95b9 (0)
-Task 30 | 00:18:58 | Creating missing vms: router/9896c839-6512-4632-a752-bd836954e8ba (0)
-Task 30 | 00:18:58 | Creating missing vms: log-api/f2ee6301-1517-42ea-bd9b-6ecd68515f67 (0)
-Task 30 | 00:18:58 | Creating missing vms: tcp-router/9d01c016-cfbc-4115-a4b2-9a4f62623c18 (0)
-Task 30 | 00:18:58 | Creating missing vms: doppler/b5e20bff-2eeb-4005-9a21-6da413f4f8fd (0)
-Task 30 | 00:18:58 | Creating missing vms: cc-worker/3efdf318-e732-4cb6-9c38-3250ac6f385e (0)
-Task 30 | 00:18:58 | Creating missing vms: singleton-blobstore/4092b9fb-aeea-41cc-a7c8-7e38c4471484 (0)
-Task 30 | 00:18:58 | Creating missing vms: scheduler/b2c7a90b-f1d9-4d54-9fbd-39f346f85bc1 (0)
-Task 30 | 00:18:58 | Creating missing vms: api/95153fb1-175b-41ca-aaab-355d9a0133f1 (0)
-Task 30 | 00:20:07 | Creating missing vms: database/c720d892-3bb8-49d9-9593-14b13b38bd22 (0) (00:01:09)
-Task 30 | 00:20:09 | Creating missing vms: doppler/b5e20bff-2eeb-4005-9a21-6da413f4f8fd (0) (00:01:11)
-Task 30 | 00:20:10 | Creating missing vms: log-api/f2ee6301-1517-42ea-bd9b-6ecd68515f67 (0) (00:01:12)
-Task 30 | 00:20:11 | Creating missing vms: diego-cell/086c80ad-598b-4bf9-81f9-dc1a29ec95b9 (0) (00:01:13)
-Task 30 | 00:20:11 | Creating missing vms: singleton-blobstore/4092b9fb-aeea-41cc-a7c8-7e38c4471484 (0) (00:01:13)
-Task 30 | 00:20:11 | Creating missing vms: consul/f984f732-4938-4430-a20d-d93ee3f325f7 (0) (00:01:13)
-Task 30 | 00:20:11 | Creating missing vms: adapter/ddece67b-eee0-4d31-af26-111dc316c2e2 (0) (00:01:13)
-Task 30 | 00:20:11 | Creating missing vms: router/9896c839-6512-4632-a752-bd836954e8ba (0) (00:01:13)
-Task 30 | 00:20:11 | Creating missing vms: tcp-router/9d01c016-cfbc-4115-a4b2-9a4f62623c18 (0) (00:01:13)
-Task 30 | 00:20:12 | Creating missing vms: diego-api/214c66ec-10c9-4cf2-a95d-3eb0fa86a231 (0) (00:01:14)
-Task 30 | 00:20:12 | Creating missing vms: scheduler/b2c7a90b-f1d9-4d54-9fbd-39f346f85bc1 (0) (00:01:14)
-Task 30 | 00:20:12 | Creating missing vms: cc-worker/3efdf318-e732-4cb6-9c38-3250ac6f385e (0) (00:01:14)
-Task 30 | 00:20:12 | Creating missing vms: nats/5d92ee0b-3d61-48ef-aac0-802aa42120f2 (0) (00:01:14)
-Task 30 | 00:20:12 | Creating missing vms: uaa/9ea40245-bbf6-4d4a-8ad5-1389cf2c8dd7 (0) (00:01:14)
-Task 30 | 00:20:13 | Creating missing vms: api/95153fb1-175b-41ca-aaab-355d9a0133f1 (0) (00:01:15)
-Task 30 | 00:20:13 | Updating instance consul: consul/f984f732-4938-4430-a20d-d93ee3f325f7 (0) (canary) (00:00:52)
-Task 30 | 00:21:05 | Updating instance adapter: adapter/ddece67b-eee0-4d31-af26-111dc316c2e2 (0) (canary)
-Task 30 | 00:21:05 | Updating instance nats: nats/5d92ee0b-3d61-48ef-aac0-802aa42120f2 (0) (canary) (00:00:50)
-Task 30 | 00:21:56 | Updating instance adapter: adapter/ddece67b-eee0-4d31-af26-111dc316c2e2 (0) (canary) (00:00:51)
-Task 30 | 00:21:56 | Updating instance database: database/c720d892-3bb8-49d9-9593-14b13b38bd22 (0) (canary) (00:01:48)
-Task 30 | 00:23:44 | Updating instance diego-api: diego-api/214c66ec-10c9-4cf2-a95d-3eb0fa86a231 (0) (canary) (00:00:51)
-Task 30 | 00:24:35 | Updating instance uaa: uaa/9ea40245-bbf6-4d4a-8ad5-1389cf2c8dd7 (0) (canary) (00:01:58)
-Task 30 | 00:26:33 | Updating instance singleton-blobstore: singleton-blobstore/4092b9fb-aeea-41cc-a7c8-7e38c4471484 (0) (canary) (00:00:51)
-Task 30 | 00:27:24 | Updating instance api: api/95153fb1-175b-41ca-aaab-355d9a0133f1 (0) (canary)
-Task 30 | 00:27:24 | Updating instance cc-worker: cc-worker/3efdf318-e732-4cb6-9c38-3250ac6f385e (0) (canary) (00:01:39)
-Task 30 | 00:29:36 | Updating instance api: api/95153fb1-175b-41ca-aaab-355d9a0133f1 (0) (canary) (00:02:12)
-Task 30 | 00:29:36 | Updating instance router: router/9896c839-6512-4632-a752-bd836954e8ba (0) (canary) (00:01:11)
-Task 30 | 00:30:47 | Updating instance tcp-router: tcp-router/9d01c016-cfbc-4115-a4b2-9a4f62623c18 (0) (canary) (00:00:51)
-Task 30 | 00:31:38 | Updating instance scheduler: scheduler/b2c7a90b-f1d9-4d54-9fbd-39f346f85bc1 (0) (canary) (00:01:05)
-Task 30 | 00:32:43 | Updating instance doppler: doppler/b5e20bff-2eeb-4005-9a21-6da413f4f8fd (0) (canary)
-Task 30 | 00:32:43 | Updating instance diego-cell: diego-cell/086c80ad-598b-4bf9-81f9-dc1a29ec95b9 (0) (canary)
-Task 30 | 00:33:39 | Updating instance doppler: doppler/b5e20bff-2eeb-4005-9a21-6da413f4f8fd (0) (canary) (00:00:56)
-Task 30 | 00:34:51 | Updating instance diego-cell: diego-cell/086c80ad-598b-4bf9-81f9-dc1a29ec95b9 (0) (canary) (00:02:08)
-Task 30 | 00:34:51 | Updating instance log-api: log-api/f2ee6301-1517-42ea-bd9b-6ecd68515f67 (0) (canary) (00:00:53)
-
-Task 30 Started  Mon Jun  4 23:22:29 UTC 2018
-Task 30 Finished Tue Jun  5 00:35:44 UTC 2018
-Task 30 Duration 01:13:15
-Task 30 done
+Task 26 Started  Sat Jun 16 10:57:33 UTC 2018
+Task 26 Finished Sat Jun 16 12:32:51 UTC 2018
+Task 26 Duration 01:35:18
+Task 26 done
 
 Succeeded

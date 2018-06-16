@@ -1,0 +1,34 @@
+Using environment '192.168.50.6' as client 'admin'
+
+Name                   Version   Commit Hash  
+binary-buildpack       1.0.19*   1936657  
+bpm                    0.6.0*    b6f4675  
+capi                   1.60.0*   d17dfe1  
+cf-mysql               36.14.0*  aa04a97  
+cf-networking          1.13.0*   e773941b  
+cf-smoke-tests         40.0.5*   d6aaf1f  
+cf-syslog-drain        6.5*      5ac23f0  
+cflinuxfs2             1.212.0*  4013f9a  
+consul                 193*      c8a25e6  
+diego                  2.8.0*    a9251c7  
+dotnet-core-buildpack  2.0.7*    9280645  
+garden-runc            1.14.0*   7f9d923  
+go-buildpack           1.8.23*   b09e947  
+java-buildpack         4.12*     a170800  
+loggregator            102.2*    0bcabdb2  
+nats                   24*       30e7a82  
+nodejs-buildpack       1.6.25*   8cf9a6f  
+php-buildpack          4.3.56*   8d72322  
+python-buildpack       1.6.17*   ed6d3dd  
+routing                0.178.0*  76fa9ea  
+ruby-buildpack         1.7.19*   0531e48  
+staticfile-buildpack   1.4.28*   e7f9345  
+statsd-injector        1.3.0*    39e5179  
+uaa                    59*       9544761  
+
+(*) Currently deployed
+(+) Uncommitted changes
+
+24 releases
+
+Succeeded

@@ -1,0 +1,26 @@
+Using environment '192.168.50.6' as client 'admin'
+
+Task 27. Done
+
+Deployment 'cf'
+
+Instance                                                  Process State  AZ  IPs           VM CID                                VM Type        Active  
+adapter/ea8603d0-19cc-48e5-beb7-666459589e3a              running        z1  10.244.0.130  5e6083c3-5a1b-4e91-7bb6-0b95496fb930  minimal        true  
+api/f41c3005-d6f0-4c30-b7e3-591c055f1c53                  running        z1  10.244.0.135  341be1d9-ce3a-4cf6-57be-66c149f7bf3b  small          true  
+cc-worker/6498e307-6ef5-4d94-ab6d-b6a99f7e8a88            running        z1  10.244.0.136  a4cee07b-c1b9-4c5c-79ad-8efa90894483  minimal        true  
+consul/73e7937a-0d31-465c-ac6f-dde310e10edd               running        z1  10.244.0.128  85c2036b-4a9e-424a-5028-220075e09971  minimal        true  
+database/85d4ce8c-9bc5-4c3b-90fe-c6a937d3d4ae             running        z1  10.244.0.131  c3c6225e-d4de-41c8-7622-d97232f06a01  small          true  
+diego-api/ef28a7fd-f231-48b4-97ea-de8fea64a8db            running        z1  10.244.0.132  6624f5c3-dd1f-42d3-4f19-14a35eaf954c  small          true  
+diego-cell/f6d1ed71-3675-4b67-9456-bde3c4c05cbe           running        z1  10.244.0.140  73791181-6bba-4a09-500c-c14096a8dd66  small-highmem  true  
+doppler/22ac29c0-407e-448b-a316-9a7e860291bf              running        z1  10.244.0.139  d9c2624f-d899-4097-693e-f89476c99d8a  minimal        true  
+log-api/338d9ca6-87b4-48db-80a5-43200342a142              running        z1  10.244.0.141  dc0ce1c4-de10-41ad-6a43-a0d55b90cc2d  minimal        true  
+nats/a1044c36-e83b-4f71-bafd-ed3239e30aa1                 running        z1  10.244.0.129  665b2631-3a7b-4504-6255-92e30cc74b63  minimal        true  
+router/bc5747c5-75f4-4c6a-b892-39fd38680967               running        z1  10.244.0.34   04785400-9670-4b24-5e30-bc6081fec3be  minimal        true  
+scheduler/140d9dfe-33bb-43c6-84fd-4f60a2915dab            running        z1  10.244.0.138  5c46cd0d-034c-4aa3-4d57-3c3e376c18b8  minimal        true  
+singleton-blobstore/b44b45a6-a323-464a-bb49-2de8f6375635  running        z1  10.244.0.134  06d4f478-5d82-40c1-635b-da0b524a6dec  small          true  
+tcp-router/9f899ac4-a568-4c45-b501-1e2a3fc50f0b           running        z1  10.244.0.137  3320fb3a-e7c9-4fb3-793a-5899597803b0  minimal        true  
+uaa/8d5ed870-7549-4c34-8be8-da24ebd799da                  running        z1  10.244.0.133  2d0d41b8-1754-42ab-733d-d820774f1c86  minimal        true  
+
+15 vms
+
+Succeeded

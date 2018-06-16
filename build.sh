@@ -17,7 +17,10 @@ _README() {
 
 _build() {
   asciidoctor $asciidoctor_attrs -D "$html_dir" $doc
-  ( cd src/docs/asciidoc; rsync -a images "$BASE_DIR/$html_dir/" )
+  (
+    cd src/docs/asciidoc
+    rsync -a . --include='*.txt' --include='*.html' --exclude='*' "$BASE_DIR/$html_dir/"
+  )
 }
 
 _pdf() {
