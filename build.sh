@@ -46,6 +46,7 @@ _publish() {
   cd build/asciidoc/html5
   rsync -am \
     --include='**/' \
+    --include='/*.txt' \
     --include='/index.html' \
     --include='/images/**' \
     --exclude='*' \
