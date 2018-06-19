@@ -1,0 +1,124 @@
+Using environment '192.168.50.6' as client 'admin'                                        
+                                                                                         
+Using deployment 'zookeeper'                                                             
+                                                                                          
+Task 4                                                                                   
+                                                                             
+Task 4 | 10:43:01 | Preparing deployment: Preparing deployment               
+Task 4 | 10:43:01 | Warning: Ambiguous request: the requested errand name 'smoke-tests' matches both a job name and an errand instance group name. Executing errand on all relevant instances with job 'smoke-tests'.
+Task 4 | 10:43:01 | Preparing package compilation: Finding packages to compile (00:00:00)
+Task 4 | 10:43:01 | Preparing deployment: Preparing deployment (00:00:00)                 
+Task 4 | 10:43:01 | Creating missing vms: smoke-tests/82340050-b366-4993-bd37-1f289bdf2489 (0) (00:00:07)
+Task 4 | 10:43:08 | Updating instance smoke-tests: smoke-tests/82340050-b366-4993-bd37-1f289bdf2489 (0) (canary) (00:00:22)
+Task 4 | 10:43:30 | Running errand: smoke-tests/82340050-b366-4993-bd37-1f289bdf2489 (0) (00:00:16)
+Task 4 | 10:43:46 | Fetching logs for smoke-tests/82340050-b366-4993-bd37-1f289bdf2489 (0): Finding and packing log files (00:00:01)                                                                                                         
+                 
+Task 4 Started  Sat Jun  2 10:43:01 UTC 2018
+Task 4 Finished Sat Jun  2 10:43:47 UTC 2018
+Task 4 Duration 00:00:46
+Task 4 done      
+
+Instance   smoke-tests/82340050-b366-4993-bd37-1f289bdf2489
+Exit Code  0
+Stdout     -----> simple test
+           Successfully created value                                    
+           Successfully retrieved created value                                          
+           Successfully set new value                                                             
+           Successfully deleted value                                                     
+           -----> phunt/zk-smoketests                                                     
+           Connecting to 10.244.0.2:2181                                                             
+           Connected in 34 ms, handle is 0                                                           
+           Connecting to 10.244.0.3:2181                                                                     
+           Connected in 33 ms, handle is 1                                                             
+           Connecting to 10.244.0.4:2181                                                    
+           Connected in 67 ms, handle is 2                                                  
+           Connecting to 10.244.0.5:2181                                                    
+           Connected in 8 ms, handle is 3                                                   
+           Connecting to 10.244.0.6:2181                                                    
+           Connected in 19 ms, handle is 4                                                             
+           Connecting to 10.244.0.2:2181                                                               
+           Connected in 7 ms, handle is 5                                                              
+           Connecting to 10.244.0.6:2181                                                               
+           Connected in 18 ms, handle is 0                                                             
+           Smoke test successful                                                                                       
+           -----> phunt/zk-latencies (servers)                                                                         
+           Connecting to 10.244.0.2:2181                                                                      
+           Connected in 8 ms, handle is 0                                                                     
+           Connecting to 10.244.0.3:2181                                                                                                                                                                                                     
+           Connected in 8 ms, handle is 1
+           Connecting to 10.244.0.4:2181    
+           Connected in 8 ms, handle is 2   
+           Connecting to 10.244.0.5:2181
+           Connected in 8 ms, handle is 3
+           Connecting to 10.244.0.6:2181
+           Connected in 5 ms, handle is 4
+           Testing latencies on server 10.244.0.2:2181 using syncronous calls
+           created     100 permanent znodes  in    599 ms (5.996699 ms/op 166.758402/sec)
+           set         100           znodes  in    527 ms (5.272210 ms/op 189.673793/sec)
+           get         100           znodes  in     79 ms (0.797298 ms/op 1254.236254/sec)
+           deleted     100 permanent znodes  in    518 ms (5.188220 ms/op 192.744349/sec)
+           created     100 ephemeral znodes  in    484 ms (4.843550 ms/op 206.460149/sec)
+           watched     100           znodes  in     60 ms (0.605550 ms/op 1651.391809/sec)
+           deleted     100 ephemeral znodes  in    373 ms (3.739641 ms/op 267.405368/sec)
+           notif       100           watches in      0 ms (included in prior)
+           Testing latencies on server 10.244.0.3:2181 using syncronous calls
+           created     100 permanent znodes  in    363 ms (3.631120 ms/op 275.397143/sec)                                                                                                                            
+           set         100           znodes  in    315 ms (3.159220 ms/op 316.533806/sec)
+           get         100           znodes  in     39 ms (0.393000 ms/op 2544.531534/sec)
+           deleted     100 permanent znodes  in    326 ms (3.260989 ms/op 306.655417/sec)                
+           created     100 ephemeral znodes  in    336 ms (3.365769 ms/op 297.108888/sec)                                  
+           watched     100           znodes  in     41 ms (0.414002 ms/op 2415.447609/sec)
+           deleted     100 ephemeral znodes  in    284 ms (2.847030 ms/op 351.243205/sec)
+           notif       100           watches in   1000 ms (10.006649 ms/op 99.933549/sec)
+           Testing latencies on server 10.244.0.4:2181 using syncronous calls
+           created     100 permanent znodes  in    366 ms (3.664992 ms/op 272.851902/sec)
+           set         100           znodes  in    332 ms (3.320470 ms/op 301.162198/sec)
+           get         100           znodes  in     56 ms (0.568881 ms/op 1757.836769/sec)
+           deleted     100 permanent znodes  in    343 ms (3.431649 ms/op 291.405077/sec)
+           created     100 ephemeral znodes  in    379 ms (3.795531 ms/op 263.467761/sec)
+           watched     100           znodes  in     57 ms (0.574548 ms/op 1740.497877/sec)
+           deleted     100 ephemeral znodes  in    285 ms (2.855952 ms/op 350.145967/sec)
+           notif       100           watches in      0 ms (included in prior)
+           Testing latencies on server 10.244.0.5:2181 using syncronous calls
+           created     100 permanent znodes  in    327 ms (3.271451 ms/op 305.674761/sec)
+           set         100           znodes  in    322 ms (3.221989 ms/op 310.367323/sec)
+           get         100           znodes  in     44 ms (0.446761 ms/op 2238.334979/sec)
+           deleted     100 permanent znodes  in    338 ms (3.385830 ms/op 295.348562/sec)
+           created     100 ephemeral znodes  in    329 ms (3.299918 ms/op 303.037817/sec)
+           watched     100           znodes  in     39 ms (0.399611 ms/op 2502.433640/sec)
+           deleted     100 ephemeral znodes  in    293 ms (2.935109 ms/op 340.702833/sec)
+           notif       100           watches in   1003 ms (10.031660 ms/op 99.684403/sec)
+           Testing latencies on server 10.244.0.6:2181 using syncronous calls
+           created     100 permanent znodes  in    326 ms (3.260629 ms/op 306.689276/sec)
+           set         100           znodes  in    322 ms (3.223839 ms/op 310.189206/sec)
+           get         100           znodes  in     25 ms (0.258420 ms/op 3869.676812/sec)
+           deleted     100 permanent znodes  in    331 ms (3.317630 ms/op 301.419963/sec)
+           created     100 ephemeral znodes  in    354 ms (3.548009 ms/op 281.848183/sec)
+           watched     100           znodes  in     24 ms (0.249670 ms/op 4005.294168/sec)
+           deleted     100 ephemeral znodes  in    406 ms (4.066980 ms/op 245.882701/sec)
+           notif       100           watches in      0 ms (included in prior)
+           Latency test complete
+           -----> phunt/zk-latencies (cluster)
+           Connecting to 10.244.0.2:2181,10.244.0.3:2181,10.244.0.4:2181,10.244.0.5:2181,10.244.0.6:2181
+           Connected in 8 ms, handle is 0
+           Testing latencies on server 10.244.0.2:2181,10.244.0.3:2181,10.244.0.4:2181,10.244.0.5:2181,10.244.0.6:2181 using syncronous calls                                                                                                
+           created     100 permanent znodes  in    307 ms (3.076992 ms/op 324.992716/sec)
+           set         100           znodes  in    290 ms (2.901080 ms/op 344.699256/sec)
+           get         100           znodes  in     49 ms (0.499408 ms/op 2002.369824/sec)
+           deleted     100 permanent znodes  in    302 ms (3.022170 ms/op 330.888063/sec)
+           created     100 ephemeral znodes  in    352 ms (3.529000 ms/op 283.366370/sec)
+           watched     100           znodes  in     29 ms (0.297918 ms/op 3356.624732/sec)
+           deleted     100 ephemeral znodes  in    259 ms (2.590559 ms/op 386.017142/sec)
+           notif       100           watches in      0 ms (included in prior)
+           Latency test complete
+
+Stderr     2018/06/02 10:43:30 Connected to 10.244.0.5:2181
+           2018/06/02 10:43:31 Authenticated: id=388365172256866304, timeout=4000
+           2018/06/02 10:43:31 Re-submitting `0` credentials after reconnect
+           2018/06/02 10:43:31 Recv loop terminated: err=EOF
+           2018/06/02 10:43:31 Send loop terminated: err=<nil>
+
+
+1 errand(s)
+
+Succeeded

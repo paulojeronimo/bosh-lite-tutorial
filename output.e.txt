@@ -1,0 +1,38 @@
+Using environment '192.168.50.6' as client 'admin'
+
+Using deployment 'cf'
+
+Continue? [yN]: y
+
+Task 28
+
+Task 28 | 13:00:30 | Preparing deployment: Preparing deployment (00:00:02)
+Task 28 | 13:00:38 | Preparing package compilation: Finding packages to compile (00:00:01)
+Task 28 | 13:00:39 | Updating instance consul: consul/73e7937a-0d31-465c-ac6f-dde310e10edd (0) (canary) (00:00:09)
+Task 28 | 13:00:48 | Updating instance nats: nats/a1044c36-e83b-4f71-bafd-ed3239e30aa1 (0) (canary)
+Task 28 | 13:00:48 | Updating instance adapter: adapter/ea8603d0-19cc-48e5-beb7-666459589e3a (0) (canary)
+Task 28 | 13:00:56 | Updating instance nats: nats/a1044c36-e83b-4f71-bafd-ed3239e30aa1 (0) (canary) (00:00:08)
+Task 28 | 13:01:54 | Updating instance adapter: adapter/ea8603d0-19cc-48e5-beb7-666459589e3a (0) (canary) (00:01:06)
+Task 28 | 13:01:54 | Updating instance database: database/85d4ce8c-9bc5-4c3b-90fe-c6a937d3d4ae (0) (canary) (00:00:19)
+Task 28 | 13:02:13 | Updating instance diego-api: diego-api/ef28a7fd-f231-48b4-97ea-de8fea64a8db (0) (canary) (00:00:08)
+Task 28 | 13:02:21 | Updating instance uaa: uaa/8d5ed870-7549-4c34-8be8-da24ebd799da (0) (canary) (00:00:14)
+Task 28 | 13:02:35 | Updating instance singleton-blobstore: singleton-blobstore/b44b45a6-a323-464a-bb49-2de8f6375635 (0) (canary) (00:00:10)
+Task 28 | 13:02:46 | Updating instance api: api/f41c3005-d6f0-4c30-b7e3-591c055f1c53 (0) (canary)
+Task 28 | 13:02:46 | Updating instance cc-worker: cc-worker/6498e307-6ef5-4d94-ab6d-b6a99f7e8a88 (0) (canary)
+Task 28 | 13:03:26 | Updating instance api: api/f41c3005-d6f0-4c30-b7e3-591c055f1c53 (0) (canary) (00:00:40)
+Task 28 | 13:03:36 | Updating instance cc-worker: cc-worker/6498e307-6ef5-4d94-ab6d-b6a99f7e8a88 (0) (canary) (00:00:50)
+Task 28 | 13:03:36 | Updating instance router: router/bc5747c5-75f4-4c6a-b892-39fd38680967 (0) (canary) (00:00:25)
+Task 28 | 13:04:01 | Updating instance tcp-router: tcp-router/9f899ac4-a568-4c45-b501-1e2a3fc50f0b (0) (canary) (00:00:06)
+Task 28 | 13:04:07 | Updating instance scheduler: scheduler/140d9dfe-33bb-43c6-84fd-4f60a2915dab (0) (canary) (00:00:09)
+Task 28 | 13:04:16 | Updating instance doppler: doppler/22ac29c0-407e-448b-a316-9a7e860291bf (0) (canary)
+Task 28 | 13:04:16 | Updating instance diego-cell: diego-cell/f6d1ed71-3675-4b67-9456-bde3c4c05cbe (0) (canary)
+Task 28 | 13:04:23 | Updating instance doppler: doppler/22ac29c0-407e-448b-a316-9a7e860291bf (0) (canary) (00:00:07)
+Task 28 | 13:04:47 | Updating instance diego-cell: diego-cell/f6d1ed71-3675-4b67-9456-bde3c4c05cbe (0) (canary) (00:00:31)
+Task 28 | 13:04:47 | Updating instance log-api: log-api/338d9ca6-87b4-48db-80a5-43200342a142 (0) (canary) (00:01:05)
+
+Task 28 Started  Sat Jun 16 13:00:30 UTC 2018
+Task 28 Finished Sat Jun 16 13:05:52 UTC 2018
+Task 28 Duration 00:05:22
+Task 28 done
+
+Succeeded

@@ -1,0 +1,167 @@
+Redirecting output to ‘wget-log’.
+Using environment '192.168.50.6' as client 'admin'       
+                                                         
+Using deployment 'zookeeper'                         
+                                                             
+-- Started downloading 'openjdk-8/5e72bbc5151b0248ff5925636fdd7d328f7dea20' (sha1=af22f95eede2918259e6337a0a1be86cfeb6a32a)
+-- Started downloading 'golang-1.10-linux/48c842421b6f05acf88dc6ec17f7574dade28a86' (sha1=e9a18aebf2c407ce17423c22c913b6612cf4b75f)
+-- Started downloading 'smoke-tests/840b14bc609483bb03cf87a938bc69e76a6e2d88' (sha1=abafa9fc0c4d35fc818cc55438cbf19bd029a418)
+-- Started downloading 'status/1a6e60e211521487e4d03c8f7dc652b27a9ee368' (sha1=bbbdb21b04ce9d8cb3a5b4b89ad93a0703e9c09e)
+-- Started downloading 'zookeeper/fcc3281c3f39b97f4ebbb22c9af89ef28d6a1775' (sha1=2a68e278eba5c8c5fce2b92835b94a6d0a1d9ba3)
+-- Finished downloading 'zookeeper/fcc3281c3f39b97f4ebbb22c9af89ef28d6a1775' (sha1=2a68e278eba5c8c5fce2b92835b94a6d0a1d9ba3)
+-- Started downloading 'smoke-tests/892d3809e369e3d7a30c8948c62c20a9abddef71' (sha1=7be3201c8acfe52c3f5c32fe653ec25bd99e383a)
+-- Finished downloading 'status/1a6e60e211521487e4d03c8f7dc652b27a9ee368' (sha1=bbbdb21b04ce9d8cb3a5b4b89ad93a0703e9c09e)
+-- Started downloading 'zookeeper/43ee655b89f8a05cc472ca997e8c8186457241c1' (sha1=5fe92e72380a1b6f3353817edf6b41d2dd128931)
+-- Finished downloading 'smoke-tests/840b14bc609483bb03cf87a938bc69e76a6e2d88' (sha1=abafa9fc0c4d35fc818cc55438cbf19bd029a418)
+-- Finished downloading 'smoke-tests/892d3809e369e3d7a30c8948c62c20a9abddef71' (sha1=7be3201c8acfe52c3f5c32fe653ec25bd99e383a)
+-- Finished downloading 'zookeeper/43ee655b89f8a05cc472ca997e8c8186457241c1' (sha1=5fe92e72380a1b6f3353817edf6b41d2dd128931)
+-- Finished downloading 'openjdk-8/5e72bbc5151b0248ff5925636fdd7d328f7dea20' (sha1=af22f95eede2918259e6337a0a1be86cfeb6a32a)
+-- Finished downloading 'golang-1.10-linux/48c842421b6f05acf88dc6ec17f7574dade28a86' (sha1=e9a18aebf2c407ce17423c22c913b6612cf4b75f)
+-- Started downloading 'license/6a02bc8ea5927016be1cd0c487ef65405fc00d40' (sha1=a827e6409b36e7d3da272f0966170916f57fe7fa)
+-- Finished downloading 'license/6a02bc8ea5927016be1cd0c487ef65405fc00d40' (sha1=a827e6409b36e7d3da272f0966170916f57fe7fa)
+######################################################## 100.00% 147.01 MiB/s 1s
+Task 2                                                                 
+                                                                                                                                                                                                                                             
+Task 2 | 10:31:30 | Extracting release: Extracting release (00:00:02)
+Task 2 | 10:31:32 | Verifying manifest: Verifying manifest (00:00:00)
+Task 2 | 10:31:32 | Resolving package dependencies: Resolving package dependencies (00:00:00)
+Task 2 | 10:31:32 | Creating new packages: golang-1.10-linux/48c842421b6f05acf88dc6ec17f7574dade28a86 (00:00:01)
+Task 2 | 10:31:33 | Creating new packages: openjdk-8/5e72bbc5151b0248ff5925636fdd7d328f7dea20 (00:00:01)
+Task 2 | 10:31:34 | Creating new packages: smoke-tests/892d3809e369e3d7a30c8948c62c20a9abddef71 (00:00:00)
+Task 2 | 10:31:34 | Creating new packages: zookeeper/43ee655b89f8a05cc472ca997e8c8186457241c1 (00:00:00)
+Task 2 | 10:31:34 | Creating new jobs: smoke-tests/840b14bc609483bb03cf87a938bc69e76a6e2d88 (00:00:00)
+Task 2 | 10:31:34 | Creating new jobs: status/1a6e60e211521487e4d03c8f7dc652b27a9ee368 (00:00:00)
+Task 2 | 10:31:34 | Creating new jobs: zookeeper/fcc3281c3f39b97f4ebbb22c9af89ef28d6a1775 (00:00:00)
+Task 2 | 10:31:34 | Release has been created: zookeeper/0.0.9 (00:00:00)                
+                                                                                                                                                                                                                                             
+Task 2 Started  Sat Jun  2 10:31:30 UTC 2018                                                                                                                                                                                                 
+Task 2 Finished Sat Jun  2 10:31:34 UTC 2018
+Task 2 Duration 00:00:04                    
+Task 2 done                                 
++ azs:                  
++ - name: z1
++ - name: z2
++ - name: z3
+
++ vm_types:                                                            
++ - name: default
+
++ compilation:
++   az: z1                                                             
++   network: default
++   reuse_compilation_vms: true
++   vm_type: default                                                   
++   workers: 5                                                                                                                                                                                                                               
+
++ networks:
++ - name: default                                        
++   subnets:                                             
++   - azs:                                           
++     - z1                                                   
++     - z2                                                                                                                 
++     - z3                                                                                                                         
++     dns:                                                                                                                   
++     - 8.8.8.8                                                                                                         
++     gateway: 10.244.0.1                                                                                                  
++     range: 10.244.0.0/24                                                                                                  
++     reserved: []                                                                                                           
++     static:                                                                                                            
++     - 10.244.0.34                                                                                                        
++   type: manual                                                                                                              
+                                                                                                                              
++ disk_types:                                             
++ - disk_size: 1024
++   name: default                                                                                                           
+                                                                                                                            
++ stemcells:                                                                                                                        
++ - alias: default                                                                                                       
++   os: ubuntu-trusty                                                                                                     
++   version: '3468.17'                                                          
+                                                                       
++ releases:                                                                                                                                                                                                                                  
++ - name: zookeeper                                                  
++   url: git+https://github.com/cppforlife/zookeeper-release         
++   version: 0.0.9                                                                           
+                                                                                                                
++ update:                                                                                               
++   canaries: 2                                                                                           
++   canary_watch_time: 5000-60000                                                                       
++   max_in_flight: 1                                                                                  
++   update_watch_time: 5000-60000                                                                
+                                                                                                    
++ instance_groups:                                                                      
++ - azs:                                                                                                                                                                                                                                     
++   - z1                                                                                                                                                                                                                                     
++   - z2                                    
++   - z3                                    
++   instances: 5                            
++   jobs:               
++   - name: zookeeper
++     properties: {}
++     provides:
++       conn:
++         shared: true                                                 
++     release: zookeeper
++   - name: status
++     properties: {}
++     release: zookeeper                                               
++   name: zookeeper 
++   networks:                  
++   - name: default                                                    
++   persistent_disk: 10240                                                                                                                                                                                                                   
++   stemcell: default
++   vm_type: default
++ - azs:                                                 
++   - z1                                                 
++   instances: 1                                     
++   jobs:                                                    
++   - name: smoke-tests                                                                                                    
++     properties: {}                                                                                                               
++     release: zookeeper                                                                                                     
++   lifecycle: errand                                                                                                   
++   name: smoke-tests                                                                                                      
++   networks:                                                                                                               
++   - name: default                                                                                                          
++   stemcell: default                                                                                                    
++   vm_type: default                                                                                                       
+                                                                                                                              
++ name: zookeeper                                                                                                             
+                                                          
++ vm_extensions: []
+                                                                                                                            
+Continue? [yN]: y                                                                                                           
+                                                                                                                                    
+                                                                                                                         
+Task 3                                                                                                                    
+                                                                                
+Task 3 | 10:31:49 | Preparing deployment: Preparing deployment (00:00:01)
+Task 3 | 10:31:50 | Preparing package compilation: Finding packages to compile (00:00:00)                                                                                                                                                    
+Task 3 | 10:31:50 | Compiling packages: golang-1.10-linux/48c842421b6f05acf88dc6ec17f7574dade28a86
+Task 3 | 10:31:50 | Compiling packages: zookeeper/43ee655b89f8a05cc472ca997e8c8186457241c1
+Task 3 | 10:31:50 | Compiling packages: openjdk-8/5e72bbc5151b0248ff5925636fdd7d328f7dea20   
+Task 3 | 10:32:32 | Compiling packages: zookeeper/43ee655b89f8a05cc472ca997e8c8186457241c1 (00:00:42)           
+Task 3 | 10:32:35 | Compiling packages: openjdk-8/5e72bbc5151b0248ff5925636fdd7d328f7dea20 (00:00:45)   
+Task 3 | 10:32:58 | Compiling packages: golang-1.10-linux/48c842421b6f05acf88dc6ec17f7574dade28a86 (00:01:08)
+Task 3 | 10:32:58 | Compiling packages: smoke-tests/892d3809e369e3d7a30c8948c62c20a9abddef71 (00:00:09) 
+Task 3 | 10:33:08 | Creating missing vms: zookeeper/99d261ff-ed1f-4b12-bbc3-22396060ecc0 (0)          
+Task 3 | 10:33:08 | Creating missing vms: zookeeper/26e3334c-41ec-4fbe-b9c1-4ece228e003f (3)     
+Task 3 | 10:33:08 | Creating missing vms: zookeeper/713cde64-e872-4a23-a50a-77eff8d4aa1f (1)        
+Task 3 | 10:33:08 | Creating missing vms: zookeeper/95143e87-af97-4fc2-bb30-b6297576e5b0 (4)
+Task 3 | 10:33:08 | Creating missing vms: zookeeper/96db221a-c3ed-4326-aade-65794ba25bda (2)                                                                                                                                                 
+Task 3 | 10:33:44 | Creating missing vms: zookeeper/26e3334c-41ec-4fbe-b9c1-4ece228e003f (3) (00:00:36)                                                                                                                                      
+Task 3 | 10:33:45 | Creating missing vms: zookeeper/713cde64-e872-4a23-a50a-77eff8d4aa1f (1) (00:00:37)
+Task 3 | 10:33:45 | Creating missing vms: zookeeper/95143e87-af97-4fc2-bb30-b6297576e5b0 (4) (00:00:37)
+Task 3 | 10:33:45 | Creating missing vms: zookeeper/96db221a-c3ed-4326-aade-65794ba25bda (2) (00:00:37)
+Task 3 | 10:33:45 | Creating missing vms: zookeeper/99d261ff-ed1f-4b12-bbc3-22396060ecc0 (0) (00:00:37)
+Task 3 | 10:33:45 | Updating instance zookeeper: zookeeper/99d261ff-ed1f-4b12-bbc3-22396060ecc0 (0) (canary) (00:00:29)
+Task 3 | 10:34:14 | Updating instance zookeeper: zookeeper/26e3334c-41ec-4fbe-b9c1-4ece228e003f (3) (canary) (00:00:29)
+Task 3 | 10:34:43 | Updating instance zookeeper: zookeeper/713cde64-e872-4a23-a50a-77eff8d4aa1f (1) (00:00:28)
+Task 3 | 10:35:11 | Updating instance zookeeper: zookeeper/95143e87-af97-4fc2-bb30-b6297576e5b0 (4) (00:00:29)
+Task 3 | 10:35:40 | Updating instance zookeeper: zookeeper/96db221a-c3ed-4326-aade-65794ba25bda (2) (00:00:29)
+                        
+Task 3 Started  Sat Jun  2 10:31:49 UTC 2018
+Task 3 Finished Sat Jun  2 10:36:09 UTC 2018
+Task 3 Duration 00:04:20                                               
+Task 3 done         
+                               
+Succeeded

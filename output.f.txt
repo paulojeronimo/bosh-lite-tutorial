@@ -1,0 +1,67 @@
+Using environment '192.168.50.6' as client 'admin'
+
+Using deployment 'cf'
+
+Continue? [yN]: y
+
+Task 30
+
+Task 30 | 13:08:22 | Preparing deployment: Preparing deployment (00:00:01)
+Task 30 | 13:08:29 | Preparing package compilation: Finding packages to compile (00:00:00)
+Task 30 | 13:08:29 | Creating missing vms: api/f41c3005-d6f0-4c30-b7e3-591c055f1c53 (0)
+Task 30 | 13:08:29 | Creating missing vms: nats/a1044c36-e83b-4f71-bafd-ed3239e30aa1 (0)
+Task 30 | 13:08:29 | Creating missing vms: adapter/ea8603d0-19cc-48e5-beb7-666459589e3a (0)
+Task 30 | 13:08:29 | Creating missing vms: database/85d4ce8c-9bc5-4c3b-90fe-c6a937d3d4ae (0)
+Task 30 | 13:08:29 | Creating missing vms: log-api/338d9ca6-87b4-48db-80a5-43200342a142 (0)
+Task 30 | 13:08:29 | Creating missing vms: diego-api/ef28a7fd-f231-48b4-97ea-de8fea64a8db (0)
+Task 30 | 13:08:29 | Creating missing vms: router/bc5747c5-75f4-4c6a-b892-39fd38680967 (0)
+Task 30 | 13:08:29 | Creating missing vms: tcp-router/9f899ac4-a568-4c45-b501-1e2a3fc50f0b (0)
+Task 30 | 13:08:29 | Creating missing vms: uaa/8d5ed870-7549-4c34-8be8-da24ebd799da (0)
+Task 30 | 13:08:29 | Creating missing vms: singleton-blobstore/b44b45a6-a323-464a-bb49-2de8f6375635 (0)
+Task 30 | 13:08:29 | Creating missing vms: scheduler/140d9dfe-33bb-43c6-84fd-4f60a2915dab (0)
+Task 30 | 13:08:29 | Creating missing vms: doppler/22ac29c0-407e-448b-a316-9a7e860291bf (0)
+Task 30 | 13:08:29 | Creating missing vms: cc-worker/6498e307-6ef5-4d94-ab6d-b6a99f7e8a88 (0)
+Task 30 | 13:08:29 | Creating missing vms: consul/73e7937a-0d31-465c-ac6f-dde310e10edd (0)
+Task 30 | 13:08:29 | Creating missing vms: diego-cell/f6d1ed71-3675-4b67-9456-bde3c4c05cbe (0)
+Task 30 | 13:09:38 | Creating missing vms: diego-api/ef28a7fd-f231-48b4-97ea-de8fea64a8db (0) (00:01:09)
+Task 30 | 13:09:38 | Creating missing vms: log-api/338d9ca6-87b4-48db-80a5-43200342a142 (0) (00:01:09)
+Task 30 | 13:09:40 | Creating missing vms: adapter/ea8603d0-19cc-48e5-beb7-666459589e3a (0) (00:01:11)
+Task 30 | 13:09:41 | Creating missing vms: uaa/8d5ed870-7549-4c34-8be8-da24ebd799da (0) (00:01:12)
+Task 30 | 13:09:41 | Creating missing vms: doppler/22ac29c0-407e-448b-a316-9a7e860291bf (0) (00:01:12)
+Task 30 | 13:09:42 | Creating missing vms: cc-worker/6498e307-6ef5-4d94-ab6d-b6a99f7e8a88 (0) (00:01:13)
+Task 30 | 13:09:41 | Creating missing vms: nats/a1044c36-e83b-4f71-bafd-ed3239e30aa1 (0) (00:01:12)
+Task 30 | 13:09:42 | Creating missing vms: router/bc5747c5-75f4-4c6a-b892-39fd38680967 (0) (00:01:13)
+Task 30 | 13:09:42 | Creating missing vms: consul/73e7937a-0d31-465c-ac6f-dde310e10edd (0) (00:01:13)
+Task 30 | 13:09:43 | Creating missing vms: tcp-router/9f899ac4-a568-4c45-b501-1e2a3fc50f0b (0) (00:01:14)
+Task 30 | 13:09:43 | Creating missing vms: diego-cell/f6d1ed71-3675-4b67-9456-bde3c4c05cbe (0) (00:01:14)
+Task 30 | 13:09:43 | Creating missing vms: database/85d4ce8c-9bc5-4c3b-90fe-c6a937d3d4ae (0) (00:01:14)
+Task 30 | 13:09:43 | Creating missing vms: singleton-blobstore/b44b45a6-a323-464a-bb49-2de8f6375635 (0) (00:01:14)
+Task 30 | 13:09:44 | Creating missing vms: scheduler/140d9dfe-33bb-43c6-84fd-4f60a2915dab (0) (00:01:15)
+Task 30 | 13:09:44 | Creating missing vms: api/f41c3005-d6f0-4c30-b7e3-591c055f1c53 (0) (00:01:15)
+Task 30 | 13:09:45 | Updating instance consul: consul/73e7937a-0d31-465c-ac6f-dde310e10edd (0) (canary) (00:00:49)
+Task 30 | 13:10:34 | Updating instance nats: nats/a1044c36-e83b-4f71-bafd-ed3239e30aa1 (0) (canary)
+Task 30 | 13:10:34 | Updating instance adapter: adapter/ea8603d0-19cc-48e5-beb7-666459589e3a (0) (canary) (00:00:49)
+Task 30 | 13:11:23 | Updating instance nats: nats/a1044c36-e83b-4f71-bafd-ed3239e30aa1 (0) (canary) (00:00:49)
+Task 30 | 13:11:23 | Updating instance database: database/85d4ce8c-9bc5-4c3b-90fe-c6a937d3d4ae (0) (canary) (00:01:19)
+Task 30 | 13:12:42 | Updating instance diego-api: diego-api/ef28a7fd-f231-48b4-97ea-de8fea64a8db (0) (canary) (00:00:52)
+Task 30 | 13:13:34 | Updating instance uaa: uaa/8d5ed870-7549-4c34-8be8-da24ebd799da (0) (canary) (00:02:16)
+Task 30 | 13:15:50 | Updating instance singleton-blobstore: singleton-blobstore/b44b45a6-a323-464a-bb49-2de8f6375635 (0) (canary) (00:00:53)
+Task 30 | 13:16:43 | Updating instance cc-worker: cc-worker/6498e307-6ef5-4d94-ab6d-b6a99f7e8a88 (0) (canary)
+Task 30 | 13:16:43 | Updating instance api: api/f41c3005-d6f0-4c30-b7e3-591c055f1c53 (0) (canary)
+Task 30 | 13:17:51 | Updating instance cc-worker: cc-worker/6498e307-6ef5-4d94-ab6d-b6a99f7e8a88 (0) (canary) (00:01:08)
+Task 30 | 13:18:46 | Updating instance api: api/f41c3005-d6f0-4c30-b7e3-591c055f1c53 (0) (canary) (00:02:03)
+Task 30 | 13:18:46 | Updating instance router: router/bc5747c5-75f4-4c6a-b892-39fd38680967 (0) (canary) (00:01:12)
+Task 30 | 13:19:58 | Updating instance tcp-router: tcp-router/9f899ac4-a568-4c45-b501-1e2a3fc50f0b (0) (canary) (00:00:53)
+Task 30 | 13:20:51 | Updating instance scheduler: scheduler/140d9dfe-33bb-43c6-84fd-4f60a2915dab (0) (canary) (00:01:15)
+Task 30 | 13:22:06 | Updating instance doppler: doppler/22ac29c0-407e-448b-a316-9a7e860291bf (0) (canary)
+Task 30 | 13:22:06 | Updating instance diego-cell: diego-cell/f6d1ed71-3675-4b67-9456-bde3c4c05cbe (0) (canary)
+Task 30 | 13:23:00 | Updating instance doppler: doppler/22ac29c0-407e-448b-a316-9a7e860291bf (0) (canary) (00:00:54)
+Task 30 | 13:24:35 | Updating instance diego-cell: diego-cell/f6d1ed71-3675-4b67-9456-bde3c4c05cbe (0) (canary) (00:02:29)
+Task 30 | 13:24:35 | Updating instance log-api: log-api/338d9ca6-87b4-48db-80a5-43200342a142 (0) (canary) (00:01:00)
+
+Task 30 Started  Sat Jun 16 13:08:22 UTC 2018
+Task 30 Finished Sat Jun 16 13:25:35 UTC 2018
+Task 30 Duration 00:17:13
+Task 30 done
+
+Succeeded

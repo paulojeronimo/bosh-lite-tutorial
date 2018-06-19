@@ -1,0 +1,89 @@
+Pushing from manifest to org paulojeronimo-org / space paulojeronimo-dev as admin...
+Using manifest file /Users/pj/bosh-env/spring-music/manifest.yml
+Getting app info...
+Creating app with these attributes...
++ name:       spring-music
+  path:       /Users/pj/bosh-env/spring-music/build/libs/spring-music-1.0.jar
++ memory:     1G
+  routes:
++   spring-music-brash-genet.bosh-lite.com
+
+Creating app spring-music...
+Mapping routes...
+Comparing local files to remote cache...
+Packaging files to upload...
+Uploading files...
+ 40.68 MiB / 40.68 MiB [===================================================================] 100.00% 2s
+
+Waiting for API to complete processing files...
+
+Staging app and tracing logs...
+   Downloading binary_buildpack...
+   Downloading dotnet_core_buildpack...
+   Downloading staticfile_buildpack...
+   Downloading java_buildpack...
+   Downloaded java_buildpack (201.5K)
+   Downloading nodejs_buildpack...
+   Downloaded binary_buildpack (3.5M)
+   Downloading go_buildpack...
+   Downloaded dotnet_core_buildpack (3.9M)
+   Downloading python_buildpack...
+   Downloaded staticfile_buildpack (4.1M)
+   Downloading ruby_buildpack...
+   Downloaded go_buildpack (3.7M)
+   Downloading php_buildpack...
+   Downloaded nodejs_buildpack (3.8M)
+   Downloaded php_buildpack (592.2K)
+   Downloaded python_buildpack (3.7M)
+   Downloaded ruby_buildpack (3.8M)
+   Cell f6d1ed71-3675-4b67-9456-bde3c4c05cbe creating container for instance 6e77d069-3e5d-49bc-a7a6-04e8cab82bb2
+   Cell f6d1ed71-3675-4b67-9456-bde3c4c05cbe successfully created container for instance 6e77d069-3e5d-49bc-a7a6-04e8cab82bb2
+   Downloading app package...
+   Downloaded app package (40.7M)
+   -----> Java Buildpack v4.12 | https://github.com/cloudfoundry/java-buildpack.git#5dca820
+   -----> Downloading Jvmkill Agent 1.13.0_RELEASE from https://java-buildpack.cloudfoundry.org/jvmkill/trusty/x86_64/jvmkill-1.13.0_RELEASE.so (0.7s)
+   -----> Downloading Open Jdk JRE 1.8.0_172 from https://java-buildpack.cloudfoundry.org/openjdk/trusty/x86_64/openjdk-1.8.0_172.tar.gz (6.5s)
+          Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.3s)
+   -----> Downloading Open JDK Like Memory Calculator 3.13.0_RELEASE from https://java-buildpack.cloudfoundry.org/memory-calculator/trusty/x86_64/memory-calculator-3.13.0_RELEASE.tar.gz (0.4s)
+          Loaded Classes: 19544, Threads: 250
+   -----> Downloading Client Certificate Mapper 1.6.0_RELEASE from https://java-buildpack.cloudfoundry.org/client-certificate-mapper/client-certificate-mapper-1.6.0_RELEASE.jar (0.2s)
+   -----> Downloading Container Security Provider 1.14.0_RELEASE from https://java-buildpack.cloudfoundry.org/container-security-provider/container-security-provider-1.14.0_RELEASE.jar (0.4s)
+   -----> Downloading Spring Auto Reconfiguration 2.4.0_RELEASE from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-2.4.0_RELEASE.jar (0.9s)
+   Exit status 0
+   Uploading droplet, build artifacts cache...
+   Uploading droplet...
+   Uploading build artifacts cache...
+   Uploaded build artifacts cache (45.9M)
+   Uploaded droplet (86.7M)
+   Uploading complete
+   Cell f6d1ed71-3675-4b67-9456-bde3c4c05cbe stopping instance 6e77d069-3e5d-49bc-a7a6-04e8cab82bb2
+   Cell f6d1ed71-3675-4b67-9456-bde3c4c05cbe destroying container for instance 6e77d069-3e5d-49bc-a7a6-04e8cab82bb2
+   Cell f6d1ed71-3675-4b67-9456-bde3c4c05cbe successfully destroyed container for instance 6e77d069-3e5d-49bc-a7a6-04e8cab82bb2
+
+Waiting for app to start...
+
+name:              spring-music
+requested state:   started
+instances:         1/1
+usage:             1G x 1 instances
+routes:            spring-music-brash-genet.bosh-lite.com
+last uploaded:     Sat 16 Jun 13:40:55 WEST 2018
+stack:             cflinuxfs2
+buildpack:         client-certificate-mapper=1.6.0_RELEASE container-security-provider=1.14.0_RELEASE
+                   java-buildpack=v4.12-https://github.com/cloudfoundry/java-buildpack.git#5dca820
+                   java-main java-opts java-security jvmkill-agent=1.13.0_RELEASE open-jdk-like-jre...
+start command:     JAVA_OPTS="-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.13.0_RELEASE=printHeapHistogram=1
+                   -Djava.io.tmpdir=$TMPDIR
+                   -Djava.ext.dirs=$PWD/.java-buildpack/container_security_provider:$PWD/.java-buildpack/open_jdk_jre/lib/ext
+                   -Djava.security.properties=$PWD/.java-buildpack/java_security/java.security
+                   $JAVA_OPTS" &&
+                   CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.13.0_RELEASE
+                   -totMemory=$MEMORY_LIMIT -loadedClasses=20254 -poolType=metaspace -stackThreads=250
+                   -vmOptions="$JAVA_OPTS") && echo JVM Memory Configuration: $CALCULATED_MEMORY &&
+                   JAVA_OPTS="$JAVA_OPTS $CALCULATED_MEMORY" && MALLOC_ARENA_MAX=2 SERVER_PORT=$PORT
+                   eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/.
+                   org.springframework.boot.loader.JarLauncher
+
+     state     since                  cpu    memory         disk           details
+#0   running   2018-06-16T12:42:19Z   0.0%   295.8M of 1G   170.1M of 1G   
+

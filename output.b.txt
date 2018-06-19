@@ -1,0 +1,10 @@
+Using environment '192.168.50.6' as client 'admin'
+
+Name                                         Version   OS             CPI  CID  
+bosh-warden-boshlite-ubuntu-trusty-go_agent  3586.23*  ubuntu-trusty  -    dd123993-f1bd-4274-5e04-a0484cbc02d1  
+
+(*) Currently deployed
+
+1 stemcells
+
+Succeeded
